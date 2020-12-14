@@ -10,8 +10,12 @@ export const contentSectionAttributes = <const>{
         description: 'Product title without author or other additions.'
     }),
     subtitle: StringAttr({
-        name: 'Subtitle',
+        name: 'subtitle',
         description: 'Product title without author or other additions.'
+    }),
+    author: StringAttr({
+        name: 'author',
+        description: 'Content author.'
     }),
     language: SetAttr({
         name: 'language',
