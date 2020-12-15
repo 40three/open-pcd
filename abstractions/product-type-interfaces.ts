@@ -1,12 +1,12 @@
 import { AttributeKey } from '../data/attributes';
 import { examplesA } from '../data/attributes/_example';
-import { ProducTypeCategory } from '../data/product-types/_categories';
+import { ProductTypeCategoryKey } from '../data/generated/types';
 
 /** Product type - extracted to allow separate interface for examples */
 export interface IProductTypeBase {
     readonly name: string;
     readonly key: string;
-    readonly categories: readonly ProducTypeCategory[];
+    readonly categories: readonly ProductTypeCategoryKey[];
     readonly description?: string;
     readonly subTypes?: any;
 }
@@ -14,12 +14,11 @@ export interface IProductTypeBase {
 /** Use sub types if products share the exact same set of attributes */
 export interface IProductSubType {
     readonly name: string;
+    readonly categories?: readonly ProductTypeCategoryKey[];
     readonly addAttributeRefs?: AttributeKey[];
 }
 
-/**
- * Product types define which attributes we need to describe a product
- */
+/** Product types define which attributes we need to describe a product */
 export interface IProductType extends IProductTypeBase {
     readonly attributeRefs: AttributeKey[];
 }
@@ -36,6 +35,7 @@ export interface IProductTypeCategory {
     readonly children: IProductTypeCategoryMap;
 }
 
+/** categoryKey: categoryDefinition map */
 export interface IProductTypeCategoryMap {
     [categoryKey: string]: IProductTypeCategory;
 }

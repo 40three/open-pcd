@@ -14,10 +14,18 @@
                 "node_modules/*",
                 "src/types/*"
             ]
-        }
+        },
+        "lib": [
+            "es2019",
+            "DOM",
+            "ES6",
+            "DOM.Iterable",
+            "ScriptHost"
+        ]
     },
     "include": [
-        "data/**/*",
-        "abstractions/**/*"
+        "abstractions/**/*",
+        "build/*",
+        "data/**/*"
     ]
 }
