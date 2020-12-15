@@ -14,6 +14,7 @@ export interface IProductTypeBase {
 /** Use sub types if products share the exact same set of attributes */
 export interface IProductSubType {
     readonly name: string;
+    readonly addAttributeRefs?: AttributeKey[];
 }
 
 /**
@@ -32,5 +33,9 @@ export interface IExampeProductType extends IProductTypeBase {
 export interface IProductTypeCategory {
     readonly name: string;
     readonly description?: string;
-    readonly children?: any;
+    readonly children: IProductTypeCategoryMap;
+}
+
+export interface IProductTypeCategoryMap {
+    [categoryKey: string]: IProductTypeCategory;
 }

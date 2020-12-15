@@ -1,5 +1,5 @@
 import { IBooleanAttribute, INumberAttribute, IRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
-import { IProductType, IExampeProductType, IProductTypeCategory, IProductSubType } from './product-type-interfaces';
+import { IProductType, IExampeProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
 import { IUnitInfo } from './unit-interfaces';
 
 /** Creates unit info */
@@ -24,4 +24,4 @@ export const PSub = (data: IProductSubType | string): IProductSubType => typeof 
 /** Creates example product type */
 export const ExamplePType = (data: IExampeProductType): IExampeProductType => data;
 /** Creates product type category */
-export const PTCat = (data: IProductTypeCategory): IProductTypeCategory => data;
+export const PTCat = (data: Omit<IProductTypeCategory, 'children'> | string, children: IProductTypeCategoryMap = {}): IProductTypeCategory => ({ ...(typeof data === 'string' ? { name: data } : data), children });
