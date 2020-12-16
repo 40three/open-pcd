@@ -22,7 +22,7 @@ export const AttrGroup = <TCollection extends readonly AttributeKey[]>(data: TCo
 /** Creates product type */
 export const PType = (data: IProductType): IProductType => data;
 /** Creates product sub type */
-export const PSub = (data: IProductSubType | string): IProductSubType => typeof data === 'string' ? ({ name: data }) : data;
+export const PSub = (data: IProductSubType): IProductSubType => data;
 
 /** Creates example product type */
 export const ExamplePType = (data: IExampeProductType): IExampeProductType => data;

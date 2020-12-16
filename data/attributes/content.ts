@@ -17,6 +17,10 @@ export const contentSectionAttributes = <const>{
         name: 'author',
         description: 'Content author.'
     }),
+    translators: StringAttr({
+        name: 'translators (person)',
+        description: 'Name of translator(s)'
+    }),
     language: SetAttr({
         name: 'language',
         description: 'Text, audio or video language',
@@ -26,6 +30,15 @@ export const contentSectionAttributes = <const>{
         name: 'font size',
         description: 'Size of font used for most of text content.',
         unit: 'pt',
+    }),
+    country: StringAttr({
+        name: 'country',
+        description: 'Name of country that this content is about.'
+    }),
+    bookGenre: SetAttr({
+        name: 'genre (book)',
+        values: ['biography', 'business', 'cooking', 'history', 'pets', 'politics', 'philosophy', 'religion', 'sports'],
+        allowCustomValues: true,
     })
 };
 

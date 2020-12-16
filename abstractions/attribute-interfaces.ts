@@ -46,4 +46,5 @@ export interface IStringAttribute extends IAttributeBase {
 export interface ISetAttribute<TValue extends string | number> extends IAttributeBase {
     readonly type: 'set'
     readonly values: readonly TValue[];
+    readonly allowCustomValues?: boolean;
 }

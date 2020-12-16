@@ -6,19 +6,14 @@ export const productTypeBook = PType({
     key: 'book',
     categories: ['booksMedia'],
     subTypes: {
-        'biography': PSub('biography and memoir'),
-        'business': PSub('business'),
-        'cooking': PSub('cooking'),
-        'history': PSub('history'),
-        'pets': PSub('pets'),
-        'politics': PSub('politics'),
-        'philosophy': PSub('philosophy'),
-        'religion': PSub('religion'),
-        'sports': PSub('sports'),
-        'travel': PSub('travel'),
+        'travel': PSub({
+            name: 'travel',
+            addAttributeRefs: ['country']
+        }),
     },
     attributeRefs: [
         ...ag.common,
+        'bookGenre',
         'author',
         'title',
         'subtitle',
