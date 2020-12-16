@@ -18,15 +18,12 @@
         },
         "lib": [
             "es2019",
-            "DOM",
             "ES6",
-            "DOM.Iterable",
-            "ScriptHost"
         ]
     },
     "include": [
         "abstractions/**/*",
-        "build/*",
+        "build/**/*",
         "data/**/*"
     ]
 }

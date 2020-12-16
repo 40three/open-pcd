@@ -15,7 +15,7 @@ export const a = {
 export type AttributeKey = keyof typeof a;
 
 /** Dictionary of all available sections */
-export const s = [
+export const g = [
     attributeGroupCommon,
     attributeGroupContent,
     attributeGroupDimensionsPackaging,
