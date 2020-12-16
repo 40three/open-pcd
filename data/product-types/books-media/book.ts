@@ -1,3 +1,4 @@
+import { ag } from 'attribute-groups';
 import { PSub, PType } from '../../../abstractions';
 
 export const productTypeBook = PType({
@@ -17,8 +18,10 @@ export const productTypeBook = PType({
         'travel': PSub('travel'),
     },
     attributeRefs: [
-        'gtin',
-        'name',
-        'brand',
+        ...ag.common,
+        'author',
+        'title',
+        'subtitle',
+        'fontSize'
     ]
 });

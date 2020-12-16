@@ -1,3 +1,4 @@
+import { AttributeKey } from 'attributes';
 import { IBooleanAttribute, INumberAttribute, IRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
 import { IProductType, IExampeProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
 import { IUnitInfo } from './unit-interfaces';
@@ -15,6 +16,8 @@ export const RangeAttr = (data: Omit<IRangeAttribute, 'type'>): IRangeAttribute 
 export const SetAttr = <TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue> => (<const>{ ...data, type: 'set' });
 /** Creates string attribute */
 export const StringAttr = (data: Omit<IStringAttribute, 'type'>): IStringAttribute => (<const>{ ...data, type: 'string' });
+
+export const AttrGroup = <TCollection extends readonly AttributeKey[]>(data: TCollection) => data;
 
 /** Creates product type */
 export const PType = (data: IProductType): IProductType => data;
