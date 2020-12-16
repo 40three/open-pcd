@@ -1,3 +1,5 @@
+import { type } from 'os';
+
 export interface IUnitProperties {
     id: string;
 }
@@ -16,18 +18,23 @@ export class XlfGroup {
         properties: IUnitProperties,
         public readonly units: XlfUnit[],
     ) {
-        if(!Array.isArray(units)) throw new Error('Xlif group.units must be an array')
+        if (!Array.isArray(units)) throw new Error('Xlif group.units must be an array')
         this.id = properties.id;
     }
 }
 export class XlfUnit {
     public readonly id: string;
+    public readonly segments: XlfSegment[];
     constructor(
-        properties: any,
-        public readonly segments: XlfSegment[]
+        properties: string | { id: string; },
+        segments: XlfSegment[] | XlfSegment
     ) {
-        if (!segments.length) throw new Error('Units must have one or more segments');
+        if (typeof properties === 'string') properties = { id: properties };
         this.id = properties.id;
+
+        if (segments instanceof XlfSegment) segments = [segments];
+        if (!segments.length) throw new Error('Units must have one or more segments');
+        this.segments = segments;
     }
 }
 export class XlfSegment {

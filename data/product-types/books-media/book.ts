@@ -1,4 +1,4 @@
-import { ag } from 'attribute-groups';
+import { ag } from '../../attribute-groups';
 import { PSub, PType } from '../../../abstractions';
 
 export const productTypeBook = PType({
