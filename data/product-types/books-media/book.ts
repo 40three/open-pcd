@@ -4,6 +4,7 @@ import { PSub, PType } from '../../../abstractions';
 export const productTypeBook = PType({
     name: 'book',
     key: 'book',
+    definitionUri: 'https://en.wikipedia.org/wiki/Book',
     categories: ['booksMedia'],
     subTypes: {
         'travel': PSub({
