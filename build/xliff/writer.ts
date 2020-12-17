@@ -1,29 +1,28 @@
-import { fstat } from 'fs';
-import { XlfGroup, XlfUnit, XlfFile } from './models';
 import { promises as fs } from 'fs';
 import { DOMParser, XMLSerializer } from 'xmldom';
+import { XlfFile, XlfGroup, XlfUnit } from './models';
 
 export function toDom(model: XlfFile): Document {
 
-    const doc = new DOMParser().parseFromString('<xml xmlns="urn:oasis:names:tc:xliff:document:2.0"></xml>', 'text/xml');
+    const doc = new DOMParser().parseFromString('<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0"></xliff>', 'text/xml');
 
     function groupToDom(group: XlfGroup): HTMLElement {
         const groupEl = doc.createElement('group');
 
         // attrs
-        if(group.id) groupEl.setAttribute('id', group.id);
+        if (group.id) groupEl.setAttribute('id', group.id);
 
         // children
         group.units.forEach(unit => groupEl.appendChild(unitToDom(unit)));
 
         return groupEl;
     }
-    
+
     function unitToDom(unit: XlfUnit): HTMLElement {
         const unitEl = doc.createElement('unit');
 
         // attrs
-        if(unit.id) unitEl.setAttribute('id', unit.id);
+        if (unit.id) unitEl.setAttribute('id', unit.id);
 
         // children
         unit.segments.forEach(seg => {
@@ -40,7 +39,10 @@ export function toDom(model: XlfFile): Document {
 
         return unitEl;
     }
-    
+
+    // root
+    if (model.srcLang) doc.documentElement.setAttribute('srcLang', model.srcLang);
+    if (model.trgLang) doc.documentElement.setAttribute('trgLang', model.trgLang);
 
     // file
     const fileEl = doc.createElement('file');

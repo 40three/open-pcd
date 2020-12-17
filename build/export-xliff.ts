@@ -11,20 +11,20 @@ import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributesXliff(path: string, targetCulture: string, groups: IAttributeGroup<Record<string, Attribute>>[]): Promise<void> {
+async function writeAttributesXliff(path: string, trgLang: string, groups: IAttributeGroup<Record<string, Attribute>>[]): Promise<void> {
     // attributes as { key: { source: a.name }}
     const attrsOfGroup = (g: IAttributeGroup<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => new XlfUnit({ id: k }, [new XlfSegment(a.name)]));
 
-    const xlif = new XlfFile({ id: 'attributes' }, Object.values(groups).map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
+    const xlif = new XlfFile({ id: 'attributes', srcLang: 'en-US', trgLang }, Object.values(groups).map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
     await writeXliff(path, xlif);
 }
 
 /**
  * All product types in one file
  */
-async function writeProductTypesXliff(path: string, targetCulture: string, productTypes: IProductType[]): Promise<void> {
+async function writeProductTypesXliff(path: string, trgLang: string, productTypes: IProductType[]): Promise<void> {
     const xlif = new XlfFile(
-        { id: 'product-types' },
+        { id: 'product-types', srcLang: 'en-US', trgLang },
         Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [new XlfUnit(`${pt.key}.name`, new XlfSegment(pt.name)), ...(pt.description ? [new XlfUnit(`${pt.key}.description`, new XlfSegment(pt.description))] : [])]))
     );
     await writeXliff(path, xlif);
@@ -33,9 +33,9 @@ async function writeProductTypesXliff(path: string, targetCulture: string, produ
 /**
  * All product types categories in one file
  */
-async function writeProductTypeCategoriesXliff(path: string, targetCulture: string, categories: IProductTypeCategoryFlat[]): Promise<void> {
+async function writeProductTypeCategoriesXliff(path: string, trgLang: string, categories: IProductTypeCategoryFlat[]): Promise<void> {
     const xlif = new XlfFile(
-        { id: 'product-type-categories' },
+        { id: 'product-type-categories', srcLang: 'en-US', trgLang },
         Object.values(categories).map(cat => new XlfGroup({ id: cat.key }, [new XlfUnit(`${cat.key}.name`, new XlfSegment(cat.name)), ...(cat.description ? [new XlfUnit(`${cat.key}.description`, new XlfSegment(cat.description))] : [])]))
     );
     await writeXliff(path, xlif);

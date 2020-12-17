@@ -5,11 +5,15 @@ export interface IUnitProperties {
 }
 export class XlfFile {
     public readonly id: string;
+    public readonly srcLang: string;
+    public readonly trgLang: string;
     constructor(
-        properties: any,
+        properties: { id: string; srcLang: string; trgLang: string; },
         public readonly items: (XlfGroup | XlfUnit)[]
     ) {
         this.id = properties.id;
+        this.srcLang = properties.srcLang;
+        this.trgLang = properties.trgLang;
     }
 }
 export class XlfGroup {
