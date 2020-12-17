@@ -37,6 +37,13 @@ export interface IProductTypeCategory {
     readonly children: IProductTypeCategoryMap;
 }
 
+/** Category allow users to browse product types */
+export interface IProductTypeCategoryFlat {
+    readonly name: string;
+    readonly description?: string;
+    readonly key: string;
+}
+
 /** categoryKey: categoryDefinition map */
 export interface IProductTypeCategoryMap {
     [categoryKey: string]: IProductTypeCategory;

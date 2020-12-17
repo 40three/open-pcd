@@ -1,11 +1,12 @@
 /**
  * Create xliff files to provide data for translations
  */
+import { Attribute, IAttributeGroup, IProductType, IProductTypeCategoryFlat } from 'abstractions';
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeGroup, IProductType } from 'abstractions';
-import { XlfGroup, XlfSegment, XlfUnit, writeXliff, XlfFile } from './xliff';
+import { productTypesCategoryList } from '../data/product-type-categories';
 import { g } from '../data/attributes';
 import { pt } from '../data/product-types';
+import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 
 /**
  * All attributes in one file grouped by attribute group
@@ -24,10 +25,22 @@ async function writeAttributesXliff(path: string, targetCulture: string, groups:
 async function writeProductTypesXliff(path: string, targetCulture: string, productTypes: IProductType[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'product-types' },
-        Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [new XlfUnit('name', new XlfSegment(pt.name)), ...(pt.description ? [new XlfUnit('description', new XlfSegment(pt.description))] : [])]))
+        Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [new XlfUnit(`${pt.key}.name`, new XlfSegment(pt.name)), ...(pt.description ? [new XlfUnit(`${pt.key}.description`, new XlfSegment(pt.description))] : [])]))
     );
     await writeXliff(path, xlif);
 }
+
+/**
+ * All product types categories in one file
+ */
+async function writeProductTypeCategoriesXliff(path: string, targetCulture: string, categories: IProductTypeCategoryFlat[]): Promise<void> {
+    const xlif = new XlfFile(
+        { id: 'product-type-categories' },
+        Object.values(categories).map(cat => new XlfGroup({ id: cat.key }, [new XlfUnit(`${cat.key}.name`, new XlfSegment(cat.name)), ...(cat.description ? [new XlfUnit(`${cat.key}.description`, new XlfSegment(cat.description))] : [])]))
+    );
+    await writeXliff(path, xlif);
+}
+
 
 const outPath = 'xliff/export';
 
@@ -36,4 +49,5 @@ const outPath = 'xliff/export';
     await fs.mkdir(outPath, { recursive: true });
     await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de-DE', g);
     await writeProductTypesXliff(`${outPath}/product-types.xlf`, 'de-DE', pt);
+    await writeProductTypeCategoriesXliff(`${outPath}/product-type-categories.xlf`, 'de-DE', productTypesCategoryList);
 })();
