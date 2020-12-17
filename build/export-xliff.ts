@@ -42,7 +42,7 @@ async function writeProductTypeCategoriesXliff(path: string, trgLang: string, ca
 }
 
 
-const outPath = 'xliff/export';
+const outPath = 'omega-t/source';
 
 // main
 (async () => {
