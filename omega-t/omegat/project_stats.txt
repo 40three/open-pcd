@@ -1,0 +1,16 @@
+17.12.20 12:58
+Projektstatistik
+
+                     	Segmente	Wörter	Zeichen (ohne Leerzeichen)	Zeichen (mit Leerzeichen)	Dateien	
+Gesamt:              	      23	    40	                       242	                      259	      3	
+Verbleibend:         	      18	    32	                       195	                      209	      2	
+Einmalig:            	      22	    39	                       237	                      254	      3	
+Verbleibend einmalig:	      17	    31	                       190	                      204	      2	
+
+
+Statistik einzelner Dateien:
+
+Dateiname                  	Segmente Gesamt	Verbleibende Segmente	Einmalige Segmente	Verbleibende einmalige Segmente	Wörter Gesamt	Verbleibende Wörter:	Einmalige Wörter	Verbleibende einmalige Wörter	Zeichen Gesamt (ohne Leerzeichen)	Verbleibende Zeichen (ohne Leerzeichen)	Einmalige Zeichen (ohne Leerzeichen)	Verbleibende einmalige Zeichen (ohne Leerzeichen)	Zeichen Gesamt (mit Leerzeichen)	Verbleibende Zeichen (mit Leerzeichen)	Einmalige Zeichen (mit Leerzeichen)	Verbleibende einmalige Zeichen (mit Leerzeichen)	
+attributes.xlf             	             18	                   14	                17	                             13	           27	                  20	              26	                           19	                              161	                                    118	                                 156	                                              113	                             170	                                   124	                                165	                                             119	
+product-type-categories.xlf	              4	                    4	                 4	                              4	           12	                  12	              12	                           12	                               77	                                     77	                                  77	                                               77	                              85	                                    85	                                 85	                                              85	
+product-types.xlf          	              1	                    0	                 1	                              0	            1	                   0	               1	                            0	                                4	                                      0	                                   4	                                                0	                               4	                                     0	                                  4	                                               0	

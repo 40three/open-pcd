@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-4.3.2" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Manufacturer part number</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115807Z" creationid="info" creationdate="20201217T115807Z">
+        <seg>Herstellerartikelnummer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Product name</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115815Z" creationid="info" creationdate="20201217T115815Z">
+        <seg>Produktname</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>book</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115738Z" creationid="info" creationdate="20201217T115738Z">
+        <seg>Buch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>brand</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115823Z" creationid="info" creationdate="20201217T115823Z">
+        <seg>Marke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>title</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115825Z" creationid="info" creationdate="20201217T115825Z">
+        <seg>Titel</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>

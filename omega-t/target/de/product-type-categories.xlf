@@ -1,0 +1,22 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="product-type-categories"><group id="clothing"><unit id="clothing.name">
+ <segment>
+  <source>clothing, shoes and accessories</source>
+  <target>clothing, shoes and accessories</target>
+ </segment>
+ </unit> </group> <group id="electronics"> <unit id="electronics.name">
+  <segment>
+   <source>electronics and office</source>
+   <target>electronics and office</target>
+  </segment>
+  </unit>  </group>  <group id="homeElectronics">  <unit id="homeElectronics.name">
+   <segment>
+    <source>home electronics</source>
+    <target>home electronics</target>
+   </segment>
+   </unit>   </group>   <group id="booksMedia">   <unit id="booksMedia.name">
+    <segment>
+     <source>books and movies</source>
+     <target>books and movies</target>
+    </segment>
+    </unit>    </group>    </file></xliff>

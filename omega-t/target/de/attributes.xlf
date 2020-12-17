@@ -1,0 +1,92 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="attributes"><group id="common"><unit id="sku">
+ <segment>
+  <source>Stock keeping unit</source>
+  <target>Stock keeping unit</target>
+ </segment>
+ </unit> <unit id="mpn">
+  <segment state="translated">
+   <source>Manufacturer part number</source>
+   <target>Herstellerartikelnummer</target>
+  </segment>
+  </unit>  <unit id="gtin">
+   <segment>
+    <source>GTIN</source>
+    <target>GTIN</target>
+   </segment>
+   </unit>   <unit id="name">
+    <segment state="translated">
+     <source>Product name</source>
+     <target>Produktname</target>
+    </segment>
+    </unit>    <unit id="brand">
+     <segment state="translated">
+      <source>brand</source>
+      <target>Marke</target>
+     </segment>
+     </unit>     </group>     <group id="content">     <unit id="title">
+      <segment state="translated">
+       <source>title</source>
+       <target>Titel</target>
+      </segment>
+      </unit>      <unit id="subtitle">
+       <segment>
+        <source>subtitle</source>
+        <target>subtitle</target>
+       </segment>
+       </unit>       <unit id="author">
+        <segment>
+         <source>author</source>
+         <target>author</target>
+        </segment>
+        </unit>        <unit id="translators">
+         <segment>
+          <source>translators (person)</source>
+          <target>translators (person)</target>
+         </segment>
+         </unit>         <unit id="language">
+          <segment>
+           <source>language</source>
+           <target>language</target>
+          </segment>
+          </unit>          <unit id="fontSize">
+           <segment>
+            <source>font size</source>
+            <target>font size</target>
+           </segment>
+           </unit>           <unit id="country">
+            <segment>
+             <source>country</source>
+             <target>country</target>
+            </segment>
+            </unit>            <unit id="bookGenre">
+             <segment>
+              <source>genre (book)</source>
+              <target>genre (book)</target>
+             </segment>
+             </unit>             </group>             <group id="dimensionsPackaging">             <unit id="width">
+              <segment>
+               <source>Width</source>
+               <target>Width</target>
+              </segment>
+              </unit>              <unit id="height">
+               <segment>
+                <source>height</source>
+                <target>height</target>
+               </segment>
+               </unit>               <unit id="depth">
+                <segment>
+                 <source>depth</source>
+                 <target>depth</target>
+                </segment>
+                </unit>                <unit id="weight">
+                 <segment>
+                  <source>Width</source>
+                  <target>Width</target>
+                 </segment>
+                 </unit>                 </group>                 <group id="display">                 <unit id="screen-diagonal">
+                  <segment>
+                   <source>Screen size</source>
+                   <target>Screen size</target>
+                  </segment>
+                  </unit>                  </group>                  </file></xliff>
