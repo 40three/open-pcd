@@ -1,2 +1,3 @@
-# open-pdc
-Open product data classification
+# open-pcd
+
+Open product classification and description standard.
