@@ -1,16 +1,16 @@
 import { NumberAttr } from '../../abstractions';
-import { IAttributeGroup } from '../../abstractions/attribute-interfaces';
+import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
-export const displaySectionAttributes = <const>{
+export const sectionDisplayAttrs = <const>{
     'screen-diagonal': NumberAttr({
         name: 'Screen size',
         description: 'Screen diagonal',
     })
 };
 
-export const attributeGroupDisplay: IAttributeGroup<typeof displaySectionAttributes> = {
+export const sectionDisplay: IAttributeSection<typeof sectionDisplayAttrs> = {
     name: 'Display',
     key: 'display',
     description: 'Display used in TVs, Smartphones, Computers, ...',
-    attributes: displaySectionAttributes
+    attributes: sectionDisplayAttrs
 }

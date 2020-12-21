@@ -1,1 +1,2 @@
-export type ProductTypeKey = "book";
+export type ProductTypeKey = "simpleProduct"
+|"book";

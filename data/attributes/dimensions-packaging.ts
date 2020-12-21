@@ -1,7 +1,7 @@
 import { NumberAttr, StringAttr } from '../../abstractions';
-import { IAttributeGroup } from '../../abstractions/attribute-interfaces';
+import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
-export const dimensionsPackagingGroupAttributes = <const>{
+export const sectionDimensionsPackagingAttrs = <const>{
     'width': NumberAttr({ // schema.org product
         name: 'Width',
         description: 'Width of product without packaging.',
@@ -24,8 +24,8 @@ export const dimensionsPackagingGroupAttributes = <const>{
     }),
 };
 
-export const attributeGroupDimensionsPackaging: IAttributeGroup<typeof dimensionsPackagingGroupAttributes> = {
+export const sectionDimensionsPackaging: IAttributeSection<typeof sectionDimensionsPackagingAttrs> = {
     name: 'dimensions an packaging',
     key: 'dimensionsPackaging',
-    attributes: dimensionsPackagingGroupAttributes
+    attributes: sectionDimensionsPackagingAttrs
 };

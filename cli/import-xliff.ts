@@ -28,6 +28,7 @@ const cultures = ['de'];
 (async () => {
     for (const culture of cultures) {
         await fs.mkdir(`${outBasePath}/${culture}`, { recursive: true });
+        await convertXliffToJson(`${srcBasePath}/${culture}/attribute-sections.xlf`, `${outBasePath}/${culture}/attribute-sections.json`, 'attribute-sections', culture);
         await convertXliffToJson(`${srcBasePath}/${culture}/attributes.xlf`, `${outBasePath}/${culture}/attributes.json`, 'attributes', culture);
         await convertXliffToJson(`${srcBasePath}/${culture}/product-type-categories.xlf`, `${outBasePath}/${culture}/product-type-categories.json`, 'product-type-categories', culture);
         await convertXliffToJson(`${srcBasePath}/${culture}/product-types.xlf`, `${outBasePath}/${culture}/product-types.json`, 'product-types', culture);

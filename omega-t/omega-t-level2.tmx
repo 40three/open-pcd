@@ -6,6 +6,30 @@
 <!-- Default translations -->
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Common</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171008Z" creationid="info" creationdate="20201221T171008Z">
+        <seg>Allgemein</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Content</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171032Z" creationid="info" creationdate="20201221T171032Z">
+        <seg>Inhalt</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Display used in TVs, Smartphones, Computers, ...</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171150Z" creationid="info" creationdate="20201221T171150Z">
+        <seg>Display, wie es in TVs, Smartphones oder Computern verwendet wird.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>Manufacturer part number</seg>
       </tuv>
       <tuv xml:lang="DE" changeid="info" changedate="20201217T115807Z" creationid="info" creationdate="20201217T115807Z">
@@ -22,6 +46,22 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
+        <seg>Standard attributes to identify products</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171029Z" creationid="info" creationdate="20201221T171029Z">
+        <seg>Standard Attribute</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>Text, audio and video content description.</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171104Z" creationid="info" creationdate="20201221T171104Z">
+        <seg>Text-, Audio- und Videoinhalte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
         <seg>book</seg>
       </tuv>
       <tuv xml:lang="DE" changeid="info" changedate="20201217T115738Z" creationid="info" creationdate="20201217T115738Z">
@@ -34,6 +74,14 @@
       </tuv>
       <tuv xml:lang="DE" changeid="info" changedate="20201217T115823Z" creationid="info" creationdate="20201217T115823Z">
         <seg>Marke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>dimensions an packaging</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20201221T171116Z" creationid="info" creationdate="20201221T171116Z">
+        <seg>Abmessungen und Verpackung</seg>
       </tuv>
     </tu>
     <tu>

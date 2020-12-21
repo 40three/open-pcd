@@ -1,4 +1,4 @@
-import { ag } from 'attribute-groups';
+import { ag } from '../attribute-groups';
 import { PType } from '../../abstractions';
 
 export const simpleProduct = PType({

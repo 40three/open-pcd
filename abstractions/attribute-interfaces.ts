@@ -4,11 +4,18 @@ import { UnitKey } from '../data/units';
  * Group of attributes
  * Attributes belong to one group.
  */
-export interface IAttributeGroup<T> {
+export interface IAttributeSection<T> {
     readonly name: string;
     readonly key: string;
     readonly description?: string;
     readonly attributes: T;
+}
+
+export interface IDistAttributeSection {
+    readonly name: Record<string, string>;
+    readonly key: string;
+    readonly description: Record<string, string>;
+    readonly attributes: Record<string, any>;
 }
 
 /** Attribute of any type */

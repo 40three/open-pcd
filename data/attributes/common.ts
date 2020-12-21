@@ -1,7 +1,7 @@
 import { StringAttr } from '../../abstractions';
-import { IAttributeGroup } from '../../abstractions/attribute-interfaces';
+import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
-export const commonGroupAttributes = <const>{
+export const sectionCommonAttrs = <const>{
     'sku': StringAttr({ // schema.org product
         name: 'Stock keeping unit',
         description: 'Unique stock keeping unit.'
@@ -22,9 +22,9 @@ export const commonGroupAttributes = <const>{
     })
 };
 
-export const attributeGroupCommon: IAttributeGroup<typeof commonGroupAttributes> = {
+export const sectionCommon: IAttributeSection<typeof sectionCommonAttrs> = {
     name: 'Common',
     key: 'common',
     description: 'Standard attributes to identify products',
-    attributes: commonGroupAttributes
+    attributes: sectionCommonAttrs
 };

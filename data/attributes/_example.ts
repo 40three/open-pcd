@@ -1,4 +1,4 @@
-import { Attribute, IAttributeGroup, NumberAttr, RangeAttr, SetAttr, StringAttr, } from '../../abstractions';
+import { Attribute, IAttributeSection, NumberAttr, RangeAttr, SetAttr, StringAttr, } from '../../abstractions';
 import { vColor } from '../values';
 
 export const exampleSectionAttributes = <const>{
@@ -30,7 +30,7 @@ export const exampleSectionAttributes = <const>{
     }),
 };
 
-export const exampleSection: IAttributeGroup<typeof exampleSectionAttributes> = {
+export const exampleSection: IAttributeSection<typeof exampleSectionAttributes> = {
     name: 'Example',
     key: 'example',
     description: 'Show all available attribute types',

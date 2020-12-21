@@ -1,0 +1,9 @@
+{
+    "attribute-sections.common.name": "Allgemein",
+    "attribute-sections.common.description": "Standard Attribute",
+    "attribute-sections.content.name": "Inhalt",
+    "attribute-sections.content.description": "Text-, Audio- und Videoinhalte.",
+    "attribute-sections.dimensionsPackaging.name": "Abmessungen und Verpackung",
+    "attribute-sections.display.name": "Display",
+    "attribute-sections.display.description": "Display, wie es in TVs, Smartphones oder Computern verwendet wird."
+}

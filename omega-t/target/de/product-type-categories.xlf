@@ -19,4 +19,9 @@
      <source>books and movies</source>
      <target>books and movies</target>
     </segment>
-    </unit>    </group>    </file></xliff>
+    </unit>    </group>    <group id="other">    <unit id="other.name">
+     <segment>
+      <source>other</source>
+      <target>other</target>
+     </segment>
+     </unit>     </group>     </file></xliff>

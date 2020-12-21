@@ -1,7 +1,17 @@
 <?xml version="1.0"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="product-types"><group id="book"><unit id="book.name">
- <segment state="translated">
-  <source>book</source>
-  <target>Buch</target>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="product-types"><group id="simpleProduct"><unit id="simpleProduct.name">
+ <segment>
+  <source>simple product</source>
+  <target>simple product</target>
  </segment>
- </unit> </group> </file></xliff>
+ </unit> <unit id="simpleProduct.description">
+  <segment>
+   <source>Product with a basic set of describing attributes.</source>
+   <target>Product with a basic set of describing attributes.</target>
+  </segment>
+  </unit>  </group>  <group id="book">  <unit id="book.name">
+   <segment state="translated">
+    <source>book</source>
+    <target>Buch</target>
+   </segment>
+   </unit>   </group>   </file></xliff>

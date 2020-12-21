@@ -1,21 +1,32 @@
 /**
  * Create xliff files to provide data for translations
  */
-import { Attribute, IAttributeGroup, IProductType, IProductTypeCategoryFlat } from 'abstractions';
+import { Attribute, IAttributeSection, IProductType, IProductTypeCategoryFlat } from 'abstractions';
 import { promises as fs } from 'fs';
 import { productTypesCategoryList } from '../data/product-type-categories';
-import { g } from '../data/attributes';
+import { attributeSections } from '../data/attributes';
 import { pt } from '../data/product-types';
 import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributesXliff(path: string, trgLang: string, groups: IAttributeGroup<Record<string, Attribute>>[]): Promise<void> {
-    // attributes as { key: { source: a.name }}
-    const attrsOfGroup = (g: IAttributeGroup<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => new XlfUnit({ id: k }, [new XlfSegment(a.name)]));
+async function writeAttributeSectionsXliff(path: string, trgLang: string, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+    const xlif = new XlfFile(
+        { id: 'attribute-sections', srcLang: 'en-US', trgLang },
+        groups.map(g => new XlfGroup({ id: g.key }, [new XlfUnit(`${g.key}.name`, new XlfSegment(g.name)), ...(g.description ? [new XlfUnit(`${g.key}.description`, new XlfSegment(g.description))] : [])]))
+    );
+    await writeXliff(path, xlif);
+}
 
-    const xlif = new XlfFile({ id: 'attributes', srcLang: 'en-US', trgLang }, Object.values(groups).map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
+/**
+ * All attributes in one file grouped by attribute group
+ */
+async function writeAttributesXliff(path: string, trgLang: string, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+    // attributes as { key: { source: a.name }}
+    const attrsOfGroup = (g: IAttributeSection<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => new XlfUnit({ id: k }, [new XlfSegment(a.name)]));
+
+    const xlif = new XlfFile({ id: 'attributes', srcLang: 'en-US', trgLang }, groups.map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
     await writeXliff(path, xlif);
 }
 
@@ -47,7 +58,8 @@ const outPath = 'omega-t/source';
 // main
 (async () => {
     await fs.mkdir(outPath, { recursive: true });
-    await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de-DE', g);
+    await writeAttributeSectionsXliff(`${outPath}/attribute-sections.xlf`, 'de-DE', attributeSections);
+    await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de-DE', attributeSections);
     await writeProductTypesXliff(`${outPath}/product-types.xlf`, 'de-DE', pt);
     await writeProductTypeCategoriesXliff(`${outPath}/product-type-categories.xlf`, 'de-DE', productTypesCategoryList);
 })();

@@ -2,9 +2,9 @@
  * Text, audio and video content attributes
  */
 import { NumberAttr, SetAttr, StringAttr } from '../../abstractions';
-import { IAttributeGroup } from '../../abstractions/attribute-interfaces';
+import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
-export const contentSectionAttributes = <const>{
+export const sectionContentAttrs = <const>{
     title: StringAttr({
         name: 'title',
         description: 'Product title without author or other additions.'
@@ -42,9 +42,9 @@ export const contentSectionAttributes = <const>{
     })
 };
 
-export const attributeGroupContent: IAttributeGroup<typeof contentSectionAttributes> = {
+export const sectionContent: IAttributeSection<typeof sectionContentAttrs> = {
     name: 'Content',
     key: 'content',
     description: 'Text, audio and video content description.',
-    attributes: contentSectionAttributes
+    attributes: sectionContentAttrs
 }

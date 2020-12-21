@@ -1,0 +1,37 @@
+<?xml version="1.0"?>
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="attribute-sections"><group id="common"><unit id="common.name">
+ <segment state="translated">
+  <source>Common</source>
+  <target>Allgemein</target>
+ </segment>
+ </unit> <unit id="common.description">
+  <segment state="translated">
+   <source>Standard attributes to identify products</source>
+   <target>Standard Attribute</target>
+  </segment>
+  </unit>  </group>  <group id="content">  <unit id="content.name">
+   <segment state="translated">
+    <source>Content</source>
+    <target>Inhalt</target>
+   </segment>
+   </unit>   <unit id="content.description">
+    <segment state="translated">
+     <source>Text, audio and video content description.</source>
+     <target>Text-, Audio- und Videoinhalte.</target>
+    </segment>
+    </unit>    </group>    <group id="dimensionsPackaging">    <unit id="dimensionsPackaging.name">
+     <segment state="translated">
+      <source>dimensions an packaging</source>
+      <target>Abmessungen und Verpackung</target>
+     </segment>
+     </unit>     </group>     <group id="display">     <unit id="display.name">
+      <segment>
+       <source>Display</source>
+       <target>Display</target>
+      </segment>
+      </unit>      <unit id="display.description">
+       <segment state="translated">
+        <source>Display used in TVs, Smartphones, Computers, ...</source>
+        <target>Display, wie es in TVs, Smartphones oder Computern verwendet wird.</target>
+       </segment>
+       </unit>       </group>       </file></xliff>
