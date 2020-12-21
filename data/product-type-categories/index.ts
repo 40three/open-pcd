@@ -9,7 +9,8 @@ export const productTypeCategoryTree: IProductTypeCategoryMap = {
         homeElectronics: PTCat('home electronics'),
     }),
     booksMedia: PTCat({ name: 'books and movies', }),
+    other: PTCat({ name: 'other' }),
 };
 
-const flatCategories = (map: IProductTypeCategoryMap): IProductTypeCategoryFlat[] => Object.entries(map).map(([key, cat]) => [{ key, ...cat}, ...flatCategories(cat.children)]).flat(1);
+const flatCategories = (map: IProductTypeCategoryMap): IProductTypeCategoryFlat[] => Object.entries(map).map(([key, cat]) => [{ key, ...cat }, ...flatCategories(cat.children)]).flat(1);
 export const productTypesCategoryList: IProductTypeCategoryFlat[] = flatCategories(productTypeCategoryTree);
