@@ -16,7 +16,7 @@ async function convertXliffToJson(xliffPath: string, jsonPath: string, objType: 
         });
     });
 
-    const json = JSON.stringify(dict);
+    const json = JSON.stringify(dict, null, 4);
     await fs.writeFile(jsonPath, json);
 }
 
