@@ -7,11 +7,12 @@ import { productTypesCategoryList } from '../data/product-type-categories';
 import { attributeSections } from '../data/attributes';
 import { pt } from '../data/product-types';
 import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
+import { TranslationCultureKey } from './configuration';
 
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributeSectionsXliff(path: string, trgLang: string, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+async function writeAttributeSectionsXliff(path: string, trgLang: TranslationCultureKey, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'attribute-sections', srcLang: 'en-US', trgLang },
         groups.map(g => new XlfGroup({ id: g.key }, [new XlfUnit(`${g.key}.name`, new XlfSegment(g.name)), ...(g.description ? [new XlfUnit(`${g.key}.description`, new XlfSegment(g.description))] : [])]))
@@ -22,7 +23,7 @@ async function writeAttributeSectionsXliff(path: string, trgLang: string, groups
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributesXliff(path: string, trgLang: string, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+async function writeAttributesXliff(path: string, trgLang: TranslationCultureKey, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
     // attributes as { key: { source: a.name }}
     const attrsOfGroup = (g: IAttributeSection<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => new XlfUnit({ id: k }, [new XlfSegment(a.name)]));
 
@@ -33,7 +34,7 @@ async function writeAttributesXliff(path: string, trgLang: string, groups: IAttr
 /**
  * All product types in one file
  */
-async function writeProductTypesXliff(path: string, trgLang: string, productTypes: IProductType[]): Promise<void> {
+async function writeProductTypesXliff(path: string, trgLang: TranslationCultureKey, productTypes: IProductType[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'product-types', srcLang: 'en-US', trgLang },
         Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [new XlfUnit(`${pt.key}.name`, new XlfSegment(pt.name)), ...(pt.description ? [new XlfUnit(`${pt.key}.description`, new XlfSegment(pt.description))] : [])]))
@@ -44,7 +45,7 @@ async function writeProductTypesXliff(path: string, trgLang: string, productType
 /**
  * All product types categories in one file
  */
-async function writeProductTypeCategoriesXliff(path: string, trgLang: string, categories: IProductTypeCategoryFlat[]): Promise<void> {
+async function writeProductTypeCategoriesXliff(path: string, trgLang: TranslationCultureKey, categories: IProductTypeCategoryFlat[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'product-type-categories', srcLang: 'en-US', trgLang },
         Object.values(categories).map(cat => new XlfGroup({ id: cat.key }, [new XlfUnit(`${cat.key}.name`, new XlfSegment(cat.name)), ...(cat.description ? [new XlfUnit(`${cat.key}.description`, new XlfSegment(cat.description))] : [])]))
@@ -58,8 +59,8 @@ const outPath = 'omega-t/source';
 // main
 (async () => {
     await fs.mkdir(outPath, { recursive: true });
-    await writeAttributeSectionsXliff(`${outPath}/attribute-sections.xlf`, 'de-DE', attributeSections);
-    await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de-DE', attributeSections);
-    await writeProductTypesXliff(`${outPath}/product-types.xlf`, 'de-DE', pt);
-    await writeProductTypeCategoriesXliff(`${outPath}/product-type-categories.xlf`, 'de-DE', productTypesCategoryList);
+    await writeAttributeSectionsXliff(`${outPath}/attribute-sections.xlf`, 'de', attributeSections);
+    await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de', attributeSections);
+    await writeProductTypesXliff(`${outPath}/product-types.xlf`, 'de', pt);
+    await writeProductTypeCategoriesXliff(`${outPath}/product-type-categories.xlf`, 'de', productTypesCategoryList);
 })();
