@@ -1,36 +1,33 @@
-import { promises as fs } from 'fs';
+import { ObjectFileName, TranslationCultureKey, translations } from './configuration';
+import { writeTranslatsion } from './translations/fn';
 import { XlfGroup, XlfUnit } from './xliff';
 import { readXliff } from './xliff/reader';
 
 /**
  * Convert xliff to { [objType.groupid.unitid]: stranslated value }
  */
-async function convertXliffToJson(xliffPath: string, jsonPath: string, objType: string, culture: string): Promise<void> {
-    const xliff = await readXliff(xliffPath);
+async function convertXliffToJson(srcBasePath: string, objType: ObjectFileName, culture: TranslationCultureKey): Promise<void> {
+    const xliff = await readXliff(`${srcBasePath}/${culture}/${objType}.xlf`);
 
     const dict: Record<string, string> = {};
     xliff.items.forEach(i => {
-        const units = (i instanceof XlfGroup) ? i.units.map(u => <const>[`${objType}.${u.id}`, u]) : [<const>[`${objType}.${i.id}`, i]];
+        const units = (i instanceof XlfGroup) ? i.units.map(u => <const>[u.id, u]) : [<const>[i.id, i]];
         units.forEach(([key, unit]: readonly [string, XlfUnit]) => {
             dict[key] = unit.segments.map(s => s.target).join();
         });
     });
 
-    const json = JSON.stringify(dict, null, 4);
-    await fs.writeFile(jsonPath, json);
+    await writeTranslatsion(objType, culture, dict);
 }
 
 const srcBasePath = 'omega-t/target';
-const outBasePath = 'data/generated/translations';
-const cultures = ['de'];
 
 // main
 (async () => {
-    for (const culture of cultures) {
-        await fs.mkdir(`${outBasePath}/${culture}`, { recursive: true });
-        await convertXliffToJson(`${srcBasePath}/${culture}/attribute-sections.xlf`, `${outBasePath}/${culture}/attribute-sections.json`, 'attribute-sections', culture);
-        await convertXliffToJson(`${srcBasePath}/${culture}/attributes.xlf`, `${outBasePath}/${culture}/attributes.json`, 'attributes', culture);
-        await convertXliffToJson(`${srcBasePath}/${culture}/product-type-categories.xlf`, `${outBasePath}/${culture}/product-type-categories.json`, 'product-type-categories', culture);
-        await convertXliffToJson(`${srcBasePath}/${culture}/product-types.xlf`, `${outBasePath}/${culture}/product-types.json`, 'product-types', culture);
+    for (const culture of translations) {
+        await convertXliffToJson(srcBasePath, 'attribute-sections', culture);
+        await convertXliffToJson(srcBasePath, 'attributes', culture);
+        await convertXliffToJson(srcBasePath, 'product-type-categories', culture);
+        await convertXliffToJson(srcBasePath, 'product-types', culture);
     }
 })();

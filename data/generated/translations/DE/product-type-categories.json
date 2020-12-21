@@ -1,7 +1,7 @@
 {
-    "product-type-categories.clothing.name": "clothing, shoes and accessories",
-    "product-type-categories.electronics.name": "electronics and office",
-    "product-type-categories.homeElectronics.name": "home electronics",
-    "product-type-categories.booksMedia.name": "books and movies",
-    "product-type-categories.other.name": "other"
+    "clothing.name": "clothing, shoes and accessories",
+    "electronics.name": "electronics and office",
+    "homeElectronics.name": "home electronics",
+    "booksMedia.name": "books and movies",
+    "other.name": "other"
 }
