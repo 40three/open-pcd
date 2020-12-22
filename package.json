@@ -3,7 +3,8 @@
     "scripts": {
         "import-xliff": "ts-node ./cli/import-xliff.ts",
         "export-xliff": "ts-node ./cli/export-xliff.ts",
-        "update-types": "ts-node ./cli/update-types.ts"
+        "update-types": "ts-node ./cli/update-types.ts",
+        "dist": "ts-node ./cli/dist.ts"
     },
     "dependencies": {
         "@types/xmldom": "^0.1.30",

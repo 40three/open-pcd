@@ -11,15 +11,9 @@ export interface IAttributeSection<T> {
     readonly attributes: T;
 }
 
-export interface IDistAttributeSection {
-    readonly name: Record<string, string>;
-    readonly key: string;
-    readonly description: Record<string, string>;
-    readonly attributes: Record<string, any>;
-}
-
 /** Attribute of any type */
 export type Attribute = IBooleanAttribute | INumberAttribute | IRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
+export type AttributeType = 'boolean' | 'number' | 'range' | 'string' | 'set';
 
 /** common attribute properties */
 export interface IAttributeBase {
