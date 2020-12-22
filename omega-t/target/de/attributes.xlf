@@ -1,92 +1,167 @@
 <?xml version="1.0"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="attributes"><group id="common"><unit id="sku">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de"><file id="attributes"><group id="common"><unit id="sku.name">
  <segment>
   <source>Stock keeping unit</source>
   <target>Stock keeping unit</target>
  </segment>
- </unit> <unit id="mpn">
-  <segment state="translated">
-   <source>Manufacturer part number</source>
-   <target>Herstellerartikelnummer</target>
+ </unit> <unit id="sku.description">
+  <segment>
+   <source>Unique stock keeping unit.</source>
+   <target>Unique stock keeping unit.</target>
   </segment>
-  </unit>  <unit id="gtin">
-   <segment>
-    <source>GTIN</source>
-    <target>GTIN</target>
+  </unit>  <unit id="mpn.name">
+   <segment state="translated">
+    <source>Manufacturer part number</source>
+    <target>Herstellerartikelnummer</target>
    </segment>
-   </unit>   <unit id="name">
-    <segment state="translated">
-     <source>Product name</source>
-     <target>Produktname</target>
+   </unit>   <unit id="mpn.description">
+    <segment>
+     <source>Manufacturer unique article number.</source>
+     <target>Manufacturer unique article number.</target>
     </segment>
-    </unit>    <unit id="brand">
-     <segment state="translated">
-      <source>brand</source>
-      <target>Marke</target>
+    </unit>    <unit id="gtin.name">
+     <segment>
+      <source>GTIN</source>
+      <target>GTIN</target>
      </segment>
-     </unit>     </group>     <group id="content">     <unit id="title">
-      <segment state="translated">
-       <source>title</source>
-       <target>Titel</target>
+     </unit>     <unit id="gtin.description">
+      <segment>
+       <source>Includes UPC, EAN, ISBN and other global identifiers.</source>
+       <target>Includes UPC, EAN, ISBN and other global identifiers.</target>
       </segment>
-      </unit>      <unit id="subtitle">
-       <segment>
-        <source>subtitle</source>
-        <target>subtitle</target>
+      </unit>      <unit id="name.name">
+       <segment state="translated">
+        <source>Product name</source>
+        <target>Produktname</target>
        </segment>
-       </unit>       <unit id="author">
-        <segment>
-         <source>author</source>
-         <target>author</target>
+       </unit>       <unit id="brand.name">
+        <segment state="translated">
+         <source>brand</source>
+         <target>Marke</target>
         </segment>
-        </unit>        <unit id="translators">
-         <segment>
-          <source>translators (person)</source>
-          <target>translators (person)</target>
+        </unit>        </group>        <group id="content">        <unit id="title.name">
+         <segment state="translated">
+          <source>title</source>
+          <target>Titel</target>
          </segment>
-         </unit>         <unit id="language">
+         </unit>         <unit id="title.description">
           <segment>
-           <source>language</source>
-           <target>language</target>
+           <source>Product title without author or other additions.</source>
+           <target>Product title without author or other additions.</target>
           </segment>
-          </unit>          <unit id="fontSize">
+          </unit>          <unit id="subtitle.name">
            <segment>
-            <source>font size</source>
-            <target>font size</target>
+            <source>subtitle</source>
+            <target>subtitle</target>
            </segment>
-           </unit>           <unit id="country">
+           </unit>           <unit id="subtitle.description">
             <segment>
-             <source>country</source>
-             <target>country</target>
+             <source>Product title without author or other additions.</source>
+             <target>Product title without author or other additions.</target>
             </segment>
-            </unit>            <unit id="bookGenre">
+            </unit>            <unit id="author.name">
              <segment>
-              <source>genre (book)</source>
-              <target>genre (book)</target>
+              <source>author</source>
+              <target>author</target>
              </segment>
-             </unit>             </group>             <group id="dimensionsPackaging">             <unit id="width">
+             </unit>             <unit id="author.description">
               <segment>
-               <source>Width</source>
-               <target>Width</target>
+               <source>Content author.</source>
+               <target>Content author.</target>
               </segment>
-              </unit>              <unit id="height">
+              </unit>              <unit id="translators.name">
                <segment>
-                <source>height</source>
-                <target>height</target>
+                <source>translators (person)</source>
+                <target>translators (person)</target>
                </segment>
-               </unit>               <unit id="depth">
+               </unit>               <unit id="translators.description">
                 <segment>
-                 <source>depth</source>
-                 <target>depth</target>
+                 <source>Name of translator(s)</source>
+                 <target>Name of translator(s)</target>
                 </segment>
-                </unit>                <unit id="weight">
+                </unit>                <unit id="language.name">
                  <segment>
-                  <source>Width</source>
-                  <target>Width</target>
+                  <source>language</source>
+                  <target>language</target>
                  </segment>
-                 </unit>                 </group>                 <group id="display">                 <unit id="screen-diagonal">
+                 </unit>                 <unit id="language.description">
                   <segment>
-                   <source>Screen size</source>
-                   <target>Screen size</target>
+                   <source>Text, audio or video language</source>
+                   <target>Text, audio or video language</target>
                   </segment>
-                  </unit>                  </group>                  </file></xliff>
+                  </unit>                  <unit id="fontSize.name">
+                   <segment>
+                    <source>font size</source>
+                    <target>font size</target>
+                   </segment>
+                   </unit>                   <unit id="fontSize.description">
+                    <segment>
+                     <source>Size of font used for most of text content.</source>
+                     <target>Size of font used for most of text content.</target>
+                    </segment>
+                    </unit>                    <unit id="country.name">
+                     <segment>
+                      <source>country</source>
+                      <target>country</target>
+                     </segment>
+                     </unit>                     <unit id="country.description">
+                      <segment>
+                       <source>Name of country that this content is about.</source>
+                       <target>Name of country that this content is about.</target>
+                      </segment>
+                      </unit>                      <unit id="bookGenre.name">
+                       <segment>
+                        <source>genre (book)</source>
+                        <target>genre (book)</target>
+                       </segment>
+                       </unit>                       </group>                       <group id="dimensionsPackaging">                       <unit id="width.name">
+                        <segment>
+                         <source>Width</source>
+                         <target>Width</target>
+                        </segment>
+                        </unit>                        <unit id="width.description">
+                         <segment>
+                          <source>Width of product without packaging.</source>
+                          <target>Width of product without packaging.</target>
+                         </segment>
+                         </unit>                         <unit id="height.name">
+                          <segment>
+                           <source>height</source>
+                           <target>height</target>
+                          </segment>
+                          </unit>                          <unit id="height.description">
+                           <segment>
+                            <source>Height of product without packaging.</source>
+                            <target>Height of product without packaging.</target>
+                           </segment>
+                           </unit>                           <unit id="depth.name">
+                            <segment>
+                             <source>depth</source>
+                             <target>depth</target>
+                            </segment>
+                            </unit>                            <unit id="depth.description">
+                             <segment>
+                              <source>Depth of product without packaging.</source>
+                              <target>Depth of product without packaging.</target>
+                             </segment>
+                             </unit>                             <unit id="weight.name">
+                              <segment>
+                               <source>Width</source>
+                               <target>Width</target>
+                              </segment>
+                              </unit>                              <unit id="weight.description">
+                               <segment>
+                                <source>Weight of product without packaging.</source>
+                                <target>Weight of product without packaging.</target>
+                               </segment>
+                               </unit>                               </group>                               <group id="display">                               <unit id="screen-diagonal.name">
+                                <segment>
+                                 <source>Screen size</source>
+                                 <target>Screen size</target>
+                                </segment>
+                                </unit>                                <unit id="screen-diagonal.description">
+                                 <segment>
+                                  <source>Screen diagonal</source>
+                                  <target>Screen diagonal</target>
+                                 </segment>
+                                 </unit>                                 </group>                                 </file></xliff>

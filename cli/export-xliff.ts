@@ -12,10 +12,10 @@ import { TranslationCultureKey } from './configuration';
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributeSectionsXliff(path: string, trgLang: TranslationCultureKey, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+async function writeAttributeSectionsXliff(path: string, trgLang: TranslationCultureKey, sections: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'attribute-sections', srcLang: 'en-US', trgLang },
-        groups.map(g => new XlfGroup({ id: g.key }, [new XlfUnit(`${g.key}.name`, new XlfSegment(g.name)), ...(g.description ? [new XlfUnit(`${g.key}.description`, new XlfSegment(g.description))] : [])]))
+        sections.map(g => new XlfGroup({ id: g.key }, [new XlfUnit(`${g.key}.name`, new XlfSegment(g.name)), ...(g.description ? [new XlfUnit(`${g.key}.description`, new XlfSegment(g.description))] : [])]))
     );
     await writeXliff(path, xlif);
 }
@@ -23,11 +23,14 @@ async function writeAttributeSectionsXliff(path: string, trgLang: TranslationCul
 /**
  * All attributes in one file grouped by attribute group
  */
-async function writeAttributesXliff(path: string, trgLang: TranslationCultureKey, groups: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+async function writeAttributesXliff(path: string, trgLang: TranslationCultureKey, sections: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
     // attributes as { key: { source: a.name }}
-    const attrsOfGroup = (g: IAttributeSection<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => new XlfUnit({ id: k }, [new XlfSegment(a.name)]));
+    const attrsOfGroup = (g: IAttributeSection<Record<string, Attribute>>): XlfUnit[] => Object.entries(g.attributes).map(([k, a]) => [
+        new XlfUnit(`${k}.name`, [new XlfSegment(a.name)]),
+        ...(a.description ? [new XlfUnit(`${k}.description`, new XlfSegment(a.description))] : [])
+    ]).flat(1);
 
-    const xlif = new XlfFile({ id: 'attributes', srcLang: 'en-US', trgLang }, groups.map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
+    const xlif = new XlfFile({ id: 'attributes', srcLang: 'en-US', trgLang }, sections.map(g => new XlfGroup({ id: g.key }, attrsOfGroup(g))));
     await writeXliff(path, xlif);
 }
 

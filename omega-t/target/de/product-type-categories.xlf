@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="product-type-categories"><group id="clothing"><unit id="clothing.name">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de"><file id="product-type-categories"><group id="clothing"><unit id="clothing.name">
  <segment>
   <source>clothing, shoes and accessories</source>
   <target>clothing, shoes and accessories</target>

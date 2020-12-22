@@ -1,5 +1,5 @@
 <?xml version="1.0"?>
-<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de-DE"><file id="attribute-sections"><group id="common"><unit id="common.name">
+<xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de"><file id="attribute-sections"><group id="common"><unit id="common.name">
  <segment state="translated">
   <source>Common</source>
   <target>Allgemein</target>

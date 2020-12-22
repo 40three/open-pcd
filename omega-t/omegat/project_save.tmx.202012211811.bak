@@ -1,0 +1,97 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE tmx SYSTEM "tmx11.dtd">
+<tmx version="1.1">
+  <header creationtool="OmegaT" o-tmf="OmegaT TMX" adminlang="EN-US" datatype="plaintext" creationtoolversion="OmegaT-4.3.2" segtype="sentence" srclang="EN-US"/>
+  <body>
+<!-- Default translations -->
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Common</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171008Z" creationid="info" creationdate="20201221T171008Z">
+        <seg>Allgemein</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Content</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171032Z" creationid="info" creationdate="20201221T171032Z">
+        <seg>Inhalt</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Display used in TVs, Smartphones, Computers, ...</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171150Z" creationid="info" creationdate="20201221T171150Z">
+        <seg>Display, wie es in TVs, Smartphones oder Computern verwendet wird.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Manufacturer part number</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115807Z" creationid="info" creationdate="20201217T115807Z">
+        <seg>Herstellerartikelnummer</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Product name</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115815Z" creationid="info" creationdate="20201217T115815Z">
+        <seg>Produktname</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Standard attributes to identify products</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171029Z" creationid="info" creationdate="20201221T171029Z">
+        <seg>Standard Attribute</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>Text, audio and video content description.</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171104Z" creationid="info" creationdate="20201221T171104Z">
+        <seg>Text-, Audio- und Videoinhalte.</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>book</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115738Z" creationid="info" creationdate="20201217T115738Z">
+        <seg>Buch</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>brand</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115823Z" creationid="info" creationdate="20201217T115823Z">
+        <seg>Marke</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>dimensions an packaging</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201221T171116Z" creationid="info" creationdate="20201221T171116Z">
+        <seg>Abmessungen und Verpackung</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
+        <seg>title</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20201217T115825Z" creationid="info" creationdate="20201217T115825Z">
+        <seg>Titel</seg>
+      </tuv>
+    </tu>
+<!-- Alternative translations -->
+  </body>
+</tmx>
