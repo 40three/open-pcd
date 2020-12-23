@@ -1,13 +1,13 @@
 /**
  * Create xliff files to provide data for translations
  */
-import { Attribute, IAttributeSection, IProductType, IProductTypeCategoryFlat } from 'abstractions';
+import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstractions';
 import { promises as fs } from 'fs';
-import { productTypesCategoryList } from '../data/product-type-categories';
 import { attributeSections } from '../data/attributes';
+import { productTypesCategoryList } from '../data/product-type-categories';
 import { pt } from '../data/product-types';
-import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 import { TranslationCultureKey } from './configuration';
+import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 
 /**
  * All attributes in one file grouped by attribute group
@@ -40,7 +40,11 @@ async function writeAttributesXliff(path: string, trgLang: TranslationCultureKey
 async function writeProductTypesXliff(path: string, trgLang: TranslationCultureKey, productTypes: IProductType[]): Promise<void> {
     const xlif = new XlfFile(
         { id: 'product-types', srcLang: 'en-US', trgLang },
-        Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [new XlfUnit(`${pt.key}.name`, new XlfSegment(pt.name)), ...(pt.description ? [new XlfUnit(`${pt.key}.description`, new XlfSegment(pt.description))] : [])]))
+        Object.values(productTypes).map(pt => new XlfGroup({ id: pt.key }, [
+            new XlfUnit(`${pt.key}.name`, new XlfSegment(pt.name)),
+            ...(pt.description ? [new XlfUnit(`${pt.key}.description`, new XlfSegment(pt.description))] : []),
+            ...Object.entries(<Record<string, IProductSubType>>pt.subTypes ?? {}).map(([skey, st]) => new XlfUnit(`${pt.key}.${skey}.name`, new XlfSegment(st.name)))
+        ]))
     );
     await writeXliff(path, xlif);
 }
