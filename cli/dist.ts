@@ -2,9 +2,10 @@
  * Create final output
  */
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeSection, IProductType } from '../abstractions';
+import { Attribute, IAttributeSection, IProductType, IProductTypeCategoryFlat } from '../abstractions';
 import { IDistAttribute, IDistAttributeSection, IDistProductType } from '../abstractions/dist';
 import { AttributeKey, attributeSections } from '../data/attributes';
+import { productTypesCategoryList } from '../data/product-type-categories';
 import { pt } from '../data/product-types';
 import { multiLang, readAllTranslations } from './translations/fn';
 import { AllTranslationsDict } from './translations/types';
@@ -42,6 +43,18 @@ async function writeProductTypes(outPath: string, allTranslations: AllTranslatio
     await fs.writeFile(outPath, json);
 }
 
+/** Write all product type categories in all lnguages */
+async function writeProductTypeCategories(outPath: string, allTranslations: AllTranslationsDict, productTypeCategories: IProductTypeCategoryFlat[]): Promise<void> {
+    const distStructure = productTypeCategories.map(c => ({
+        ...c,
+        name: multiLang(allTranslations, c.name, 'product-type-categories', `${c.key}.name`),
+        description: multiLang(allTranslations, c.name, 'product-type-categories', `${c.key}.description`),
+    }));
+    const json = JSON.stringify(distStructure, null, 4);
+    await fs.writeFile(outPath, json);
+}
+
+
 const distDataBaseDir = 'dist/data';
 
 // main
@@ -51,4 +64,5 @@ const distDataBaseDir = 'dist/data';
     const translations = await readAllTranslations();
     await writeSections(`${distDataBaseDir}/attribute-sections.json`, translations, attributeSections);
     await writeProductTypes(`${distDataBaseDir}/product-types.json`, translations, pt);
+    await writeProductTypeCategories(`${distDataBaseDir}/product-type-categories.json`, translations, productTypesCategoryList);
 })();
