@@ -8,4 +8,4 @@ export const objectFiles = <const>['attributes', 'attribute-sections', 'product-
 export type ObjectFileName = typeof objectFiles[number];
 
 // directories
-export const translationsBasePath = 'data/generated/translations';
+export const translationsBasePath = 'omega-t/target';

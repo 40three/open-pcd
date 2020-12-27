@@ -2,15 +2,26 @@
  * Helper functions for reading translations
  */
 
-import { ObjectFileName, objectFiles, TranslationCultureKey, translations, translationsBasePath } from '../configuration';
 import { promises as fs } from 'fs';
-import { AllTranslationsDict } from './types';
 import { MultiLanguageText } from '../../abstractions/dist';
+import { ObjectFileName, objectFiles, TranslationCultureKey, translations, translationsBasePath } from '../configuration';
+import { XlfGroup, XlfUnit } from '../xliff';
+import { readXliff } from '../xliff/reader';
+import { AllTranslationsDict } from './types';
 
-/** Read translations from json as dict key: transated */
+/** Read translations from xliff as dict key: transated */
 export async function readTranslationsFile(objType: ObjectFileName, culture: TranslationCultureKey): Promise<Record<string, string>> {
-    const json = await fs.readFile(`${translationsBasePath}/${culture}/${objType}.json`, 'utf-8');
-    return JSON.parse(json);
+    const xliff = await readXliff(`${translationsBasePath}/${culture}/${objType}.xlf`);
+
+    const dict: Record<string, string> = {};
+    xliff.items.forEach(i => {
+        const units = (i instanceof XlfGroup) ? i.units.map(u => <const>[u.id, u]) : [<const>[i.id, i]];
+        units.forEach(([key, unit]: readonly [string, XlfUnit]) => {
+            dict[key] = unit.segments.map(s => s.target).join();
+        });
+    });
+
+    return dict;
 }
 
 /** Read and return all translations culture: objectType: key: translation */
@@ -27,7 +38,7 @@ export function getTranslation(allTranslations: AllTranslationsDict, objType: Ob
     return allTranslations[culture][objType]?.[key];
 }
 
-/** Get dict with all languages {culture: translation} */
+/** Get dict with all languages for single property {culture: translation} */
 export function multiLang(allTranslations: AllTranslationsDict, en: string | undefined, objType: ObjectFileName, key: string): MultiLanguageText | undefined {
     if (en === undefined) return undefined;
     return <MultiLanguageText>translations.reduce((prev, cur) => (prev[cur] = getTranslation(allTranslations, objType, cur, key), prev), <Partial<MultiLanguageText>>{ 'en-US': en });
