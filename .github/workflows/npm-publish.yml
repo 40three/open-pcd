@@ -22,8 +22,9 @@ jobs:
     needs: build
     runs-on: ubuntu-latest
     steps:
+      - run: echo "Debug ${github.event.release.tag_name} ${{github.event.release.tag_name}}"
       - name: Setup env vars
-        run: echo "PACKAGE_VERSION=${github.event.release.tag_name-v}" >> $GITHUB_ENV
+        run: echo "PACKAGE_VERSION=${github.event.release.tag_name#v}" >> $GITHUB_ENV
       - run: echo "Releasing as version $PACKAGE_VERSION"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
