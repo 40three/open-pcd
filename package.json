@@ -11,6 +11,9 @@
         "update-types": "ts-node ./cli/update-types.ts",
         "dist": "ts-node ./cli/dist.ts"
     },
+    "files": [
+        "dist"
+    ],
     "dependencies": {
         "@types/xmldom": "^0.1.30",
         "xmldom": "^0.4.0"
