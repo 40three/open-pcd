@@ -21,15 +21,20 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
+    env:
+      PACKAGE_VERSION: ${{github.event.release.tag_name:1}}
     steps:
+      # - name: Setup env vars
+      #   run: |
+      #     export TAG_WITHOUT_V="${{github.event.release.tag_name:1}}"
+      #     echo "::set-env name=PACKAGE_VERSION::$TAG_WITHOUT_V"
+      #     echo echo "Releasing as version ${{env.PACKAGE_VERSION}}"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
           node-version: 12
           registry-url: https://registry.npmjs.org/
-      - run: declare -x PACKAGE_VERSION=${github.event.release.tag_name:1}
-      - run: "sed -i \"s/\\\"version\\\": .*,/\\\"version\\\": \\\"${PACKAGE_VERSION}\\\",/g\" \"package.json\""
-      - run: echo "Version $PACKAGE_VERSION"
+      - run: "sed -i \"s/\\\"version\\\": .*,/\\\"version\\\": \\\"${{env.PACKAGE_VERSION}}\\\",/g\" \"package.json\""
       - run: yarn install --frozen-lockfile
       # - run: npm publish
         env:
