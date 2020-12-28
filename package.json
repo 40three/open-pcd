@@ -1,4 +1,9 @@
 {
+    "name": "@40three/open-pcd",
+    "version": "0.0.0",
+    "repository": {
+        "url": "https://github.com/40three/open-pcd"
+    },
     "license": "MIT",
     "scripts": {
         "import-xliff": "ts-node ./cli/import-xliff.ts",
