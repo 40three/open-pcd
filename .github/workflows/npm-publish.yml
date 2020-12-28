@@ -15,8 +15,8 @@ jobs:
       - uses: actions/setup-node@v1
         with:
           node-version: 12
-      - run: npm ci
-      - run: npm test
+      - run: yarn install --frozen-lockfile
+      # - run: npm test
 
   publish-npm:
     needs: build
@@ -30,7 +30,7 @@ jobs:
       - run: declare -x PACKAGE_VERSION=${github.event.release.tag_name:1}
       - run: "sed -i \"s/\\\"version\\\": .*,/\\\"version\\\": \\\"${PACKAGE_VERSION}\\\",/g\" \"package.json\""
       - run: echo "Version $PACKAGE_VERSION"
-      - run: npm ci
+      - run: yarn install --frozen-lockfile
       # - run: npm publish
         env:
           NODE_AUTH_TOKEN: ${{secrets.npm_token}}
