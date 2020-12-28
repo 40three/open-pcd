@@ -21,14 +21,10 @@ jobs:
   publish-npm:
     needs: build
     runs-on: ubuntu-latest
-    env:
-      PACKAGE_VERSION: ${{github.event.release.tag_name:1}}
     steps:
-      # - name: Setup env vars
-      #   run: |
-      #     export TAG_WITHOUT_V="${{github.event.release.tag_name:1}}"
-      #     echo "::set-env name=PACKAGE_VERSION::$TAG_WITHOUT_V"
-      #     echo echo "Releasing as version ${{env.PACKAGE_VERSION}}"
+      - name: Setup env vars
+        run: echo "PACKAGE_VERSION=${github.event.release.tag_name-v}" >> $GITHUB_ENV
+      - run: echo "Releasing as version $PACKAGE_VERSION"
       - uses: actions/checkout@v2
       - uses: actions/setup-node@v1
         with:
