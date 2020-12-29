@@ -9,3 +9,4 @@ export type ObjectFileName = typeof objectFiles[number];
 
 // directories
 export const translationsBasePath = 'omega-t/target';
+export const generatedTypesBasePath = 'data/generated/types';

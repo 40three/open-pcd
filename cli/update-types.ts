@@ -7,6 +7,7 @@ import { promises as fs } from 'fs';
 import { IProductType, IProductTypeCategoryMap } from '../abstractions';
 import { productTypeCategoryTree } from '../data/product-type-categories';
 import { pt } from '../data/product-types';
+import { generatedTypesBasePath } from './configuration';
 
 
 /**
@@ -31,13 +32,10 @@ async function writeProductTypeCategoryTypes(productTypeCategories: IProductType
 }
 
 
-// configuration
-const outPath = 'data/generated/types';
-
 // main
 (async () => {
-    await fs.mkdir(outPath, { recursive: true });
-    await writeProductTypeTypes(pt, `${outPath}/product-types.ts`);
-    await writeProductTypeCategoryTypes(productTypeCategoryTree, `${outPath}/product-type-categories.ts`);
-    await fs.writeFile(`${outPath}/index.ts`, 'export * from "./product-type-categories";\nexport * from "./product-types";');
+    await fs.mkdir(generatedTypesBasePath, { recursive: true });
+    await writeProductTypeTypes(pt, `${generatedTypesBasePath}/product-types.ts`);
+    await writeProductTypeCategoryTypes(productTypeCategoryTree, `${generatedTypesBasePath}/product-type-categories.ts`);
+    await fs.writeFile(`${generatedTypesBasePath}/index.ts`, 'export * from "./product-type-categories";\nexport * from "./product-types";');
 })();

@@ -17,6 +17,7 @@
     "files": [
         "dist"
     ],
+    "types": "types/index.d.ts",
     "dependencies": {
     },
     "devDependencies": {
