@@ -61,7 +61,7 @@ async function generateAttributeKeyType(outPath: string, attrs: Record<string, A
 }
 
 async function writeTypesIndex(outPath: string): Promise<void> {
-    await fs.writeFile(outPath, 'export * from "product-types.d.ts"');
+    await fs.writeFile(outPath, 'export * from "./attributes";\nexport * from "./product-types";');
 }
 
 const distDataBaseDir = 'dist/data';
