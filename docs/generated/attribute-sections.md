@@ -46,3 +46,10 @@ Display used in TVs, Smartphones, Computers, ...
 ## Media (media)
 * images (images, files)
 
+
+## Price & Availability (priceAvailability)
+* price (price, money)
+* MSRP (msrp, money)
+* available from (availabilityDate, datetime)
+* available until (availabilityEndDate, datetime)
+

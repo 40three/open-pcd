@@ -1,4 +1,5 @@
-import { IFilesAttribute } from 'abstractions';
+import { Optional } from 'utility-types';
+import { IDateTimeAttribute, IFilesAttribute, IMoneyAttribute } from 'abstractions';
 import { AttributeKey } from 'attributes';
 import { IBooleanAttribute, INumberAttribute, INumberRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
 import { IProductType, IExampeProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
@@ -9,8 +10,14 @@ export const Unit = (data: IUnitInfo): IUnitInfo => data;
 
 /** Creates boolean attribute */
 export const BooleanAttr = (data: Omit<IBooleanAttribute, 'type'>): IBooleanAttribute => (<const>{ ...data, type: 'boolean' });
+/** Creates date attribute */
+export const DateAttr = (data: Omit<IDateTimeAttribute, 'type' | 'resolution'>): IDateTimeAttribute => (<const>{ ...data, type: 'datetime', resolution: 'date' });
+/** Creates datetime attribute */
+export const DateTimeAttr = (data: Optional<Omit<IDateTimeAttribute, 'type' | 'resolution'>, 'interval'>): IDateTimeAttribute => (<const>{ ...<const>{ interval: 'start'}, ...data, type: 'datetime', resolution: 'datetime' });
 /** Creates file list attribute */
 export const FilesAttr = (data: Omit<IFilesAttribute, 'type'>): IFilesAttribute => (<const>{ ...data, type: 'files' });
+/** Creates money attribute */
+export const MoneyAttr = (data: Omit<IMoneyAttribute, 'type'>): IMoneyAttribute => (<const>{ ...data, type: 'money' });
 /** Creates number attribute */
 export const NumberAttr = (data: Omit<INumberAttribute, 'type'>): INumberAttribute => (<const>{ ...data, type: 'number' });
 /** Creates range attribute */

@@ -4,6 +4,7 @@ import { sectionDescription, sectionDescriptionAttrs } from './description';
 import { sectionDimensionsPackaging, sectionDimensionsPackagingAttrs } from './dimensions-packaging';
 import { sectionDisplay, sectionDisplayAttrs } from './display';
 import { sectionMedia, sectionMediaAttrs } from './media';
+import { sectionPriceAvailability, sectionPriceAvailabilityAttrs } from './price-availability';
 
 /** Dictionary of all available attribute */
 export const a = {
@@ -13,6 +14,7 @@ export const a = {
     ...sectionDisplayAttrs,
     ...sectionDimensionsPackagingAttrs,
     ...sectionMediaAttrs,
+    ...sectionPriceAvailabilityAttrs,
 };
 
 /** All allowed attribute keys */
@@ -26,4 +28,5 @@ export const attributeSections = [
     sectionDimensionsPackaging,
     sectionDisplay,
     sectionMedia,
+    sectionPriceAvailability,
 ];

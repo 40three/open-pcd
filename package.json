@@ -9,10 +9,10 @@
     },
     "license": "MIT",
     "scripts": {
-        "import-xliff": "ts-node ./cli/import-xliff.ts",
         "export-xliff": "ts-node ./cli/export-xliff.ts",
         "update-docs": "ts-node ./cli/update-docs.ts",
         "update-types": "ts-node ./cli/update-types.ts",
+        "pre-commit": "yarn export-xliff & yarn update-docs & yarn update-types",
         "dist": "ts-node ./cli/dist.ts"
     },
     "files": [
@@ -26,6 +26,7 @@
         "@types/xmldom": "^0.1.30",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.3",
+        "utility-types": "^3.10.0",
         "xmldom": "^0.4.0"
     }
 }

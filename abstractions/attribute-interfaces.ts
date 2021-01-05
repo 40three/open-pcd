@@ -12,8 +12,8 @@ export interface IAttributeSection<T> {
 }
 
 /** Attribute of any type */
-export type Attribute = IBooleanAttribute | IFilesAttribute | INumberAttribute | INumberRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
-export type AttributeType = 'boolean' | 'files' | 'number' | 'number-range' | 'string' | 'set';
+export type Attribute = IBooleanAttribute | IDateTimeAttribute | IFilesAttribute | IMoneyAttribute | INumberAttribute | INumberRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
+export type AttributeType = 'boolean' | 'datetime' | 'files' | 'money' | 'number' | 'number-range' | 'string' | 'set';
 
 /** common attribute properties */
 export interface IAttributeBase {
@@ -26,9 +26,24 @@ export interface IBooleanAttribute extends IAttributeBase {
     readonly type: 'boolean';
 }
 
+/** Single date or date with time value */
+export interface IDateTimeAttribute extends IAttributeBase {
+    readonly type: 'datetime';
+    readonly resolution: 'date' | 'datetime';
+    /** e.g. date + end = date 24:00 vs date + start = date 00:00 */
+    readonly interval: 'start' | 'end';
+}
+
 /** List of files */
 export interface IFilesAttribute extends IAttributeBase {
     readonly type: 'files';
+}
+
+/** Single money value */
+export interface IMoneyAttribute extends IAttributeBase {
+    readonly type: 'money';
+    /** ISO currency code */
+    readonly currency?: string;
 }
 
 /** Single number value */
