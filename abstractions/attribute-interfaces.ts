@@ -46,6 +46,8 @@ export interface INumberRangeAttribute extends IAttributeBase {
 /** Single string value */
 export interface IStringAttribute extends IAttributeBase {
     readonly type: 'string';
+    /** Allowed content */
+    readonly content?: 'url';
 }
 
 /** Value from defined set of available values */
