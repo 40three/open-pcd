@@ -3,11 +3,11 @@ import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionCommonAttrs = <const>{
     'sku': StringAttr({
-        name: 'Stock keeping unit',
+        name: 'stock keeping unit',
         description: 'Unique stock keeping unit.'
     }),
     'mpn': StringAttr({
-        name: 'Manufacturer part number',
+        name: 'manufacturer part number',
         description: 'Manufacturer unique article number.'
     }),
     'gtin': StringAttr({
@@ -15,10 +15,7 @@ export const sectionCommonAttrs = <const>{
         description: 'Includes UPC, EAN, ISBN and other global identifiers.',
     }),
     'name': StringAttr({
-        name: 'Product name'
-    }),
-    'description': StringAttr({
-        name: 'Product description'
+        name: 'product name'
     }),
     'brand': StringAttr({
         name: 'brand'
