@@ -8,8 +8,8 @@ export interface IProductTypeBase {
     readonly key: string;
     readonly categories: readonly ProductTypeCategoryKey[];
     readonly description?: string;
-    /** URI of document describing what products of this type are */
-    readonly definitionUri?: string;
+    /** URL of document describing what products of this type are */
+    readonly definitionUrl?: string;
     readonly subTypes?: any;
 }
 

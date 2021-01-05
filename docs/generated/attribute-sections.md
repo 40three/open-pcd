@@ -1,11 +1,10 @@
 ## Common (common)
 Standard attributes to identify products
 
-* Stock keeping unit (sku, string)
-* Manufacturer part number (mpn, string)
+* stock keeping unit (sku, string)
+* manufacturer part number (mpn, string)
 * GTIN (gtin, string)
-* Product name (name, string)
-* Product description (description, string)
+* product name (name, string)
 * brand (brand, string)
 
 
@@ -22,8 +21,17 @@ Text, audio and video content description.
 * genre (book) (bookGenre, set)
 
 
+## description (description)
+Detailed product description.
+
+* product description (description, string)
+* product short description (descriptionShort, string)
+* landingpage url (url, string)
+* landingpage url (mobile) (urlMobile, string)
+
+
 ## dimensions an packaging (dimensionsPackaging)
-* Width (width, number)
+* width (width, number)
 * height (height, number)
 * depth (depth, number)
 * Width (weight, number)
@@ -32,9 +40,9 @@ Text, audio and video content description.
 ## Display (display)
 Display used in TVs, Smartphones, Computers, ...
 
-* Screen size (screen-diagonal, number)
+* screen size (screen-diagonal, number)
 
 
 ## Media (media)
-* Images (images, files)
+* images (images, files)
 

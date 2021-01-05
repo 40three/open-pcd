@@ -3,7 +3,7 @@ import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionDimensionsPackagingAttrs = <const>{
     'width': NumberAttr({ // schema.org product
-        name: 'Width',
+        name: 'width',
         description: 'Width of product without packaging.',
         unit: 'cm',
     }),

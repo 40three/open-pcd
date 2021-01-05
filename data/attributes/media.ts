@@ -2,7 +2,7 @@ import { FilesAttr, IAttributeSection } from '../../abstractions';
 
 export const sectionMediaAttrs = <const>{
     images: FilesAttr({
-        name: 'Images',
+        name: 'images',
         description: 'Product images. Primary image as first item.',
     }),
 };

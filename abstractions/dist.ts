@@ -33,8 +33,8 @@ export interface IDistProductType {
     readonly key: string;
     readonly categories: readonly ProductTypeCategoryKey[];
     readonly description?: MultiLanguageText;
-    /** URI of document describing what products of this type are */
-    readonly definitionUri?: string;
+    /** URL of document describing what products of this type are */
+    readonly definitionUrl?: string;
     readonly subTypes?: IDistProductSubType[];
     readonly attributeRefs: AttributeKey[];
 }

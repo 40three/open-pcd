@@ -3,7 +3,7 @@ import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionDisplayAttrs = <const>{
     'screen-diagonal': NumberAttr({
-        name: 'Screen size',
+        name: 'screen size',
         description: 'Screen diagonal',
     })
 };
