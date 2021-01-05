@@ -11,6 +11,7 @@
     "scripts": {
         "import-xliff": "ts-node ./cli/import-xliff.ts",
         "export-xliff": "ts-node ./cli/export-xliff.ts",
+        "update-docs": "ts-node ./cli/update-docs.ts",
         "update-types": "ts-node ./cli/update-types.ts",
         "dist": "ts-node ./cli/dist.ts"
     },
