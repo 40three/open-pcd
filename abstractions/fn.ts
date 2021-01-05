@@ -11,7 +11,7 @@ export const BooleanAttr = (data: Omit<IBooleanAttribute, 'type'>): IBooleanAttr
 /** Creates number attribute */
 export const NumberAttr = (data: Omit<INumberAttribute, 'type'>): INumberAttribute => (<const>{ ...data, type: 'number' });
 /** Creates range attribute */
-export const RangeAttr = (data: Omit<IRangeAttribute, 'type'>): IRangeAttribute => (<const>{ ...data, type: 'range' });
+export const NumberRangeAttr = (data: Omit<IRangeAttribute, 'type'>): IRangeAttribute => (<const>{ ...data, type: 'number-range' });
 /** Creates set attribute */
 export const SetAttr = <TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue> => (<const>{ ...data, type: 'set' });
 /** Creates string attribute */

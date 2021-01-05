@@ -13,7 +13,7 @@ export interface IAttributeSection<T> {
 
 /** Attribute of any type */
 export type Attribute = IBooleanAttribute | INumberAttribute | IRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
-export type AttributeType = 'boolean' | 'number' | 'range' | 'string' | 'set';
+export type AttributeType = 'boolean' | 'number' | 'number-range' | 'string' | 'set';
 
 /** common attribute properties */
 export interface IAttributeBase {
@@ -34,7 +34,7 @@ export interface INumberAttribute extends IAttributeBase {
 
 /** Numeric range value */
 export interface IRangeAttribute extends IAttributeBase {
-    readonly type: 'range';
+    readonly type: 'number-range';
     readonly unit?: UnitKey;
 }
 

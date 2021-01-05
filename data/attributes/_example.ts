@@ -1,4 +1,4 @@
-import { Attribute, IAttributeSection, NumberAttr, RangeAttr, SetAttr, StringAttr, } from '../../abstractions';
+import { Attribute, IAttributeSection, NumberAttr, NumberRangeAttr, SetAttr, StringAttr, } from '../../abstractions';
 import { vColor } from '../values';
 
 export const exampleSectionAttributes = <const>{
@@ -24,7 +24,7 @@ export const exampleSectionAttributes = <const>{
         values: ['male', 'female'] as const
     }),
     // set of non string values
-    voltage: RangeAttr({
+    voltage: NumberRangeAttr({
         name: 'Voltage',
         unit: 'V',
     }),
