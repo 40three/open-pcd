@@ -2,6 +2,7 @@ import { sectionCommon, sectionCommonAttrs } from './common';
 import { sectionContent, sectionContentAttrs } from './content';
 import { sectionDimensionsPackaging, sectionDimensionsPackagingAttrs } from './dimensions-packaging';
 import { sectionDisplay, sectionDisplayAttrs } from './display';
+import { sectionMedia, sectionMediaAttrs } from './media';
 
 /** Dictionary of all available attribute */
 export const a = {
@@ -9,6 +10,7 @@ export const a = {
     ...sectionContentAttrs,
     ...sectionDisplayAttrs,
     ...sectionDimensionsPackagingAttrs,
+    ...sectionMediaAttrs,
 };
 
 /** All allowed attribute keys */
@@ -20,4 +22,5 @@ export const attributeSections = [
     sectionContent,
     sectionDimensionsPackaging,
     sectionDisplay,
+    sectionMedia,
 ];

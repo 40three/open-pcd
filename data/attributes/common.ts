@@ -2,22 +2,25 @@ import { StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionCommonAttrs = <const>{
-    'sku': StringAttr({ // schema.org product
+    'sku': StringAttr({
         name: 'Stock keeping unit',
         description: 'Unique stock keeping unit.'
     }),
-    'mpn': StringAttr({ // schema.org product
+    'mpn': StringAttr({
         name: 'Manufacturer part number',
         description: 'Manufacturer unique article number.'
     }),
-    'gtin': StringAttr({ // schema.org product
+    'gtin': StringAttr({
         name: 'GTIN',
         description: 'Includes UPC, EAN, ISBN and other global identifiers.',
     }),
-    'name': StringAttr({ // schema.org product
+    'name': StringAttr({
         name: 'Product name'
     }),
-    'brand': StringAttr({ // schema.org product
+    'description': StringAttr({
+        name: 'Product description'
+    }),
+    'brand': StringAttr({
         name: 'brand'
     })
 };

@@ -12,8 +12,8 @@ export interface IAttributeSection<T> {
 }
 
 /** Attribute of any type */
-export type Attribute = IBooleanAttribute | INumberAttribute | IRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
-export type AttributeType = 'boolean' | 'number' | 'number-range' | 'string' | 'set';
+export type Attribute = IBooleanAttribute | IFilesAttribute | INumberAttribute | INumberRangeAttribute | IStringAttribute | ISetAttribute<string> | ISetAttribute<number>;
+export type AttributeType = 'boolean' | 'files' | 'number' | 'number-range' | 'string' | 'set';
 
 /** common attribute properties */
 export interface IAttributeBase {
@@ -26,6 +26,11 @@ export interface IBooleanAttribute extends IAttributeBase {
     readonly type: 'boolean';
 }
 
+/** List of files */
+export interface IFilesAttribute extends IAttributeBase {
+    readonly type: 'files';
+}
+
 /** Single number value */
 export interface INumberAttribute extends IAttributeBase {
     readonly type: 'number';
@@ -33,7 +38,7 @@ export interface INumberAttribute extends IAttributeBase {
 }
 
 /** Numeric range value */
-export interface IRangeAttribute extends IAttributeBase {
+export interface INumberRangeAttribute extends IAttributeBase {
     readonly type: 'number-range';
     readonly unit?: UnitKey;
 }
