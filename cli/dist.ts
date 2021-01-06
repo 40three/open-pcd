@@ -1,16 +1,20 @@
 /**
  * Create final output
  */
+import { IUnitInfo } from 'abstractions/unit-interfaces';
 import { promises as fs } from 'fs';
 import { Attribute, IAttributeSection, IProductType, IProductTypeCategoryFlat } from '../abstractions';
 import { IDistAttribute, IDistAttributeSection, IDistProductType } from '../abstractions/dist';
 import { a, AttributeKey, attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
 import { pt } from '../data/product-types';
+import { u, UnitKey } from '../data/units';
 import { generatedTypesBasePath } from './configuration';
 import { multiLang, readAllTranslations } from './translations/fn';
 import { AllTranslationsDict } from './translations/types';
 
+/** Place input between quotes */
+const quoted = (input: string): string => '"' + input + '"';
 
 const distAttr = (allTranslations: AllTranslationsDict, attrKey: AttributeKey, attr: Attribute): IDistAttribute => ({
     ...attr,
@@ -55,13 +59,17 @@ async function writeProductTypeCategories(outPath: string, allTranslations: AllT
     await fs.writeFile(outPath, json);
 }
 
+async function writeUnitTypes(path: string, units: Record<UnitKey, IUnitInfo>): Promise<void> {
+    await fs.writeFile(path, `export type UnitKey = ${Object.keys(units).map(quoted).join('|')};`);
+}
+
 async function generateAttributeKeyType(outPath: string, attrs: Record<string, Attribute>): Promise<void> {
     const keys = Object.keys(attrs);
-    await fs.writeFile(outPath, `export type AttributeKey = ${keys.map(k => '"' + k + '"').join('|')};`);
+    await fs.writeFile(outPath, `export type AttributeKey = ${keys.map(quoted).join('|')};`);
 }
 
 async function writeTypesIndex(outPath: string): Promise<void> {
-    await fs.writeFile(outPath, 'export * from "./attributes";\nexport * from "./product-types";');
+    await fs.writeFile(outPath, 'export * from "./attributes";\nexport * from "./product-types";\nexport * from "./units";\n');
 }
 
 const distDataBaseDir = 'dist/data';
@@ -77,8 +85,10 @@ const distTypesBaseDir = 'dist/types';
     await writeSections(`${distDataBaseDir}/attribute-sections.json`, translations, attributeSections);
     await writeProductTypes(`${distDataBaseDir}/product-types.json`, translations, pt);
     await writeProductTypeCategories(`${distDataBaseDir}/product-type-categories.json`, translations, productTypesCategoryList);
+    
     // types
     await fs.copyFile(`${generatedTypesBasePath}/product-types.ts`, `${distTypesBaseDir}/product-types.d.ts`);
-    await writeTypesIndex(`${distTypesBaseDir}/index.d.ts`);
     await generateAttributeKeyType(`${distTypesBaseDir}/attributes.d.ts`, a);
+    await writeUnitTypes(`${distTypesBaseDir}/units.d.ts`, u);
+    await writeTypesIndex(`${distTypesBaseDir}/index.d.ts`);
 })();
