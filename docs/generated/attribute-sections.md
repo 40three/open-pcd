@@ -52,6 +52,19 @@ Display used in TVs, Smartphones, Computers, ...
 * images (images, files)
 
 
+## power supply & energy (powerSupplyEnergy)
+* connection voltage (powerSupplyVoltage, number-range)
+* max power consumption (powerConsumptionMax, number)
+* max power consumption (powerConsumptionStandby, number)
+* power source (powerSource, set)
+* batteries included (batteriesIncluded, boolean)
+* batteries required (batteriesRequired, boolean)
+* battery capacity (batteryCapacity, number)
+* energy efficiency class (energyEfficiencyClass, set)
+* energy label min class (energyEfficiencyClassMin, set)
+* energy label max class (energyEfficiencyClassMax, set)
+
+
 ## Price & Availability (priceAvailability)
 * price (price, money)
 * MSRP (msrp, money)

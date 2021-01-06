@@ -15,11 +15,12 @@ export const sectionContentAttrs = <const>{
     }),
     author: StringAttr({
         name: 'author',
-        description: 'Content author.'
+        description: 'Content author.',
+        definitionUrl: 'https://en.wikipedia.org/wiki/Author',
     }),
     translators: StringAttr({
         name: 'translators (person)',
-        description: 'Name of translator(s)'
+        description: 'Name of translator(s)',
     }),
     language: SetAttr({
         name: 'language',

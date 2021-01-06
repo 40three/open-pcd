@@ -25,4 +25,7 @@ export const u = {
     'px': Unit({ name: 'pixel' }),
     'pt': Unit({ name: 'point', description: 'Point (typography)', reference: 'https://en.wikipedia.org/wiki/Point_(typography)' }),
     'V': Unit({ name: 'volt' }),
+    'A': Unit({ name: 'ampere' }),
+    'W': Unit({ name: 'watt' }),
+    'Ah': Unit({ name: 'amp hours'}),
 };
