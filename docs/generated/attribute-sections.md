@@ -19,6 +19,7 @@ Text, audio and video content description.
 * font size (fontSize, number)
 * country (country, string)
 * genre (book) (bookGenre, set)
+* adult content (adultContent, boolean)
 
 
 ## description (description)
@@ -34,7 +35,11 @@ Detailed product description.
 * width (width, number)
 * height (height, number)
 * depth (depth, number)
-* Width (weight, number)
+* width (weight, number)
+* items per unit (itemsPerUnit, number)
+* package type (item) (packagingTypePrimary, set)
+* package type (secondary) (packagingTypeSecondary, set)
+* package type (transit) (packagingTypeTransit, set)
 
 
 ## Display (display)

@@ -1,7 +1,7 @@
 /**
  * Text, audio and video content attributes
  */
-import { NumberAttr, SetAttr, StringAttr } from '../../abstractions';
+import { BooleanAttr, NumberAttr, SetAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionContentAttrs = <const>{
@@ -33,12 +33,16 @@ export const sectionContentAttrs = <const>{
     }),
     country: StringAttr({
         name: 'country',
-        description: 'Name of country that this content is about.'
+        description: 'Name of country that this content is about.',
     }),
     bookGenre: SetAttr({
         name: 'genre (book)',
         values: ['biography', 'business', 'cooking', 'history', 'pets', 'politics', 'philosophy', 'religion', 'sports'],
         allowCustomValues: true,
+    }),
+    adultContent: BooleanAttr({
+        name: 'adult content',
+        description: 'Enable, if content is intended for adults only, e.g. nudity or secually suggestive content.',
     })
 };
 

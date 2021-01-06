@@ -19,6 +19,8 @@ export type AttributeType = 'boolean' | 'datetime' | 'files' | 'money' | 'number
 export interface IAttributeBase {
     readonly name: string;
     readonly description?: string;
+    /** Url of document describing what this attribute is about */
+    readonly definitionUrl?: string;
 }
 
 /** Single boolean value */
