@@ -4,6 +4,7 @@ import { sectionContent, sectionContentAttrs } from './content';
 import { sectionDescription, sectionDescriptionAttrs } from './description';
 import { sectionDimensionsPackaging, sectionDimensionsPackagingAttrs } from './dimensions-packaging';
 import { sectionDisplay, sectionDisplayAttrs } from './display';
+import { sectionFashion, sectionFashionAttrs } from './fashion';
 import { sectionMaterial, sectionMaterialAttrs } from './material';
 import { sectionMedia, sectionMediaAttrs } from './media';
 import { sectionPowerSupply, sectionPowerSupplyAttrs } from './power-supply-energy';
@@ -17,6 +18,7 @@ export const a = {
     ...sectionDescriptionAttrs,
     ...sectionDisplayAttrs,
     ...sectionDimensionsPackagingAttrs,
+    ...sectionFashionAttrs,
     ...sectionMaterialAttrs,
     ...sectionMediaAttrs,
     ...sectionPowerSupplyAttrs,
@@ -34,6 +36,7 @@ export const attributeSections = [
     sectionPriceAvailability,
     sectionMedia,
     // specific sets
+    sectionFashion,
     sectionMaterial,
     sectionContent,
     sectionAudience,

@@ -39,6 +39,11 @@ Detailed product description.
 * images (images, files)
 
 
+## fashion (fashion)
+* size (fashionSize, string)
+* cut (fashionCut, set)
+
+
 ## material (material)
 * color (color, string)
 * material (materialType, string)
