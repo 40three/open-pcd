@@ -1,4 +1,4 @@
-import { BooleanAttr, NumberAttr, NumberRangeAttr, SetAttr } from '../../abstractions';
+import { BooleanAttr, NumberAttr, NumberRangeAttr, SetAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 import { vEnergyEfficiencyClass } from '../values';
 
@@ -32,6 +32,9 @@ export const sectionPowerSupplyAttrs = <const>{
         description: 'Amperage the battery can provide for one hour.',
         definitionUrl: 'http://web.mit.edu/evt/summary_battery_specifications.pdf',
         unit: 'Ah'
+    }),
+    'batteryTechnology': StringAttr({
+        name: 'battery technology',
     }),
     'energyEfficiencyClass': SetAttr({
         name: 'energy efficiency class',

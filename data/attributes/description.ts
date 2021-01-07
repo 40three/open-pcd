@@ -2,6 +2,10 @@ import { StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionDescriptionAttrs = <const>{
+    'highlights': StringAttr({
+        name: 'highlights (bullet points)',
+        description: 'Product highlights, one per line.'
+    }),
     'description': StringAttr({
         name: 'product description',
         description: 'Detailed product description.'

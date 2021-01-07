@@ -63,8 +63,13 @@ export interface INumberRangeAttribute extends IAttributeBase {
 /** Single string value */
 export interface IStringAttribute extends IAttributeBase {
     readonly type: 'string';
-    /** Allowed content */
-    readonly content?: 'url';
+    /**
+     * Allowed content 
+     * 
+     * url: only a single url allowed, e.g. http://heavendata.com
+     * bullet-points: features separated by newline
+     */
+    readonly content?: 'url' | 'bullet-points';
 }
 
 /** Value from defined set of available values */

@@ -11,6 +11,7 @@ Standard attributes to identify products
 ## description (description)
 Detailed product description.
 
+* highlights (bullet points) (highlights, string)
 * product description (description, string)
 * product short description (descriptionShort, string)
 * landingpage url (url, string)
@@ -76,7 +77,9 @@ Target audience information.
 ## Display (display)
 Display used in TVs, Smartphones, Computers, ...
 
-* screen size (screen-diagonal, number)
+* screen size (displayScreenDiagonal, number)
+* resolution (horizontal) (displayResolutionHorizontal, number)
+* resolution (vertical) (displayResolutionVertical, number)
 
 
 ## power supply & energy (powerSupplyEnergy)
@@ -87,6 +90,7 @@ Display used in TVs, Smartphones, Computers, ...
 * batteries included (batteriesIncluded, boolean)
 * batteries required (batteriesRequired, boolean)
 * battery capacity (batteryCapacity, number)
+* battery technology (batteryTechnology, string)
 * energy efficiency class (energyEfficiencyClass, set)
 * energy label min class (energyEfficiencyClassMin, set)
 * energy label max class (energyEfficiencyClassMax, set)
