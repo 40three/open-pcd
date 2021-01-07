@@ -41,10 +41,6 @@ export const sectionContentAttrs = <const>{
         values: ['biography', 'business', 'cooking', 'history', 'pets', 'politics', 'philosophy', 'religion', 'sports'],
         allowCustomValues: true,
     }),
-    adultContent: BooleanAttr({
-        name: 'adult content',
-        description: 'Enable, if content is intended for adults only, e.g. nudity or secually suggestive content.',
-    })
 };
 
 export const sectionContent: IAttributeSection<typeof sectionContentAttrs> = {

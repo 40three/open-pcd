@@ -1,3 +1,4 @@
+import { sectionAudience, sectionAudienceAttrs } from './audience';
 import { sectionCommon, sectionCommonAttrs } from './common';
 import { sectionContent, sectionContentAttrs } from './content';
 import { sectionDescription, sectionDescriptionAttrs } from './description';
@@ -9,6 +10,7 @@ import { sectionPriceAvailability, sectionPriceAvailabilityAttrs } from './price
 
 /** Dictionary of all available attribute */
 export const a = {
+    ...sectionAudienceAttrs,
     ...sectionCommonAttrs,
     ...sectionContentAttrs,
     ...sectionDescriptionAttrs,
@@ -22,14 +24,16 @@ export const a = {
 /** All allowed attribute keys */
 export type AttributeKey = keyof typeof a;
 
-/** Dictionary of all available sections */
+/** ORDERED list of all available sections */
 export const attributeSections = [
     sectionCommon,
-    sectionContent,
     sectionDescription,
     sectionDimensionsPackaging,
-    sectionDisplay,
-    sectionMedia,
-    sectionPowerSupply,
     sectionPriceAvailability,
+    sectionMedia,
+    // specific sets
+    sectionContent,
+    sectionAudience,
+    sectionDisplay,
+    sectionPowerSupply,
 ];

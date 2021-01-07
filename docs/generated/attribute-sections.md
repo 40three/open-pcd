@@ -8,20 +8,6 @@ Standard attributes to identify products
 * brand (brand, string)
 
 
-## Content (content)
-Text, audio and video content description.
-
-* title (title, string)
-* subtitle (subtitle, string)
-* author (author, string)
-* translators (person) (translators, string)
-* language (language, set)
-* font size (fontSize, number)
-* country (country, string)
-* genre (book) (bookGenre, set)
-* adult content (adultContent, boolean)
-
-
 ## description (description)
 Detailed product description.
 
@@ -42,14 +28,44 @@ Detailed product description.
 * package type (transit) (packagingTypeTransit, set)
 
 
-## Display (display)
-Display used in TVs, Smartphones, Computers, ...
-
-* screen size (screen-diagonal, number)
+## Price & Availability (priceAvailability)
+* price (price, money)
+* MSRP (msrp, money)
+* available from (availabilityDate, datetime)
+* available until (availabilityEndDate, datetime)
 
 
 ## Media (media)
 * images (images, files)
+
+
+## Content (content)
+Text, audio and video content description.
+
+* title (title, string)
+* subtitle (subtitle, string)
+* author (author, string)
+* translators (person) (translators, string)
+* language (language, set)
+* font size (fontSize, number)
+* country (country, string)
+* genre (book) (bookGenre, set)
+
+
+## Audience (audience)
+Target audience information.
+
+* min age (audienceAgeMin, number)
+* max age (audienceAgeMax, number)
+* gender (audienceGender, set)
+* adults only (audienceAdult, boolean)
+* audience type (audienceType, string)
+
+
+## Display (display)
+Display used in TVs, Smartphones, Computers, ...
+
+* screen size (screen-diagonal, number)
 
 
 ## power supply & energy (powerSupplyEnergy)
@@ -63,11 +79,4 @@ Display used in TVs, Smartphones, Computers, ...
 * energy efficiency class (energyEfficiencyClass, set)
 * energy label min class (energyEfficiencyClassMin, set)
 * energy label max class (energyEfficiencyClassMax, set)
-
-
-## Price & Availability (priceAvailability)
-* price (price, money)
-* MSRP (msrp, money)
-* available from (availabilityDate, datetime)
-* available until (availabilityEndDate, datetime)
 
