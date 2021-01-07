@@ -39,6 +39,12 @@ Detailed product description.
 * images (images, files)
 
 
+## material (material)
+* color (color, string)
+* material (materialType, string)
+* pattern or design (pattern, string)
+
+
 ## Content (content)
 Text, audio and video content description.
 
