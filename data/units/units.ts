@@ -13,7 +13,7 @@ export const u = {
 
     // weight (metric)
     'mg': Unit({ name: 'milligram' }),
-    'gr': Unit({ name: 'gram' }),
+    'g': Unit({ name: 'gram' }),
     'kg': Unit({ name: 'kilogram' }),
 
     // volume (metric)
