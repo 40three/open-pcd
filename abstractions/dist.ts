@@ -1,5 +1,6 @@
 // DIST types
 // that's how the published data looks like
+// We merge translations and move keys to the object itself.
 
 import { SupportedCultureKey } from '../cli/configuration';
 import { AttributeKey } from '../data/attributes';

@@ -2,7 +2,7 @@ import { Optional } from 'utility-types';
 import { IDateTimeAttribute, IFilesAttribute, IMoneyAttribute } from 'abstractions';
 import { AttributeKey } from 'attributes';
 import { IBooleanAttribute, INumberAttribute, INumberRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
-import { IProductType, IExampeProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
+import { IProductType, IExampleProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
 import { IUnitInfo } from './unit-interfaces';
 
 /** Creates unit info */
@@ -35,6 +35,6 @@ export const PType = (data: IProductType): IProductType => data;
 export const PSub = (data: IProductSubType): IProductSubType => data;
 
 /** Creates example product type */
-export const ExamplePType = (data: IExampeProductType): IExampeProductType => data;
+export const ExamplePType = (data: IExampleProductType): IExampleProductType => data;
 /** Creates product type category */
 export const PTCat = (data: Omit<IProductTypeCategory, 'children'> | string, children: IProductTypeCategoryMap = {}): IProductTypeCategory => ({ ...(typeof data === 'string' ? { name: data } : data), children });

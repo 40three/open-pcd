@@ -26,7 +26,7 @@ export interface IProductType extends IProductTypeBase {
 }
 
 /** Testing only */
-export interface IExampeProductType extends IProductTypeBase {
+export interface IExampleProductType extends IProductTypeBase {
     readonly attributeRefs: (keyof typeof examplesA)[];
 }
 

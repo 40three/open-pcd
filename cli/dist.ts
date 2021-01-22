@@ -3,7 +3,7 @@
  */
 import { IUnitInfo } from 'abstractions/unit-interfaces';
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeSection, IProductType, IProductTypeCategoryFlat } from '../abstractions';
+import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abstractions';
 import { IDistAttribute, IDistAttributeSection, IDistProductType } from '../abstractions/dist';
 import { a, AttributeKey, attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
@@ -42,13 +42,18 @@ async function writeProductTypes(outPath: string, allTranslations: AllTranslatio
     const distStructure = productTypes.map(pt => <IDistProductType>({
         ...pt,
         name: multiLang(allTranslations, pt.name, 'product-types', `${pt.key}.name`),
-        description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.description`)
+        description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.description`),
+        subTypes: pt.subTypes ? Object.entries(pt.subTypes as Record<string, IProductSubType>).map(([key, st]) => ({
+            ...st, key: `${pt.key}.${key}`,
+            name: multiLang(allTranslations, pt.name, 'product-types', `${pt.key}.${key}.name`),
+            description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.${key}.description`),
+        })) : undefined
     }));
     const json = JSON.stringify(distStructure, null, 4);
     await fs.writeFile(outPath, json);
 }
 
-/** Write all product type categories in all lnguages */
+/** Write all product type categories in all languages */
 async function writeProductTypeCategories(outPath: string, allTranslations: AllTranslationsDict, productTypeCategories: IProductTypeCategoryFlat[]): Promise<void> {
     const distStructure = productTypeCategories.map(c => ({
         ...c,
@@ -85,7 +90,7 @@ const distTypesBaseDir = 'dist/types';
     await writeSections(`${distDataBaseDir}/attribute-sections.json`, translations, attributeSections);
     await writeProductTypes(`${distDataBaseDir}/product-types.json`, translations, pt);
     await writeProductTypeCategories(`${distDataBaseDir}/product-type-categories.json`, translations, productTypesCategoryList);
-    
+
     // types
     await fs.copyFile(`${generatedTypesBasePath}/product-types.ts`, `${distTypesBaseDir}/product-types.d.ts`);
     await generateAttributeKeyType(`${distTypesBaseDir}/attributes.d.ts`, a);
