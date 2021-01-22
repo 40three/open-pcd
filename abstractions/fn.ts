@@ -21,7 +21,7 @@ export const MoneyAttr = (data: Omit<IMoneyAttribute, 'type'>): IMoneyAttribute 
 /** Creates number attribute */
 export const NumberAttr = (data: Omit<INumberAttribute, 'type'>): INumberAttribute => (<const>{ ...data, type: 'number' });
 /** Creates range attribute */
-export const NumberRangeAttr = (data: Omit<INumberRangeAttribute, 'type'>): INumberRangeAttribute => (<const>{ ...data, type: 'number-range' });
+export const NumberRangeAttr = (data: Omit<INumberRangeAttribute, 'type'>): INumberRangeAttribute => (<const>{ ...data, type: 'numberrange' });
 /** Creates set attribute */
 export const SetAttr = <TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue> => (<const>{ ...data, type: 'set' });
 /** Creates string attribute */

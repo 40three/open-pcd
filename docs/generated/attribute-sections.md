@@ -83,7 +83,7 @@ Display used in TVs, Smartphones, Computers, ...
 
 
 ## power supply & energy (powerSupplyEnergy)
-* connection voltage (powerSupplyVoltage, number-range)
+* connection voltage (powerSupplyVoltage, numberrange)
 * max power consumption (powerConsumptionMax, number)
 * max power consumption (powerConsumptionStandby, number)
 * power source (powerSource, set)
