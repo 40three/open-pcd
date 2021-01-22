@@ -14,4 +14,9 @@
     <source>book</source>
     <target>Buch</target>
    </segment>
-   </unit>   </group>   </file></xliff>
+   </unit>   <unit id="book.travel.name">
+    <segment>
+     <source>travel</source>
+     <target>travel</target>
+    </segment>
+    </unit>    </group>    </file></xliff>

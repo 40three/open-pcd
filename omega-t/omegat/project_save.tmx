@@ -86,6 +86,14 @@
     </tu>
     <tu>
       <tuv lang="EN-US">
+        <seg>home electronics</seg>
+      </tuv>
+      <tuv lang="DE" changeid="info" changedate="20210113T124007Z" creationid="info" creationdate="20210113T124007Z">
+        <seg>Heimelektronik</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv lang="EN-US">
         <seg>title</seg>
       </tuv>
       <tuv lang="DE" changeid="info" changedate="20201217T115825Z" creationid="info" creationdate="20201217T115825Z">

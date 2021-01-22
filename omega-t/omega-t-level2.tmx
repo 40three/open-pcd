@@ -30,22 +30,6 @@
     </tu>
     <tu>
       <tuv xml:lang="EN-US">
-        <seg>Manufacturer part number</seg>
-      </tuv>
-      <tuv xml:lang="DE" changeid="info" changedate="20201217T115807Z" creationid="info" creationdate="20201217T115807Z">
-        <seg>Herstellerartikelnummer</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
-        <seg>Product name</seg>
-      </tuv>
-      <tuv xml:lang="DE" changeid="info" changedate="20201217T115815Z" creationid="info" creationdate="20201217T115815Z">
-        <seg>Produktname</seg>
-      </tuv>
-    </tu>
-    <tu>
-      <tuv xml:lang="EN-US">
         <seg>Standard attributes to identify products</seg>
       </tuv>
       <tuv xml:lang="DE" changeid="info" changedate="20201221T171029Z" creationid="info" creationdate="20201221T171029Z">
@@ -82,6 +66,14 @@
       </tuv>
       <tuv xml:lang="DE" changeid="info" changedate="20201221T171116Z" creationid="info" creationdate="20201221T171116Z">
         <seg>Abmessungen und Verpackung</seg>
+      </tuv>
+    </tu>
+    <tu>
+      <tuv xml:lang="EN-US">
+        <seg>home electronics</seg>
+      </tuv>
+      <tuv xml:lang="DE" changeid="info" changedate="20210113T124007Z" creationid="info" creationdate="20210113T124007Z">
+        <seg>Heimelektronik</seg>
       </tuv>
     </tu>
     <tu>

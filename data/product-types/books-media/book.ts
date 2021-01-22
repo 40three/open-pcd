@@ -18,6 +18,6 @@ export const productTypeBook = PType({
         'author',
         'title',
         'subtitle',
-        'fontSize'
+        'fontSize',
     ]
 });

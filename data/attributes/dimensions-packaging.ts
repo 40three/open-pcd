@@ -48,7 +48,7 @@ export const sectionDimensionsPackagingAttrs = <const>{
 };
 
 export const sectionDimensionsPackaging: IAttributeSection<typeof sectionDimensionsPackagingAttrs> = {
-    name: 'dimensions an packaging',
+    name: 'dimensions & packaging',
     key: 'dimensionsPackaging',
     attributes: sectionDimensionsPackagingAttrs
 };

@@ -9,29 +9,74 @@
    <source>Standard attributes to identify products</source>
    <target>Standard Attribute</target>
   </segment>
-  </unit>  </group>  <group id="content">  <unit id="content.name">
-   <segment state="translated">
-    <source>Content</source>
-    <target>Inhalt</target>
+  </unit>  </group>  <group id="description">  <unit id="description.name">
+   <segment>
+    <source>description</source>
+    <target>description</target>
    </segment>
-   </unit>   <unit id="content.description">
-    <segment state="translated">
-     <source>Text, audio and video content description.</source>
-     <target>Text-, Audio- und Videoinhalte.</target>
+   </unit>   <unit id="description.description">
+    <segment>
+     <source>Detailed product description.</source>
+     <target>Detailed product description.</target>
     </segment>
     </unit>    </group>    <group id="dimensionsPackaging">    <unit id="dimensionsPackaging.name">
      <segment state="translated">
       <source>dimensions an packaging</source>
       <target>Abmessungen und Verpackung</target>
      </segment>
-     </unit>     </group>     <group id="display">     <unit id="display.name">
+     </unit>     </group>     <group id="priceAvailability">     <unit id="priceAvailability.name">
       <segment>
-       <source>Display</source>
-       <target>Display</target>
+       <source>Price &amp; Availability</source>
+       <target>Price &amp; Availability</target>
       </segment>
-      </unit>      <unit id="display.description">
-       <segment state="translated">
-        <source>Display used in TVs, Smartphones, Computers, ...</source>
-        <target>Display, wie es in TVs, Smartphones oder Computern verwendet wird.</target>
+      </unit>      </group>      <group id="media">      <unit id="media.name">
+       <segment>
+        <source>Media</source>
+        <target>Media</target>
        </segment>
-       </unit>       </group>       </file></xliff>
+       </unit>       </group>       <group id="fashion">       <unit id="fashion.name">
+        <segment>
+         <source>fashion</source>
+         <target>fashion</target>
+        </segment>
+        </unit>        </group>        <group id="material">        <unit id="material.name">
+         <segment>
+          <source>material</source>
+          <target>material</target>
+         </segment>
+         </unit>         </group>         <group id="content">         <unit id="content.name">
+          <segment state="translated">
+           <source>Content</source>
+           <target>Inhalt</target>
+          </segment>
+          </unit>          <unit id="content.description">
+           <segment state="translated">
+            <source>Text, audio and video content description.</source>
+            <target>Text-, Audio- und Videoinhalte.</target>
+           </segment>
+           </unit>           </group>           <group id="audience">           <unit id="audience.name">
+            <segment>
+             <source>Audience</source>
+             <target>Audience</target>
+            </segment>
+            </unit>            <unit id="audience.description">
+             <segment>
+              <source>Target audience information.</source>
+              <target>Target audience information.</target>
+             </segment>
+             </unit>             </group>             <group id="display">             <unit id="display.name">
+              <segment>
+               <source>Display</source>
+               <target>Display</target>
+              </segment>
+              </unit>              <unit id="display.description">
+               <segment state="translated">
+                <source>Display used in TVs, Smartphones, Computers, ...</source>
+                <target>Display, wie es in TVs, Smartphones oder Computern verwendet wird.</target>
+               </segment>
+               </unit>               </group>               <group id="powerSupplyEnergy">               <unit id="powerSupplyEnergy.name">
+                <segment>
+                 <source>power supply &amp; energy</source>
+                 <target>power supply &amp; energy</target>
+                </segment>
+                </unit>                </group>                </file></xliff>

@@ -1,8 +1,8 @@
 <?xml version="1.0"?>
 <xliff xmlns="urn:oasis:names:tc:xliff:document:2.0" version="2.0" srcLang="en-US" trgLang="de"><file id="attributes"><group id="common"><unit id="sku.name">
  <segment>
-  <source>Stock keeping unit</source>
-  <target>Stock keeping unit</target>
+  <source>stock keeping unit</source>
+  <target>stock keeping unit</target>
  </segment>
  </unit> <unit id="sku.description">
   <segment>
@@ -10,9 +10,9 @@
    <target>Unique stock keeping unit.</target>
   </segment>
   </unit>  <unit id="mpn.name">
-   <segment state="translated">
-    <source>Manufacturer part number</source>
-    <target>Herstellerartikelnummer</target>
+   <segment>
+    <source>manufacturer part number</source>
+    <target>manufacturer part number</target>
    </segment>
    </unit>   <unit id="mpn.description">
     <segment>
@@ -30,138 +30,453 @@
        <target>Includes UPC, EAN, ISBN and other global identifiers.</target>
       </segment>
       </unit>      <unit id="name.name">
-       <segment state="translated">
-        <source>Product name</source>
-        <target>Produktname</target>
+       <segment>
+        <source>product name</source>
+        <target>product name</target>
        </segment>
        </unit>       <unit id="brand.name">
         <segment state="translated">
          <source>brand</source>
          <target>Marke</target>
         </segment>
-        </unit>        </group>        <group id="content">        <unit id="title.name">
-         <segment state="translated">
-          <source>title</source>
-          <target>Titel</target>
+        </unit>        </group>        <group id="description">        <unit id="highlights.name">
+         <segment>
+          <source>highlights (bullet points)</source>
+          <target>highlights (bullet points)</target>
          </segment>
-         </unit>         <unit id="title.description">
+         </unit>         <unit id="highlights.description">
           <segment>
-           <source>Product title without author or other additions.</source>
-           <target>Product title without author or other additions.</target>
+           <source>Product highlights, one per line.</source>
+           <target>Product highlights, one per line.</target>
           </segment>
-          </unit>          <unit id="subtitle.name">
+          </unit>          <unit id="description.name">
            <segment>
-            <source>subtitle</source>
-            <target>subtitle</target>
+            <source>product description</source>
+            <target>product description</target>
            </segment>
-           </unit>           <unit id="subtitle.description">
+           </unit>           <unit id="description.description">
             <segment>
-             <source>Product title without author or other additions.</source>
-             <target>Product title without author or other additions.</target>
+             <source>Detailed product description.</source>
+             <target>Detailed product description.</target>
             </segment>
-            </unit>            <unit id="author.name">
+            </unit>            <unit id="descriptionShort.name">
              <segment>
-              <source>author</source>
-              <target>author</target>
+              <source>product short description</source>
+              <target>product short description</target>
              </segment>
-             </unit>             <unit id="author.description">
+             </unit>             <unit id="descriptionShort.description">
               <segment>
-               <source>Content author.</source>
-               <target>Content author.</target>
+               <source>Short description e.g. for product lists.</source>
+               <target>Short description e.g. for product lists.</target>
               </segment>
-              </unit>              <unit id="translators.name">
+              </unit>              <unit id="url.name">
                <segment>
-                <source>translators (person)</source>
-                <target>translators (person)</target>
+                <source>landingpage url</source>
+                <target>landingpage url</target>
                </segment>
-               </unit>               <unit id="translators.description">
+               </unit>               <unit id="url.description">
                 <segment>
-                 <source>Name of translator(s)</source>
-                 <target>Name of translator(s)</target>
+                 <source>Link to your online shop's product details page.</source>
+                 <target>Link to your online shop's product details page.</target>
                 </segment>
-                </unit>                <unit id="language.name">
+                </unit>                <unit id="urlMobile.name">
                  <segment>
-                  <source>language</source>
-                  <target>language</target>
+                  <source>landingpage url (mobile)</source>
+                  <target>landingpage url (mobile)</target>
                  </segment>
-                 </unit>                 <unit id="language.description">
+                 </unit>                 <unit id="urlMobile.description">
                   <segment>
-                   <source>Text, audio or video language</source>
-                   <target>Text, audio or video language</target>
+                   <source>Link to your online shop's product details page for mobile devices.</source>
+                   <target>Link to your online shop's product details page for mobile devices.</target>
                   </segment>
-                  </unit>                  <unit id="fontSize.name">
+                  </unit>                  </group>                  <group id="dimensionsPackaging">                  <unit id="width.name">
                    <segment>
-                    <source>font size</source>
-                    <target>font size</target>
+                    <source>width</source>
+                    <target>width</target>
                    </segment>
-                   </unit>                   <unit id="fontSize.description">
+                   </unit>                   <unit id="width.description">
                     <segment>
-                     <source>Size of font used for most of text content.</source>
-                     <target>Size of font used for most of text content.</target>
+                     <source>Width of product without packaging.</source>
+                     <target>Width of product without packaging.</target>
                     </segment>
-                    </unit>                    <unit id="country.name">
+                    </unit>                    <unit id="height.name">
                      <segment>
-                      <source>country</source>
-                      <target>country</target>
+                      <source>height</source>
+                      <target>height</target>
                      </segment>
-                     </unit>                     <unit id="country.description">
+                     </unit>                     <unit id="height.description">
                       <segment>
-                       <source>Name of country that this content is about.</source>
-                       <target>Name of country that this content is about.</target>
+                       <source>Height of product without packaging.</source>
+                       <target>Height of product without packaging.</target>
                       </segment>
-                      </unit>                      <unit id="bookGenre.name">
+                      </unit>                      <unit id="depth.name">
                        <segment>
-                        <source>genre (book)</source>
-                        <target>genre (book)</target>
+                        <source>depth</source>
+                        <target>depth</target>
                        </segment>
-                       </unit>                       </group>                       <group id="dimensionsPackaging">                       <unit id="width.name">
+                       </unit>                       <unit id="depth.description">
                         <segment>
-                         <source>Width</source>
-                         <target>Width</target>
+                         <source>Depth of product without packaging.</source>
+                         <target>Depth of product without packaging.</target>
                         </segment>
-                        </unit>                        <unit id="width.description">
+                        </unit>                        <unit id="weight.name">
                          <segment>
-                          <source>Width of product without packaging.</source>
-                          <target>Width of product without packaging.</target>
+                          <source>width</source>
+                          <target>width</target>
                          </segment>
-                         </unit>                         <unit id="height.name">
+                         </unit>                         <unit id="weight.description">
                           <segment>
-                           <source>height</source>
-                           <target>height</target>
+                           <source>Weight of product without packaging.</source>
+                           <target>Weight of product without packaging.</target>
                           </segment>
-                          </unit>                          <unit id="height.description">
+                          </unit>                          <unit id="itemsPerUnit.name">
                            <segment>
-                            <source>Height of product without packaging.</source>
-                            <target>Height of product without packaging.</target>
+                            <source>items per unit</source>
+                            <target>items per unit</target>
                            </segment>
-                           </unit>                           <unit id="depth.name">
+                           </unit>                           <unit id="itemsPerUnit.description">
                             <segment>
-                             <source>depth</source>
-                             <target>depth</target>
+                             <source>Number of items you get, if you order one unit. E.g. for a pack of 6 bottles: 6</source>
+                             <target>Number of items you get, if you order one unit. E.g. for a pack of 6 bottles: 6</target>
                             </segment>
-                            </unit>                            <unit id="depth.description">
+                            </unit>                            <unit id="packagingTypePrimary.name">
                              <segment>
-                              <source>Depth of product without packaging.</source>
-                              <target>Depth of product without packaging.</target>
+                              <source>package type (item)</source>
+                              <target>package type (item)</target>
                              </segment>
-                             </unit>                             <unit id="weight.name">
+                             </unit>                             <unit id="packagingTypePrimary.description">
                               <segment>
-                               <source>Width</source>
-                               <target>Width</target>
+                               <source>Packaging of item(s).</source>
+                               <target>Packaging of item(s).</target>
                               </segment>
-                              </unit>                              <unit id="weight.description">
+                              </unit>                              <unit id="packagingTypeSecondary.name">
                                <segment>
-                                <source>Weight of product without packaging.</source>
-                                <target>Weight of product without packaging.</target>
+                                <source>package type (secondary)</source>
+                                <target>package type (secondary)</target>
                                </segment>
-                               </unit>                               </group>                               <group id="display">                               <unit id="screen-diagonal.name">
+                               </unit>                               <unit id="packagingTypeSecondary.description">
                                 <segment>
-                                 <source>Screen size</source>
-                                 <target>Screen size</target>
+                                 <source>Secondary packaging, e.g. to group items together.</source>
+                                 <target>Secondary packaging, e.g. to group items together.</target>
                                 </segment>
-                                </unit>                                <unit id="screen-diagonal.description">
+                                </unit>                                <unit id="packagingTypeTransit.name">
                                  <segment>
-                                  <source>Screen diagonal</source>
-                                  <target>Screen diagonal</target>
+                                  <source>package type (transit)</source>
+                                  <target>package type (transit)</target>
                                  </segment>
-                                 </unit>                                 </group>                                 </file></xliff>
+                                 </unit>                                 <unit id="packagingTypeTransit.description">
+                                  <segment>
+                                   <source>Additional packaging for easier transport. E.g. "pallet".</source>
+                                   <target>Additional packaging for easier transport. E.g. "pallet".</target>
+                                  </segment>
+                                  </unit>                                  </group>                                  <group id="priceAvailability">                                  <unit id="price.name">
+                                   <segment>
+                                    <source>price</source>
+                                    <target>price</target>
+                                   </segment>
+                                   </unit>                                   <unit id="msrp.name">
+                                    <segment>
+                                     <source>MSRP</source>
+                                     <target>MSRP</target>
+                                    </segment>
+                                    </unit>                                    <unit id="msrp.description">
+                                     <segment>
+                                      <source>Recommended retail price.</source>
+                                      <target>Recommended retail price.</target>
+                                     </segment>
+                                     </unit>                                     <unit id="availabilityDate.name">
+                                      <segment>
+                                       <source>available from</source>
+                                       <target>available from</target>
+                                      </segment>
+                                      </unit>                                      <unit id="availabilityEndDate.name">
+                                       <segment>
+                                        <source>available until</source>
+                                        <target>available until</target>
+                                       </segment>
+                                       </unit>                                       </group>                                       <group id="media">                                       <unit id="images.name">
+                                        <segment>
+                                         <source>images</source>
+                                         <target>images</target>
+                                        </segment>
+                                        </unit>                                        <unit id="images.description">
+                                         <segment>
+                                          <source>Product images. Primary image as first item.</source>
+                                          <target>Product images. Primary image as first item.</target>
+                                         </segment>
+                                         </unit>                                         </group>                                         <group id="fashion">                                         <unit id="fashionSize.name">
+                                          <segment>
+                                           <source>size</source>
+                                           <target>size</target>
+                                          </segment>
+                                          </unit>                                          <unit id="fashionSize.description">
+                                           <segment>
+                                            <source>Clothing an shoes, e.g. "XL".</source>
+                                            <target>Clothing an shoes, e.g. "XL".</target>
+                                           </segment>
+                                           </unit>                                           <unit id="fashionCut.name">
+                                            <segment>
+                                             <source>cut</source>
+                                             <target>cut</target>
+                                            </segment>
+                                            </unit>                                            </group>                                            <group id="material">                                            <unit id="color.name">
+                                             <segment>
+                                              <source>color</source>
+                                              <target>color</target>
+                                             </segment>
+                                             </unit>                                             <unit id="color.description">
+                                              <segment>
+                                               <source>Primary color.</source>
+                                               <target>Primary color.</target>
+                                              </segment>
+                                              </unit>                                              <unit id="materialType.name">
+                                               <segment>
+                                                <source>material</source>
+                                                <target>material</target>
+                                               </segment>
+                                               </unit>                                               <unit id="materialType.description">
+                                                <segment>
+                                                 <source>What's this product is made of. E.g. leather, polyester, ...</source>
+                                                 <target>What's this product is made of. E.g. leather, polyester, ...</target>
+                                                </segment>
+                                                </unit>                                                <unit id="pattern.name">
+                                                 <segment>
+                                                  <source>pattern or design</source>
+                                                  <target>pattern or design</target>
+                                                 </segment>
+                                                 </unit>                                                 <unit id="pattern.description">
+                                                  <segment>
+                                                   <source>Pattern or graphic print.</source>
+                                                   <target>Pattern or graphic print.</target>
+                                                  </segment>
+                                                  </unit>                                                  </group>                                                  <group id="content">                                                  <unit id="title.name">
+                                                   <segment state="translated">
+                                                    <source>title</source>
+                                                    <target>Titel</target>
+                                                   </segment>
+                                                   </unit>                                                   <unit id="title.description">
+                                                    <segment>
+                                                     <source>Product title without author or other additions.</source>
+                                                     <target>Product title without author or other additions.</target>
+                                                    </segment>
+                                                    </unit>                                                    <unit id="subtitle.name">
+                                                     <segment>
+                                                      <source>subtitle</source>
+                                                      <target>subtitle</target>
+                                                     </segment>
+                                                     </unit>                                                     <unit id="subtitle.description">
+                                                      <segment>
+                                                       <source>Product title without author or other additions.</source>
+                                                       <target>Product title without author or other additions.</target>
+                                                      </segment>
+                                                      </unit>                                                      <unit id="author.name">
+                                                       <segment>
+                                                        <source>author</source>
+                                                        <target>author</target>
+                                                       </segment>
+                                                       </unit>                                                       <unit id="author.description">
+                                                        <segment>
+                                                         <source>Content author.</source>
+                                                         <target>Content author.</target>
+                                                        </segment>
+                                                        </unit>                                                        <unit id="translators.name">
+                                                         <segment>
+                                                          <source>translators (person)</source>
+                                                          <target>translators (person)</target>
+                                                         </segment>
+                                                         </unit>                                                         <unit id="translators.description">
+                                                          <segment>
+                                                           <source>Name of translator(s)</source>
+                                                           <target>Name of translator(s)</target>
+                                                          </segment>
+                                                          </unit>                                                          <unit id="language.name">
+                                                           <segment>
+                                                            <source>language</source>
+                                                            <target>language</target>
+                                                           </segment>
+                                                           </unit>                                                           <unit id="language.description">
+                                                            <segment>
+                                                             <source>Text, audio or video language</source>
+                                                             <target>Text, audio or video language</target>
+                                                            </segment>
+                                                            </unit>                                                            <unit id="fontSize.name">
+                                                             <segment>
+                                                              <source>font size</source>
+                                                              <target>font size</target>
+                                                             </segment>
+                                                             </unit>                                                             <unit id="fontSize.description">
+                                                              <segment>
+                                                               <source>Size of font used for most of text content.</source>
+                                                               <target>Size of font used for most of text content.</target>
+                                                              </segment>
+                                                              </unit>                                                              <unit id="country.name">
+                                                               <segment>
+                                                                <source>country</source>
+                                                                <target>country</target>
+                                                               </segment>
+                                                               </unit>                                                               <unit id="country.description">
+                                                                <segment>
+                                                                 <source>Name of country that this content is about.</source>
+                                                                 <target>Name of country that this content is about.</target>
+                                                                </segment>
+                                                                </unit>                                                                <unit id="bookGenre.name">
+                                                                 <segment>
+                                                                  <source>genre (book)</source>
+                                                                  <target>genre (book)</target>
+                                                                 </segment>
+                                                                 </unit>                                                                 </group>                                                                 <group id="audience">                                                                 <unit id="audienceAgeMin.name">
+                                                                  <segment>
+                                                                   <source>min age</source>
+                                                                   <target>min age</target>
+                                                                  </segment>
+                                                                  </unit>                                                                  <unit id="audienceAgeMax.name">
+                                                                   <segment>
+                                                                    <source>max age</source>
+                                                                    <target>max age</target>
+                                                                   </segment>
+                                                                   </unit>                                                                   <unit id="audienceGender.name">
+                                                                    <segment>
+                                                                     <source>gender</source>
+                                                                     <target>gender</target>
+                                                                    </segment>
+                                                                    </unit>                                                                    <unit id="audienceGender.description">
+                                                                     <segment>
+                                                                      <source>Gender of primary target audience. This typically does not mean it's restricted to only one gender but to place it in the right category.</source>
+                                                                      <target>Gender of primary target audience. This typically does not mean it's restricted to only one gender but to place it in the right category.</target>
+                                                                     </segment>
+                                                                     </unit>                                                                     <unit id="audienceAdult.name">
+                                                                      <segment>
+                                                                       <source>adults only</source>
+                                                                       <target>adults only</target>
+                                                                      </segment>
+                                                                      </unit>                                                                      <unit id="audienceAdult.description">
+                                                                       <segment>
+                                                                        <source>Enable, if product is intended for adults only, e.g. nudity or secually suggestive content.</source>
+                                                                        <target>Enable, if product is intended for adults only, e.g. nudity or secually suggestive content.</target>
+                                                                       </segment>
+                                                                       </unit>                                                                       <unit id="audienceType.name">
+                                                                        <segment>
+                                                                         <source>audience type</source>
+                                                                         <target>audience type</target>
+                                                                        </segment>
+                                                                        </unit>                                                                        <unit id="audienceType.description">
+                                                                         <segment>
+                                                                          <source>Special target group, e.g. veterans, car owners, musicians, ...</source>
+                                                                          <target>Special target group, e.g. veterans, car owners, musicians, ...</target>
+                                                                         </segment>
+                                                                         </unit>                                                                         </group>                                                                         <group id="display">                                                                         <unit id="displayScreenDiagonal.name">
+                                                                          <segment>
+                                                                           <source>screen size</source>
+                                                                           <target>screen size</target>
+                                                                          </segment>
+                                                                          </unit>                                                                          <unit id="displayScreenDiagonal.description">
+                                                                           <segment>
+                                                                            <source>Screen diagonal</source>
+                                                                            <target>Screen diagonal</target>
+                                                                           </segment>
+                                                                           </unit>                                                                           <unit id="displayResolutionHorizontal.name">
+                                                                            <segment>
+                                                                             <source>resolution (horizontal)</source>
+                                                                             <target>resolution (horizontal)</target>
+                                                                            </segment>
+                                                                            </unit>                                                                            <unit id="displayResolutionHorizontal.description">
+                                                                             <segment>
+                                                                              <source>Number of horizontal pixels. E.g. 1920 (full hd)</source>
+                                                                              <target>Number of horizontal pixels. E.g. 1920 (full hd)</target>
+                                                                             </segment>
+                                                                             </unit>                                                                             <unit id="displayResolutionVertical.name">
+                                                                              <segment>
+                                                                               <source>resolution (vertical)</source>
+                                                                               <target>resolution (vertical)</target>
+                                                                              </segment>
+                                                                              </unit>                                                                              <unit id="displayResolutionVertical.description">
+                                                                               <segment>
+                                                                                <source>Number of vertical pixels. E.g. 1080 (full hd)</source>
+                                                                                <target>Number of vertical pixels. E.g. 1080 (full hd)</target>
+                                                                               </segment>
+                                                                               </unit>                                                                               </group>                                                                               <group id="powerSupplyEnergy">                                                                               <unit id="powerSupplyVoltage.name">
+                                                                                <segment>
+                                                                                 <source>connection voltage</source>
+                                                                                 <target>connection voltage</target>
+                                                                                </segment>
+                                                                                </unit>                                                                                <unit id="powerConsumptionMax.name">
+                                                                                 <segment>
+                                                                                  <source>max power consumption</source>
+                                                                                  <target>max power consumption</target>
+                                                                                 </segment>
+                                                                                 </unit>                                                                                 <unit id="powerConsumptionStandby.name">
+                                                                                  <segment>
+                                                                                   <source>max power consumption</source>
+                                                                                   <target>max power consumption</target>
+                                                                                  </segment>
+                                                                                  </unit>                                                                                  <unit id="powerSource.name">
+                                                                                   <segment>
+                                                                                    <source>power source</source>
+                                                                                    <target>power source</target>
+                                                                                   </segment>
+                                                                                   </unit>                                                                                   <unit id="batteriesIncluded.name">
+                                                                                    <segment>
+                                                                                     <source>batteries included</source>
+                                                                                     <target>batteries included</target>
+                                                                                    </segment>
+                                                                                    </unit>                                                                                    <unit id="batteriesIncluded.description">
+                                                                                     <segment>
+                                                                                      <source>Batteries are included.</source>
+                                                                                      <target>Batteries are included.</target>
+                                                                                     </segment>
+                                                                                     </unit>                                                                                     <unit id="batteriesRequired.name">
+                                                                                      <segment>
+                                                                                       <source>batteries required</source>
+                                                                                       <target>batteries required</target>
+                                                                                      </segment>
+                                                                                      </unit>                                                                                      <unit id="batteriesRequired.description">
+                                                                                       <segment>
+                                                                                        <source>This product requires batteries.</source>
+                                                                                        <target>This product requires batteries.</target>
+                                                                                       </segment>
+                                                                                       </unit>                                                                                       <unit id="batteryCapacity.name">
+                                                                                        <segment>
+                                                                                         <source>battery capacity</source>
+                                                                                         <target>battery capacity</target>
+                                                                                        </segment>
+                                                                                        </unit>                                                                                        <unit id="batteryCapacity.description">
+                                                                                         <segment>
+                                                                                          <source>Amperage the battery can provide for one hour.</source>
+                                                                                          <target>Amperage the battery can provide for one hour.</target>
+                                                                                         </segment>
+                                                                                         </unit>                                                                                         <unit id="batteryTechnology.name">
+                                                                                          <segment>
+                                                                                           <source>battery technology</source>
+                                                                                           <target>battery technology</target>
+                                                                                          </segment>
+                                                                                          </unit>                                                                                          <unit id="energyEfficiencyClass.name">
+                                                                                           <segment>
+                                                                                            <source>energy efficiency class</source>
+                                                                                            <target>energy efficiency class</target>
+                                                                                           </segment>
+                                                                                           </unit>                                                                                           <unit id="energyEfficiencyClass.description">
+                                                                                            <segment>
+                                                                                             <source>Energy efficiency class of product.</source>
+                                                                                             <target>Energy efficiency class of product.</target>
+                                                                                            </segment>
+                                                                                            </unit>                                                                                            <unit id="energyEfficiencyClassMin.name">
+                                                                                             <segment>
+                                                                                              <source>energy label min class</source>
+                                                                                              <target>energy label min class</target>
+                                                                                             </segment>
+                                                                                             </unit>                                                                                             <unit id="energyEfficiencyClassMin.description">
+                                                                                              <segment>
+                                                                                               <source>Lowest power consumption class to include in engery label. E.g. "A++".</source>
+                                                                                               <target>Lowest power consumption class to include in engery label. E.g. "A++".</target>
+                                                                                              </segment>
+                                                                                              </unit>                                                                                              <unit id="energyEfficiencyClassMax.name">
+                                                                                               <segment>
+                                                                                                <source>energy label max class</source>
+                                                                                                <target>energy label max class</target>
+                                                                                               </segment>
+                                                                                               </unit>                                                                                               <unit id="energyEfficiencyClassMax.description">
+                                                                                                <segment>
+                                                                                                 <source>Highest power consumption class to include in engery label. E.g. "D".</source>
+                                                                                                 <target>Highest power consumption class to include in engery label. E.g. "D".</target>
+                                                                                                </segment>
+                                                                                                </unit>                                                                                                </group>                                                                                                </file></xliff>

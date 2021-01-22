@@ -10,9 +10,9 @@
    <target>electronics and office</target>
   </segment>
   </unit>  </group>  <group id="homeElectronics">  <unit id="homeElectronics.name">
-   <segment>
+   <segment state="translated">
     <source>home electronics</source>
-    <target>home electronics</target>
+    <target>Heimelektronik</target>
    </segment>
    </unit>   </group>   <group id="booksMedia">   <unit id="booksMedia.name">
     <segment>
