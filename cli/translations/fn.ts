@@ -39,6 +39,8 @@ export function getTranslation(allTranslations: AllTranslationsDict, objType: Ob
 }
 
 /** Get dict with all languages for single property {culture: translation} */
+export function multiLang(allTranslations: AllTranslationsDict, en: string, objType: ObjectFileName, key: string): MultiLanguageText;
+export function multiLang(allTranslations: AllTranslationsDict, en: string | undefined, objType: ObjectFileName, key: string): MultiLanguageText | undefined;
 export function multiLang(allTranslations: AllTranslationsDict, en: string | undefined, objType: ObjectFileName, key: string): MultiLanguageText | undefined {
     if (en === undefined) return undefined;
     return <MultiLanguageText>translations.reduce((prev, cur) => (prev[cur] = getTranslation(allTranslations, objType, cur, key), prev), <Partial<MultiLanguageText>>{ 'en-US': en });

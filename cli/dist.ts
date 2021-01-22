@@ -39,7 +39,7 @@ async function writeSections(outPath: string, allTranslations: AllTranslationsDi
 
 /** Write all product types in all languages */
 async function writeProductTypes(outPath: string, allTranslations: AllTranslationsDict, productTypes: IProductType[]): Promise<void> {
-    const distStructure = productTypes.map(pt => <IDistProductType>({
+    const distStructure: IDistProductType[] = productTypes.map(pt => ({
         ...pt,
         name: multiLang(allTranslations, pt.name, 'product-types', `${pt.key}.name`),
         description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.description`),
