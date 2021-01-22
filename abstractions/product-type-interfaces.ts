@@ -34,14 +34,16 @@ export interface IExampleProductType extends IProductTypeBase {
 export interface IProductTypeCategory {
     readonly name: string;
     readonly description?: string;
-    readonly children: IProductTypeCategoryMap;
+    readonly children?: IProductTypeCategoryMap;
 }
 
 /** Category allow users to browse product types */
 export interface IProductTypeCategoryFlat {
+    readonly parentKey?: string;
     readonly name: string;
     readonly description?: string;
     readonly key: string;
+    readonly children?: IProductTypeCategoryMap;
 }
 
 /** categoryKey: categoryDefinition map */

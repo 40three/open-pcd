@@ -46,3 +46,11 @@ export interface IDistProductSubType {
     readonly categories?: readonly ProductTypeCategoryKey[];
     readonly addAttributeRefs?: AttributeKey[];
 }
+
+export interface IDistProductTypeCategory {
+    readonly name: MultiLanguageText;
+    readonly description?: MultiLanguageText;
+    readonly key: string;
+    readonly parentKey?: string;
+    readonly children: ProductTypeCategoryKey[] | undefined;
+}

@@ -4,7 +4,7 @@
 import { IUnitInfo } from 'abstractions/unit-interfaces';
 import { promises as fs } from 'fs';
 import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abstractions';
-import { IDistAttribute, IDistAttributeSection, IDistProductType } from '../abstractions/dist';
+import { IDistAttribute, IDistAttributeSection, IDistProductType, IDistProductTypeCategory } from '../abstractions/dist';
 import { a, AttributeKey, attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
 import { pt } from '../data/product-types';
@@ -56,10 +56,11 @@ async function writeProductTypes(outPath: string, allTranslations: AllTranslatio
 
 /** Write all product type categories in all languages */
 async function writeProductTypeCategories(outPath: string, allTranslations: AllTranslationsDict, productTypeCategories: IProductTypeCategoryFlat[]): Promise<void> {
-    const distStructure = productTypeCategories.map(c => ({
+    const distStructure: IDistProductTypeCategory[] = productTypeCategories.map(c => ({
         ...c,
         name: multiLang(allTranslations, c.name, 'product-type-categories', `${c.key}.name`),
         description: multiLang(allTranslations, c.name, 'product-type-categories', `${c.key}.description`),
+        children: c.children ? <any>Object.keys(c.children) : [],
     }));
     const json = JSON.stringify(distStructure, null, 4);
     await fs.writeFile(outPath, json);
