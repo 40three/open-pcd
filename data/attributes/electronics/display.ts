@@ -2,16 +2,16 @@ import { NumberAttr } from '../../../abstractions';
 import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionDisplayAttrs = <const>{
-    'displayScreenDiagonal': NumberAttr({
+    'electronics.display.screenDiagonal': NumberAttr({
         name: 'screen size',
         description: 'Screen diagonal',
         unit: 'cm',
     }),
-    'displayResolutionHorizontal': NumberAttr({
+    'electronics.display.resolutionHorizontal': NumberAttr({
         name: 'resolution (horizontal)',
         description: 'Number of horizontal pixels. E.g. 1920 (full hd)',
     }),
-    'displayResolutionVertical': NumberAttr({
+    'electronics.display.resolutionVertical': NumberAttr({
         name: 'resolution (vertical)',
         description: 'Number of vertical pixels. E.g. 1080 (full hd)',
     })
