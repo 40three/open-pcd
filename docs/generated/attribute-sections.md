@@ -74,6 +74,18 @@ Target audience information.
 * audience type (audienceType, string)
 
 
+## Audio inputs (audioInputs)
+Available input connectors for audio signals.
+
+* Phone inputs (electronics.audio.inputs.phono, number)
+* RCA stereo input channels (electronics.audio.inputs.rcaLineStereo, number)
+* RCA mono inputs (electronics.audio.inputs.rcaLineMono, number)
+* Coaxial digital audio inputs (electronics.audio.inputs.coaxialDigital, number)
+* Optical digital audio inputs (electronics.audio.inputs.opticalDigital, number)
+* AES/EBU inputs (electronics.audio.inputs.aes3, number)
+* Supported bluetooth version (electronics.audio.inputs.bluetoothVersion, string)
+
+
 ## Display (display)
 Display used in TVs, Smartphones, Computers, ...
 
