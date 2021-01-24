@@ -1,5 +1,5 @@
-import { NumberAttr } from '../../abstractions';
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
+import { NumberAttr } from '../../../abstractions';
+import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionDisplayAttrs = <const>{
     'displayScreenDiagonal': NumberAttr({

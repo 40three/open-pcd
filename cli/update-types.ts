@@ -24,7 +24,7 @@ async function writeProductTypeTypes(productTypes: IProductType[], path: string)
  * Take category tree and write all keys as type
  */
 async function writeProductTypeCategoryTypes(productTypeCategories: IProductTypeCategoryMap, path: string): Promise<void> {
-    const allKeys = (cats: IProductTypeCategoryMap): string[] => Object.entries(cats).map(([key, cat]) => [key, ...allKeys(cat.children)]).flat(1);
+    const allKeys = (cats?: IProductTypeCategoryMap): string[] => (typeof cats === 'undefined') ? [] : Object.entries(cats).map(([key, cat]) => [key, ...allKeys(cat.children)]).flat(1);
     const productTypeCategoryKeys = allKeys(productTypeCategories);
     const src = `export type ProductTypeCategoryKey = ${productTypeCategoryKeys.map(k => '"' + k + '"').join('\n|')};`;
 

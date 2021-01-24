@@ -18,7 +18,7 @@ Detailed product description.
 * landingpage url (mobile) (urlMobile, string)
 
 
-## dimensions an packaging (dimensionsPackaging)
+## dimensions & packaging (dimensionsPackaging)
 * width (width, number)
 * height (height, number)
 * depth (depth, number)

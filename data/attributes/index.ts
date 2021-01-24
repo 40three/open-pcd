@@ -3,11 +3,11 @@ import { sectionCommon, sectionCommonAttrs } from './common';
 import { sectionContent, sectionContentAttrs } from './content';
 import { sectionDescription, sectionDescriptionAttrs } from './description';
 import { sectionDimensionsPackaging, sectionDimensionsPackagingAttrs } from './dimensions-packaging';
-import { sectionDisplay, sectionDisplayAttrs } from './display';
+import { sectionDisplay, sectionDisplayAttrs } from './electronics/display';
 import { sectionFashion, sectionFashionAttrs } from './fashion';
 import { sectionMaterial, sectionMaterialAttrs } from './material';
 import { sectionMedia, sectionMediaAttrs } from './media';
-import { sectionPowerSupply, sectionPowerSupplyAttrs } from './power-supply-energy';
+import { sectionPowerSupply, sectionPowerSupplyAttrs } from './electronics/power-supply-energy';
 import { sectionPriceAvailability, sectionPriceAvailabilityAttrs } from './price-availability';
 
 /** Dictionary of all available attribute */

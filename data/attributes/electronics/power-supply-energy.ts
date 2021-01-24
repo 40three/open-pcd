@@ -1,6 +1,6 @@
-import { BooleanAttr, NumberAttr, NumberRangeAttr, SetAttr, StringAttr } from '../../abstractions';
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
-import { vEnergyEfficiencyClass } from '../values';
+import { BooleanAttr, NumberAttr, NumberRangeAttr, SetAttr, StringAttr } from '../../../abstractions';
+import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
+import { vEnergyEfficiencyClass } from '../../values';
 
 export const sectionPowerSupplyAttrs = <const>{
     'powerSupplyVoltage': NumberRangeAttr({
