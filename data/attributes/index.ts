@@ -10,11 +10,13 @@ import { sectionMedia, sectionMediaAttrs } from './media';
 import { sectionPowerSupply, sectionPowerSupplyAttrs } from './electronics/power-supply-energy';
 import { sectionPriceAvailability, sectionPriceAvailabilityAttrs } from './price-availability';
 import { sectionAudioInputs, sectionAudioInputsAttrs } from './electronics/audioInputs';
+import { sectionAudioOutputs, sectionAudioOutputsAttrs } from './electronics/audioOutputs';
 
 /** Dictionary of all available attribute */
 export const a = {
     ...sectionAudienceAttrs,
     ...sectionAudioInputsAttrs,
+    ...sectionAudioOutputsAttrs,
     ...sectionCommonAttrs,
     ...sectionContentAttrs,
     ...sectionDescriptionAttrs,
@@ -43,6 +45,7 @@ export const attributeSections = [
     sectionContent,
     sectionAudience,
     sectionAudioInputs,
+    sectionAudioOutputs,
     sectionDisplay,
     sectionPowerSupply,
 ];

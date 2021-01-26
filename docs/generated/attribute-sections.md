@@ -86,6 +86,17 @@ Available input connectors for audio signals.
 * Supported bluetooth version (electronics.audio.inputs.bluetoothVersion, string)
 
 
+## Audio inputs (audioInputs)
+Available input connectors for audio signals.
+
+* RCA stereo outputs (pairs) (electronics.audio.outputs.rcaLineStereo, number)
+* RCA mono outputs (electronics.audio.outputs.rcaLineMono, number)
+* Coaxial digital audio outputs (electronics.audio.outputs.coaxialDigital, number)
+* Optical digital audio outputs (electronics.audio.outputs.opticalDigital, number)
+* AES/EBU outputs (electronics.audio.outputs.aes3, number)
+* Supported bluetooth version (electronics.audio.outputs.bluetoothVersion, string)
+
+
 ## Display (display)
 Display used in TVs, Smartphones, Computers, ...
 
