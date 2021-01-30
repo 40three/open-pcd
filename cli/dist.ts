@@ -45,7 +45,7 @@ async function writeProductTypes(outPath: string, allTranslations: AllTranslatio
         description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.description`),
         subTypes: pt.subTypes ? Object.entries(pt.subTypes as Record<string, IProductSubType>).map(([key, st]) => ({
             ...st, key: `${pt.key}.${key}`,
-            name: multiLang(allTranslations, pt.name, 'product-types', `${pt.key}.${key}.name`),
+            name: multiLang(allTranslations, st.name, 'product-types', `${pt.key}.${key}.name`),
             description: multiLang(allTranslations, pt.description, 'product-types', `${pt.key}.${key}.description`),
         })) : undefined
     }));
