@@ -37,17 +37,20 @@ export async function readAllTranslations(): Promise<AllTranslationsDict> {
 export function getTranslation(allTranslations: AllTranslationsDict, objType: ObjectFileName, culture: TranslationCultureKey, key: string): string {
     return allTranslations[culture][objType]?.[key];
 }
+/** Extract all cultures from "all translations" dict - this excludes en-US */
+export const getTranslations = (allTranslations: AllTranslationsDict, objType: ObjectFileName, key: string) =>
+    translations.reduce((prev, cur) => (prev[cur] = getTranslation(allTranslations, objType, cur, key), prev), <Record<string, string>>{});
 
-/** Get dict with all languages for single property {culture: translation} */
+/** Get dict with all languages for single property {culture: translation} including en-US */
 export function multiLang(allTranslations: AllTranslationsDict, en: string, objType: ObjectFileName, key: string): MultiLanguageText;
 export function multiLang(allTranslations: AllTranslationsDict, en: string | undefined, objType: ObjectFileName, key: string): MultiLanguageText | undefined;
 export function multiLang(allTranslations: AllTranslationsDict, en: string | undefined, objType: ObjectFileName, key: string): MultiLanguageText | undefined {
     if (en === undefined) return undefined;
-    return <MultiLanguageText>translations.reduce((prev, cur) => (prev[cur] = getTranslation(allTranslations, objType, cur, key), prev), <Partial<MultiLanguageText>>{ 'en-US': en });
+    return <MultiLanguageText>{ ...getTranslations(allTranslations, objType, key), ...{ 'en-US': en }};
 }
 
 /** Write object translations */
-export async function writeTranslatsion(objType: ObjectFileName, culture: TranslationCultureKey, dict: Record<string, string>): Promise<void> {
+export async function writeTranslations(objType: ObjectFileName, culture: TranslationCultureKey, dict: Record<string, string>): Promise<void> {
     await fs.mkdir(`${translationsBasePath}/${culture}`, { recursive: true });
 
     const json = JSON.stringify(dict, null, 4);
