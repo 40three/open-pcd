@@ -5,6 +5,7 @@
         "MSRP",
         "TOSLINK",
         "datetime",
-        "landingpage"
+        "landingpage",
+        "numberrange"
     ]
 }

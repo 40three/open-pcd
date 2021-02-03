@@ -1,10 +1,11 @@
+import { AttributeKey } from 'attributes';
 import { UnitKey } from '../data/units';
 
 /**
  * Group of attributes
  * Attributes belong to one group.
  */
-export interface IAttributeSection<T> {
+export interface IAttributeSection<T = Record<string, Attribute>> {
     readonly name: string;
     readonly key: string;
     readonly description?: string;

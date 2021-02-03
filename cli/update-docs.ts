@@ -1,12 +1,13 @@
 import { promises as fs } from 'fs';
-import { pt } from '../data/product-types';
 import { Attribute, IAttributeSection, IProductType } from '../abstractions';
 import { a, attributeSections } from '../data/attributes';
-import { AllTranslationsDict } from './translations/types';
+import { pt } from '../data/product-types';
+import { filteredSectionsWithReferencedAttributes } from './docs/fn';
 import { getTranslations, readAllTranslations } from './translations/fn';
+import { AllTranslationsDict } from './translations/types';
 
 /** Write all sections with all attributes as markdown files */
-async function writeSections(path: string, sections: IAttributeSection<Record<string, Attribute>>[]): Promise<void> {
+async function writeSections(path: string, sections: IAttributeSection[]): Promise<void> {
     const lines: string[] = [];
     sections.forEach(s => {
         lines.push(`## ${s.name} (${s.key})`);
@@ -31,7 +32,7 @@ async function writeAttributeDetailsPage(path: string, attr: Attribute ): Promis
 }
 
 /** Write one page for each product type */
-async function writeProductTypes(path: string, productTypes: IProductType[], translations: AllTranslationsDict): Promise<void> {
+async function writeProductTypes(path: string, productTypes: IProductType[], sections: IAttributeSection[], translations: AllTranslationsDict): Promise<void> {
     for(const pt of productTypes) {
         const lines: string[] = [
             `## ${pt.name}`,
@@ -39,9 +40,16 @@ async function writeProductTypes(path: string, productTypes: IProductType[], tra
             '### Translations',
             ...Object.entries(getTranslations(translations, 'product-types', `${pt.key}.name`)).map(([c, t]) => `* ${c}: ${t}`),
             '',
-            '### Attributes',
-            ...pt.attributeRefs.map(key => `* ${key}`),
+            '### Attributes & Sections',
+            '',
         ];
+        for(const s of filteredSectionsWithReferencedAttributes(sections, pt.attributeRefs)) {
+            lines.push(
+                `#### ${s.name}`,
+                ...Object.entries(s.attributes).map(([k, a]) => `* [${a.name} (${k})](../attributes/${k}.md)`),
+                '',
+            )
+        }
 
         await fs.writeFile(`${path}/${pt.key}.md`, lines.join('\n'));
     }
@@ -59,5 +67,5 @@ const docsBaseDir = 'docs/generated';
     // json data
     await writeSections(`${docsBaseDir}/attribute-sections.md`, attributeSections);
     await Promise.all(Object.entries(a).map(kv => writeAttributeDetailsPage(`${docsBaseDir}/attributes/${kv[0]}.md`, kv[1])));
-    await writeProductTypes(`${docsBaseDir}/product-types`, pt, translations);
+    await writeProductTypes(`${docsBaseDir}/product-types`, pt, attributeSections, translations);
 })();
