@@ -28,3 +28,7 @@ If you add new object, please check schema.org if a definition already exists an
 
 There are some standards like schema.org, eClass or ETIM but they often focus on non consumer goods, are incomplete (and difficult to extend)
 or require you to buy a license. That makes them difficult to use for many projects.
+
+## Questions?
+
+Write an email to info@heavendata.com or contact us via our website https://heavendata.com
