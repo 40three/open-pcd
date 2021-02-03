@@ -6,7 +6,7 @@ export const sectionDescriptionAttrs = <const>{
         name: 'highlights (bullet points)',
         description: 'Product highlights, one per line.'
     }),
-    'description': StringAttr({
+    'product.description': StringAttr({
         name: 'product description',
         description: 'Detailed product description.'
     }),
@@ -14,11 +14,11 @@ export const sectionDescriptionAttrs = <const>{
         name: 'product short description',
         description: 'Short description e.g. for product lists.',
     }),
-    'url': StringAttr({
+    'offer.url': StringAttr({
         name: 'landingpage url',
         description: 'Link to your online shop\'s product details page.',
     }),
-    'urlMobile': StringAttr({
+    'offer.mobileUrl': StringAttr({
         name: 'landingpage url (mobile)',
         description: 'Link to your online shop\'s product details page for mobile devices.',
     }),

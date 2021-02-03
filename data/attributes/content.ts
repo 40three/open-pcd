@@ -1,42 +1,42 @@
 /**
  * Text, audio and video content attributes
  */
-import { BooleanAttr, NumberAttr, SetAttr, StringAttr } from '../../abstractions';
+import { NumberAttr, SetAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionContentAttrs = <const>{
-    title: StringAttr({
+    'content.title': StringAttr({
         name: 'title',
         description: 'Product title without author or other additions.'
     }),
-    subtitle: StringAttr({
+    'content.subtitle': StringAttr({
         name: 'subtitle',
         description: 'Product title without author or other additions.'
     }),
-    author: StringAttr({
+    'content.author': StringAttr({
         name: 'author',
         description: 'Content author.',
         definitionUrl: 'https://en.wikipedia.org/wiki/Author',
     }),
-    translators: StringAttr({
+    'content.translators': StringAttr({
         name: 'translators (person)',
         description: 'Name of translator(s)',
     }),
-    language: SetAttr({
+    'content.language': SetAttr({
         name: 'language',
         description: 'Text, audio or video language',
         values: ['de', 'en'] as const,
     }),
-    fontSize: NumberAttr({
+    'content.fontSize': NumberAttr({
         name: 'font size',
         description: 'Size of font used for most of text content.',
         unit: 'pt',
     }),
-    country: StringAttr({
+    'content.country': StringAttr({
         name: 'country',
         description: 'Name of country that this content is about.',
     }),
-    bookGenre: SetAttr({
+    'content.genre': SetAttr({
         name: 'genre (book)',
         values: ['biography', 'business', 'cooking', 'history', 'pets', 'politics', 'philosophy', 'religion', 'sports'],
         allowCustomValues: true,

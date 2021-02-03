@@ -27,19 +27,19 @@ export const sectionDimensionsPackagingAttrs = <const>{
         name: 'items per unit',
         description: 'Number of items you get, if you order one unit. E.g. for a pack of 6 bottles: 6'
     }),
-    'packagingTypePrimary': SetAttr({
+    'packaging.typePrimary': SetAttr({
         name: 'package type (item)',
         description: 'Packaging of item(s).',
         definitionUrl: 'https://en.wikipedia.org/wiki/Packaging_and_labeling#Packaging_types',
         values: vPackagingType,
     }),
-    'packagingTypeSecondary': SetAttr({
+    'packaging.typeSecondary': SetAttr({
         name: 'package type (secondary)',
         description: 'Secondary packaging, e.g. to group items together.',
         definitionUrl: 'https://en.wikipedia.org/wiki/Packaging_and_labeling#Packaging_types',
         values: vPackagingType,
     }),
-    'packagingTypeTransit': SetAttr({
+    'packaging.typeTransit': SetAttr({
         name: 'package type (transit)',
         description: 'Additional packaging for easier transport. E.g. "pallet".',
         definitionUrl: 'https://en.wikipedia.org/wiki/Packaging_and_labeling#Packaging_types',

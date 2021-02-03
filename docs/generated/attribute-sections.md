@@ -1,21 +1,21 @@
 ## Common (common)
 Standard attributes to identify products
 
-* stock keeping unit (sku, string)
-* manufacturer part number (mpn, string)
-* GTIN (gtin, string)
-* product name (name, string)
-* brand (brand, string)
+* stock keeping unit (product.sku, string)
+* manufacturer part number (product.mpn, string)
+* GTIN (product.gtin, string)
+* product name (product.name, string)
+* brand (product.brand, string)
 
 
 ## description (description)
 Detailed product description.
 
 * highlights (bullet points) (highlights, string)
-* product description (description, string)
+* product description (product.description, string)
 * product short description (descriptionShort, string)
-* landingpage url (url, string)
-* landingpage url (mobile) (urlMobile, string)
+* landingpage url (offer.url, string)
+* landingpage url (mobile) (offer.mobileUrl, string)
 
 
 ## dimensions & packaging (dimensionsPackaging)
@@ -24,54 +24,54 @@ Detailed product description.
 * depth (depth, number)
 * width (weight, number)
 * items per unit (itemsPerUnit, number)
-* package type (item) (packagingTypePrimary, set)
-* package type (secondary) (packagingTypeSecondary, set)
-* package type (transit) (packagingTypeTransit, set)
+* package type (item) (packaging.typePrimary, set)
+* package type (secondary) (packaging.typeSecondary, set)
+* package type (transit) (packaging.typeTransit, set)
 
 
 ## Price & Availability (priceAvailability)
-* price (price, money)
+* price (offer.price, money)
 * MSRP (msrp, money)
-* available from (availabilityDate, datetime)
-* available until (availabilityEndDate, datetime)
+* available from (offer.availabilityStarts, datetime)
+* available until (offer.availabilityEnds, datetime)
 
 
 ## Media (media)
-* images (images, files)
+* images (product.images, files)
 
 
 ## fashion (fashion)
-* size (fashionSize, string)
-* cut (fashionCut, set)
+* size (fashion.size, string)
+* cut (fashion.cut, set)
 
 
 ## material (material)
 * color (color, string)
-* material (materialType, string)
+* material (material.type, string)
 * pattern or design (pattern, string)
 
 
 ## Content (content)
 Text, audio and video content description.
 
-* title (title, string)
-* subtitle (subtitle, string)
-* author (author, string)
-* translators (person) (translators, string)
-* language (language, set)
-* font size (fontSize, number)
-* country (country, string)
-* genre (book) (bookGenre, set)
+* title (content.title, string)
+* subtitle (content.subtitle, string)
+* author (content.author, string)
+* translators (person) (content.translators, string)
+* language (content.language, set)
+* font size (content.fontSize, number)
+* country (content.country, string)
+* genre (book) (content.genre, set)
 
 
 ## Audience (audience)
 Target audience information.
 
-* min age (audienceAgeMin, number)
-* max age (audienceAgeMax, number)
-* gender (audienceGender, set)
-* adults only (audienceAdult, boolean)
-* audience type (audienceType, string)
+* min age (audience.ageMin, number)
+* max age (audience.ageMax, number)
+* gender (audience.gender, set)
+* adults only (audience.adult, boolean)
+* audience type (audience.type, string)
 
 
 ## Audio inputs (audioInputs)

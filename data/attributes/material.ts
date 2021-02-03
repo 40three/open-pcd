@@ -6,7 +6,7 @@ export const sectionMaterialAttrs = <const>{
         name: 'color',
         description: 'Primary color.'
     }),
-    'materialType': StringAttr({
+    'material.type': StringAttr({
         name: 'material',
         description: 'What\'s this product is made of. E.g. leather, polyester, ...',
     }),

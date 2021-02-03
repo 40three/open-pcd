@@ -9,15 +9,15 @@ export const productTypeBook = PType({
     subTypes: {
         'travel': PSub({
             name: 'travel',
-            addAttributeRefs: ['country']
+            addAttributeRefs: ['content.country']
         }),
     },
     attributeRefs: [
         ...ag.common,
-        'bookGenre',
-        'author',
-        'title',
-        'subtitle',
-        'fontSize',
+        'content.genre',
+        'content.author',
+        'content.title',
+        'content.subtitle',
+        'content.fontSize',
     ]
 });

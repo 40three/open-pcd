@@ -2,17 +2,17 @@ import { DateTimeAttr, MoneyAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionPriceAvailabilityAttrs = <const>{
-    'price': MoneyAttr({
+    'offer.price': MoneyAttr({
         name: 'price',
     }),
     'msrp': MoneyAttr({
         name: 'MSRP',
         description: 'Recommended retail price.'
     }),
-    'availabilityDate': DateTimeAttr({
+    'offer.availabilityStarts': DateTimeAttr({
         name: 'available from',
     }),
-    'availabilityEndDate': DateTimeAttr({
+    'offer.availabilityEnds': DateTimeAttr({
         name: 'available until',
         interval: 'end',
     }),
