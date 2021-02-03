@@ -1,0 +1,5 @@
+## connection voltage
+
+
+
+Type: numberrange

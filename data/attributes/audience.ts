@@ -20,7 +20,7 @@ export const sectionAudienceAttrs = <const>{
     }),
     'audience.adult': BooleanAttr({
         name: 'adults only',
-        description: 'Enable, if product is intended for adults only, e.g. nudity or secually suggestive content.',
+        description: 'Enable, if product is intended for adults only, e.g. nudity or sexually suggestive content.',
     }),
     'audience.type': StringAttr({
         name: 'audience type',
