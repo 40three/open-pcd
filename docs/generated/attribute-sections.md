@@ -2,6 +2,7 @@
 Standard attributes to identify products
 
 * [stock keeping unit](attributes/product.sku.md) (product.sku, string)
+* [article number](attributes/articleNumber.md) (articleNumber, string)
 * [manufacturer part number](attributes/product.mpn.md) (product.mpn, string)
 * [GTIN](attributes/product.gtin.md) (product.gtin, string)
 * [product name](attributes/product.name.md) (product.name, string)
@@ -46,7 +47,7 @@ Detailed product description.
 
 
 ## material (material)
-* [color](attributes/color.md) (color, string)
+* [color](attributes/product.color.md) (product.color, string)
 * [material](attributes/material.type.md) (material.type, string)
 * [pattern or design](attributes/pattern.md) (pattern, string)
 

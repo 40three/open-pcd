@@ -6,6 +6,10 @@ export const sectionCommonAttrs = <const>{
         name: 'stock keeping unit',
         description: 'Unique stock keeping unit.'
     }),
+    'articleNumber': StringAttr({
+        name: 'article number',
+        description: 'Must be the same for all product variants.'
+    }),
     'product.mpn': StringAttr({
         name: 'manufacturer part number',
         description: 'Manufacturer unique article number.'
