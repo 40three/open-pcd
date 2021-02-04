@@ -9,7 +9,6 @@ export const common = AttrGroup([
     'offer.url',
     'product.images',
     'offer.price',
-    'product.brand',
     'product.gtin',
     'product.color',
     'audience.gender',
