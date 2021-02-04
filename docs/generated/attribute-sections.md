@@ -87,7 +87,7 @@ Available input connectors for audio signals.
 * [Supported bluetooth version](attributes/electronics.audio.inputs.bluetoothVersion.md) (electronics.audio.inputs.bluetoothVersion, string)
 
 
-## Audio inputs (audioInputs)
+## Audio inputs (audioOutputs)
 Available input connectors for audio signals.
 
 * [RCA stereo outputs (pairs)](attributes/electronics.audio.outputs.rcaLineStereo.md) (electronics.audio.outputs.rcaLineStereo, number)

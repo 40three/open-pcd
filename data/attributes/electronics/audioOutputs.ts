@@ -31,7 +31,7 @@ export const sectionAudioOutputsAttrs = <const>{
 
 export const sectionAudioOutputs: IAttributeSection<typeof sectionAudioOutputsAttrs> = {
     name: 'Audio inputs',
-    key: 'audioInputs',
+    key: 'audioOutputs',
     description: 'Available input connectors for audio signals.',
     attributes: sectionAudioOutputsAttrs
 }
