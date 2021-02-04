@@ -12,18 +12,19 @@
         "export-xliff": "ts-node ./cli/export-xliff.ts",
         "update-docs": "ts-node ./cli/update-docs.ts",
         "update-types": "ts-node ./cli/update-types.ts",
-        "pre-commit": "yarn export-xliff & yarn update-docs & yarn update-types",
+        "validate": "ts-node ./cli/validate.ts",
+        "pre-commit": "yarn validate & yarn export-xliff & yarn update-docs & yarn update-types",
         "dist": "ts-node ./cli/dist.ts"
     },
     "files": [
         "dist"
     ],
     "types": "types/index.d.ts",
-    "dependencies": {
-    },
+    "dependencies": {},
     "devDependencies": {
         "@types/node": "^14.14.13",
         "@types/xmldom": "^0.1.30",
+        "log-symbols": "^4.0.0",
         "ts-node": "^9.1.1",
         "typescript": "^4.1.3",
         "utility-types": "^3.10.0",
