@@ -23,11 +23,15 @@ Detailed product description.
 * [width](attributes/width.md) (width, number)
 * [height](attributes/height.md) (height, number)
 * [depth](attributes/depth.md) (depth, number)
-* [width](attributes/weight.md) (weight, number)
+* [weight](attributes/weight.md) (weight, number)
 * [items per unit](attributes/itemsPerUnit.md) (itemsPerUnit, number)
 * [package type (item)](attributes/packaging.typePrimary.md) (packaging.typePrimary, set)
 * [package type (secondary)](attributes/packaging.typeSecondary.md) (packaging.typeSecondary, set)
 * [package type (transit)](attributes/packaging.typeTransit.md) (packaging.typeTransit, set)
+* [width](attributes/packaging.width.md) (packaging.width, number)
+* [height](attributes/packaging.height.md) (packaging.height, number)
+* [depth](attributes/packaging.depth.md) (packaging.depth, number)
+* [weight](attributes/packaging.weight.md) (packaging.weight, number)
 
 
 ## Price & Availability (priceAvailability)
@@ -78,7 +82,7 @@ Target audience information.
 ## Audio inputs (audioInputs)
 Available input connectors for audio signals.
 
-* [Phone inputs](attributes/electronics.audio.inputs.phono.md) (electronics.audio.inputs.phono, number)
+* [Phono inputs](attributes/electronics.audio.inputs.phono.md) (electronics.audio.inputs.phono, number)
 * [RCA stereo input channels](attributes/electronics.audio.inputs.rcaLineStereo.md) (electronics.audio.inputs.rcaLineStereo, number)
 * [RCA mono inputs](attributes/electronics.audio.inputs.rcaLineMono.md) (electronics.audio.inputs.rcaLineMono, number)
 * [Coaxial digital audio inputs](attributes/electronics.audio.inputs.coaxialDigital.md) (electronics.audio.inputs.coaxialDigital, number)

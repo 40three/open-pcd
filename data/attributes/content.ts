@@ -41,6 +41,9 @@ export const sectionContentAttrs = <const>{
         values: ['biography', 'business', 'cooking', 'history', 'pets', 'politics', 'philosophy', 'religion', 'sports'],
         allowCustomValues: true,
     }),
+    'content.numberOfPages': NumberAttr({
+        name: 'Number of pages',
+    })
 };
 
 export const sectionContent: IAttributeSection<typeof sectionContentAttrs> = {

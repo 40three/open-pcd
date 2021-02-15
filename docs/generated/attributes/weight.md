@@ -1,4 +1,4 @@
-## width
+## weight
 
 Weight of product without packaging.
 
