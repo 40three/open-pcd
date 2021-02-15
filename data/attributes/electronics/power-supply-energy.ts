@@ -43,12 +43,12 @@ export const sectionPowerSupplyAttrs = <const>{
     }),
     'electronics.energyEfficiencyClassMin': SetAttr({
         name: 'energy label min class',
-        description: 'Lowest power consumption class to include in engery label. E.g. "A++".',
+        description: 'Lowest power consumption class to include in energy label. E.g. "A++".',
         values: vEnergyEfficiencyClass,
     }),
     'electronics.energyEfficiencyClassMax': SetAttr({
         name: 'energy label max class',
-        description: 'Highest power consumption class to include in engery label. E.g. "D".',
+        description: 'Highest power consumption class to include in energy label. E.g. "D".',
         values: vEnergyEfficiencyClass,
     }),
 };

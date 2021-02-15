@@ -3,7 +3,7 @@ import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionAudioInputsAttrs = <const>{
     'electronics.audio.inputs.phono': NumberAttr({
-        name: 'Phone inputs',
+        name: 'Phono inputs',
         description: 'Number of input connectors for turntables (stereo pairs).',
     }),
     'electronics.audio.inputs.rcaLineStereo': NumberAttr({

@@ -19,7 +19,7 @@ export const sectionDimensionsPackagingAttrs = <const>{
         unit: 'cm',
     }),
     'weight': NumberAttr({
-        name: 'width',
+        name: 'weight',
         description: 'Weight of product without packaging.',
         unit: 'kg',
     }),
@@ -44,6 +44,26 @@ export const sectionDimensionsPackagingAttrs = <const>{
         description: 'Additional packaging for easier transport. E.g. "pallet".',
         definitionUrl: 'https://en.wikipedia.org/wiki/Packaging_and_labeling#Packaging_types',
         values: vPackagingType,
+    }),
+    'packaging.width': NumberAttr({
+        name: 'width',
+        description: 'Width of product including packaging.',
+        unit: 'cm',
+    }),
+    'packaging.height': NumberAttr({
+        name: 'height',
+        description: 'Height of product including packaging.',
+        unit: 'cm',
+    }),
+    'packaging.depth': NumberAttr({
+        name: 'depth',
+        description: 'Depth of product including packaging.',
+        unit: 'cm',
+    }),
+    'packaging.weight': NumberAttr({
+        name: 'weight',
+        description: 'Weight of product including packaging.',
+        unit: 'kg',
     }),
 };
 

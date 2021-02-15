@@ -1,5 +1,5 @@
 ## energy label min class
 
-Lowest power consumption class to include in engery label. E.g. "A++".
+Lowest power consumption class to include in energy label. E.g. "A++".
 
 Type: set
