@@ -33,6 +33,3 @@
 * [Image stabilization (camera.imageStabilization)](../attributes/camera.imageStabilization.md)
 * [Zoom type (camera.zoom.type)](../attributes/camera.zoom.type.md)
 * [Zoom range (camera.zoom.range)](../attributes/camera.zoom.range.md)
-
-#### Audience
-* [gender (audience.gender)](../attributes/audience.gender.md)

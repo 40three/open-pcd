@@ -31,6 +31,3 @@
 * [author (content.author)](../attributes/content.author.md)
 * [font size (content.fontSize)](../attributes/content.fontSize.md)
 * [genre (book) (content.genre)](../attributes/content.genre.md)
-
-#### Audience
-* [gender (audience.gender)](../attributes/audience.gender.md)

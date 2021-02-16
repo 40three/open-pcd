@@ -7,7 +7,7 @@ import { getTranslations, readAllTranslations } from './translations/fn';
 import { AllTranslationsDict } from './translations/types';
 
 /** Write all sections with all attributes as markdown files */
-async function writeSections(path: string, sections: IAttributeSection[]): Promise<void> {
+async function writeSectionsList(path: string, sections: IAttributeSection[]): Promise<void> {
     const lines: string[] = [];
     sections.forEach(s => {
         lines.push(`## ${s.name} (${s.key})`);
@@ -55,6 +55,17 @@ async function writeProductTypes(path: string, productTypes: IProductType[], sec
     }
 }
 
+async function writeProductTypesList(path: string, productTypes: IProductType[]): Promise<void> {
+    const lines: string[] = [];
+    productTypes.forEach(pt => {
+        lines.push(`## [${pt.name} (${pt.key})](./product-types/${pt.key}.md)`);
+        if (pt.description) lines.push(`${pt.description}\n`);
+        lines.push('\n');
+    });
+    await fs.writeFile(path, lines.join('\n'));
+
+}
+
 const docsBaseDir = 'docs/generated';
 
 // main
@@ -65,7 +76,8 @@ const docsBaseDir = 'docs/generated';
     const translations = await readAllTranslations();
 
     // json data
-    await writeSections(`${docsBaseDir}/attribute-sections.md`, attributeSections);
+    await writeSectionsList(`${docsBaseDir}/attribute-sections.md`, attributeSections);
     await Promise.all(Object.entries(a).map(kv => writeAttributeDetailsPage(`${docsBaseDir}/attributes/${kv[0]}.md`, kv[1])));
     await writeProductTypes(`${docsBaseDir}/product-types`, pt, attributeSections, translations);
+    await writeProductTypesList(`${docsBaseDir}/product-types.md`, pt);
 })();
