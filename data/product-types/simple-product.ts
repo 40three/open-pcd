@@ -8,5 +8,6 @@ export const simpleProduct = PType({
     categories: ['other'],
     attributeRefs: [
         ...ag.common,
+        'audience.gender',
     ]
 });
