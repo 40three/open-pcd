@@ -16,6 +16,8 @@ export interface IProductTypeBase {
 /** Use sub types if products share the exact same set of attributes */
 export interface IProductSubType {
     readonly name: string;
+    readonly description?: string;
+    readonly definitionUrl?: string;
     readonly categories?: readonly ProductTypeCategoryKey[];
     readonly addAttributeRefs?: AttributeKey[];
 }
