@@ -2,6 +2,8 @@
 
 Open product classification and description standard.
 
+* Documentation: https://40three.github.io/open-pcd/
+
 ## Why?
 
 When working with product data, we often need complete and machine readable product information. This includes:
