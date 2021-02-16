@@ -1,9 +1,9 @@
-## Camera (photo)
+# Camera (photo)
 
-### Translations
+## Translations
 * de: undefined
 
-### Attributes & Sections
+## Attributes & Sections
 
 #### Common
 * [stock keeping unit (product.sku)](../attributes/product.sku.md)
@@ -33,3 +33,21 @@
 * [Image stabilization (camera.imageStabilization)](../attributes/camera.imageStabilization.md)
 * [Zoom type (camera.zoom.type)](../attributes/camera.zoom.type.md)
 * [Zoom range (camera.zoom.range)](../attributes/camera.zoom.range.md)
+
+## Sub Types
+
+### Action camera
+
+-- no description --
+
+### Analog camera
+
+-- no description --
+
+### Compact camera (digital)
+
+-- no description --
+
+### DSLR camera (digital single-lens)
+
+Digital single-lens reflex camera with interchangeable lense.

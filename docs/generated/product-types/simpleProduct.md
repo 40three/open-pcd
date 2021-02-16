@@ -1,9 +1,9 @@
-## simple product
+# simple product
 
-### Translations
+## Translations
 * de: simple product
 
-### Attributes & Sections
+## Attributes & Sections
 
 #### Common
 * [stock keeping unit (product.sku)](../attributes/product.sku.md)
@@ -27,3 +27,5 @@
 
 #### Audience
 * [gender (audience.gender)](../attributes/audience.gender.md)
+
+## Sub Types

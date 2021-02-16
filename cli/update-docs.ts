@@ -1,5 +1,5 @@
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeSection, IProductType } from '../abstractions';
+import { Attribute, IAttributeSection, IProductSubType, IProductType } from '../abstractions';
 import { a, attributeSections } from '../data/attributes';
 import { pt } from '../data/product-types';
 import { filteredSectionsWithReferencedAttributes } from './docs/fn';
@@ -19,7 +19,7 @@ async function writeSectionsList(path: string, sections: IAttributeSection[]): P
 }
 
 /** Write details page for single attribute */
-async function writeAttributeDetailsPage(path: string, attr: Attribute ): Promise<void> {
+async function writeAttributeDetailsPage(path: string, attr: Attribute): Promise<void> {
     const lines: string[] = [
         `## ${attr.name}`,
         '',
@@ -33,23 +33,38 @@ async function writeAttributeDetailsPage(path: string, attr: Attribute ): Promis
 
 /** Write one page for each product type */
 async function writeProductTypes(path: string, productTypes: IProductType[], sections: IAttributeSection[], translations: AllTranslationsDict): Promise<void> {
-    for(const pt of productTypes) {
+    for (const pt of productTypes) {
         const lines: string[] = [
-            `## ${pt.name}`,
+            `# ${pt.name}`,
             '',
-            '### Translations',
+            '## Translations',
             ...Object.entries(getTranslations(translations, 'product-types', `${pt.key}.name`)).map(([c, t]) => `* ${c}: ${t}`),
             '',
-            '### Attributes & Sections',
+            '## Attributes & Sections',
             '',
         ];
-        for(const s of filteredSectionsWithReferencedAttributes(sections, pt.attributeRefs)) {
+        // sections and attributes
+        for (const s of filteredSectionsWithReferencedAttributes(sections, pt.attributeRefs)) {
             lines.push(
                 `#### ${s.name}`,
                 ...Object.entries(s.attributes).map(([k, a]) => `* [${a.name} (${k})](../attributes/${k}.md)`),
                 '',
             )
         }
+        // sub types
+        lines.push(...[
+            '## Sub Types',
+            '',
+        ]);
+        if (pt.subTypes !== undefined) {
+            lines.push(...Object.entries(<Record<string, IProductSubType>>pt.subTypes).map(([sk, st]) => [
+                `### ${st.name}`,
+                '',
+                st.description ?? '-- no description --',
+                '',
+            ]).flat(1));
+        }
+
 
         await fs.writeFile(`${path}/${pt.key}.md`, lines.join('\n'));
     }

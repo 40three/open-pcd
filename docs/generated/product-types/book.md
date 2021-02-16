@@ -1,9 +1,9 @@
-## book
+# book
 
-### Translations
+## Translations
 * de: Buch
 
-### Attributes & Sections
+## Attributes & Sections
 
 #### Common
 * [stock keeping unit (product.sku)](../attributes/product.sku.md)
@@ -31,3 +31,9 @@
 * [author (content.author)](../attributes/content.author.md)
 * [font size (content.fontSize)](../attributes/content.fontSize.md)
 * [genre (book) (content.genre)](../attributes/content.genre.md)
+
+## Sub Types
+
+### travel
+
+-- no description --
