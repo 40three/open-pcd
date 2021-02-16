@@ -2,6 +2,7 @@
 
 # Data
 * [Attribute sections](./generated/attribute-sections.md)
+* [Product types](./generated/product-types.md)
 
 # Updating
 
