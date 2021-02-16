@@ -31,4 +31,5 @@ export const u = {
     'A': Unit({ name: 'ampere' }),
     'W': Unit({ name: 'watt' }),
     'Ah': Unit({ name: 'amp hours' }),
+    'MP': Unit({ name: 'mega pixels (count)' }),
 };

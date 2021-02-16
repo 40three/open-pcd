@@ -12,8 +12,9 @@
         "export-xliff": "ts-node ./cli/export-xliff.ts",
         "update-docs": "ts-node ./cli/update-docs.ts",
         "update-types": "ts-node ./cli/update-types.ts",
+        "update-data-indexes": "ts-node ./cli/update-data-indexes.ts",
         "validate": "ts-node ./cli/validate.ts",
-        "pre-commit": "yarn validate & yarn export-xliff & yarn update-docs & yarn update-types",
+        "sync": "yarn validate & yarn update-data-indexes & yarn export-xliff & yarn update-docs & yarn update-types",
         "dist": "ts-node ./cli/dist.ts"
     },
     "files": [

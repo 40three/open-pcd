@@ -1,0 +1,5 @@
+## Zoom range
+
+
+
+Type: string

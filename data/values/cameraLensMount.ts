@@ -1,0 +1,1 @@
+export const vCameraLensMount = <const> ['E-mount (Sony)']

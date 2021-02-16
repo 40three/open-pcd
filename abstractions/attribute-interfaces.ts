@@ -76,6 +76,10 @@ export interface IStringAttribute extends IAttributeBase {
 /** Value from defined set of available values */
 export interface ISetAttribute<TValue extends string | number> extends IAttributeBase {
     readonly type: 'set'
+    /** Selectable values */
     readonly values: readonly TValue[];
+    /** Users are allowed to input values not in values list */
     readonly allowCustomValues?: boolean;
+    /** Regular expression describing valid values */
+    readonly pattern?: string;
 }

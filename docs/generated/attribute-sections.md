@@ -56,6 +56,18 @@ Detailed product description.
 * [pattern or design](attributes/pattern.md) (pattern, string)
 
 
+## Camera (camera)
+Photo camera description.
+
+* [Number of pixels (image sensor)](attributes/camera.imageSensor.numberOfPixels.md) (camera.imageSensor.numberOfPixels, number)
+* [Aspect ratio](attributes/camera.imageSensor.aspectRatio.md) (camera.imageSensor.aspectRatio, set)
+* [Image sensor format](attributes/camera.imageSensor.format.md) (camera.imageSensor.format, set)
+* [Lens mount](attributes/camera.lens.mount.md) (camera.lens.mount, set)
+* [Image stabilization](attributes/camera.imageStabilization.md) (camera.imageStabilization, set)
+* [Zoom type](attributes/camera.zoom.type.md) (camera.zoom.type, set)
+* [Zoom range](attributes/camera.zoom.range.md) (camera.zoom.range, string)
+
+
 ## Content (content)
 Text, audio and video content description.
 
@@ -67,6 +79,7 @@ Text, audio and video content description.
 * [font size](attributes/content.fontSize.md) (content.fontSize, number)
 * [country](attributes/content.country.md) (content.country, string)
 * [genre (book)](attributes/content.genre.md) (content.genre, set)
+* [Number of pages](attributes/content.numberOfPages.md) (content.numberOfPages, number)
 
 
 ## Audience (audience)

@@ -1,2 +1,3 @@
 export type ProductTypeKey = "simpleProduct"
-|"book";
+|"book"
+|"camera";

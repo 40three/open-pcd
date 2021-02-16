@@ -4,12 +4,13 @@ import { IProductTypeCategory, IProductTypeCategoryMap, IProductTypeCategoryFlat
  * Categories allow us to browse available product types
  */
 export const productTypeCategoryTree: IProductTypeCategoryMap = {
-    clothing: PTCat('clothing, shoes and accessories'),
-    electronics: PTCat('electronics and office', {
-        homeElectronics: PTCat('home electronics'),
+    clothing: PTCat('Clothing, shoes & accessories'),
+    electronics: PTCat('Electronics & office', {
+        homeElectronics: PTCat('Home electronics'),
+        photo: PTCat('Photo & video')
     }),
-    booksMedia: PTCat({ name: 'books and movies', }),
-    other: PTCat({ name: 'other' }),
+    booksMedia: PTCat({ name: 'Books and movies', }),
+    other: PTCat({ name: 'Other' }),
 };
 
 const flatCategories = (map: IProductTypeCategoryMap | undefined, parentKey?: string): IProductTypeCategoryFlat[] =>
