@@ -12,6 +12,7 @@ import { sectionPriceAvailability, sectionPriceAvailabilityAttrs } from './price
 import { sectionAudioInputs, sectionAudioInputsAttrs } from './electronics/audioInputs';
 import { sectionAudioOutputs, sectionAudioOutputsAttrs } from './electronics/audioOutputs';
 import { sectionCamera, sectionCameraAttrs } from './electronics/camera';
+import { sectionMicrophone, sectionMicrophoneAttrs } from './electronics/microphone';
 
 /** Dictionary of all available attribute */
 export const a = {
@@ -26,6 +27,7 @@ export const a = {
     ...sectionDimensionsPackagingAttrs,
     ...sectionFashionAttrs,
     ...sectionMaterialAttrs,
+    ...sectionMicrophoneAttrs,
     ...sectionMediaAttrs,
     ...sectionPowerSupplyAttrs,
     ...sectionPriceAvailabilityAttrs,
@@ -50,5 +52,6 @@ export const attributeSections = [
     sectionAudioInputs,
     sectionAudioOutputs,
     sectionDisplay,
+    sectionMicrophone,
     sectionPowerSupply,
 ];

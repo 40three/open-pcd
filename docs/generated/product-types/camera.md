@@ -34,6 +34,16 @@
 * [Zoom type (camera.zoom.type)](../attributes/camera.zoom.type.md)
 * [Zoom range (camera.zoom.range)](../attributes/camera.zoom.range.md)
 
+#### Microphone
+* [Has microphone (electronics.mic.hasMicrophone)](../attributes/electronics.mic.hasMicrophone.md)
+* [Microphone channels (electronics.mic.channels)](../attributes/electronics.mic.channels.md)
+
+#### power supply & energy
+* [batteries included (electronics.batteriesIncluded)](../attributes/electronics.batteriesIncluded.md)
+* [batteries required (electronics.batteriesRequired)](../attributes/electronics.batteriesRequired.md)
+* [battery capacity (electronics.batteryCapacity)](../attributes/electronics.batteryCapacity.md)
+* [battery technology (electronics.batteryTechnology)](../attributes/electronics.batteryTechnology.md)
+
 ## Sub Types
 
 ### Action camera

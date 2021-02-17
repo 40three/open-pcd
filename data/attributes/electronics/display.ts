@@ -1,7 +1,11 @@
-import { NumberAttr } from '../../../abstractions';
+import { BooleanAttr, NumberAttr } from '../../../abstractions';
 import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionDisplayAttrs = <const>{
+    'electronics.display.hasDisplay': BooleanAttr({
+        name: 'Has display',
+        description: 'True if device has a display.',
+    }),
     'electronics.display.screenDiagonal': NumberAttr({
         name: 'screen size',
         description: 'Screen diagonal',
@@ -14,7 +18,7 @@ export const sectionDisplayAttrs = <const>{
     'electronics.display.resolutionVertical': NumberAttr({
         name: 'resolution (vertical)',
         description: 'Number of vertical pixels. E.g. 1080 (full hd)',
-    })
+    }),
 };
 
 export const sectionDisplay: IAttributeSection<typeof sectionDisplayAttrs> = {

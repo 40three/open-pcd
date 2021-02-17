@@ -118,9 +118,15 @@ Available input connectors for audio signals.
 ## Display (display)
 Display used in TVs, Smartphones, Computers, ...
 
+* [Has display](attributes/electronics.display.hasDisplay.md) (electronics.display.hasDisplay, boolean)
 * [screen size](attributes/electronics.display.screenDiagonal.md) (electronics.display.screenDiagonal, number)
 * [resolution (horizontal)](attributes/electronics.display.resolutionHorizontal.md) (electronics.display.resolutionHorizontal, number)
 * [resolution (vertical)](attributes/electronics.display.resolutionVertical.md) (electronics.display.resolutionVertical, number)
+
+
+## Microphone (microphone)
+* [Has microphone](attributes/electronics.mic.hasMicrophone.md) (electronics.mic.hasMicrophone, boolean)
+* [Microphone channels](attributes/electronics.mic.channels.md) (electronics.mic.channels, set)
 
 
 ## power supply & energy (powerSupplyEnergy)

@@ -41,7 +41,7 @@ export const sectionCameraAttrs = <const>{
     }),
     'camera.zoom.range': StringAttr({
         name: 'Zoom range',
-    })
+    }),
 };
 
 export const sectionCamera: IAttributeSection<typeof sectionCameraAttrs> = {

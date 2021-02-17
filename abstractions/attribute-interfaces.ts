@@ -9,6 +9,7 @@ export interface IAttributeSection<T = Record<string, Attribute>> {
     readonly name: string;
     readonly key: string;
     readonly description?: string;
+    readonly definitionUrl?: string;
     readonly attributes: T;
 }
 
@@ -78,6 +79,8 @@ export interface ISetAttribute<TValue extends string | number> extends IAttribut
     readonly type: 'set'
     /** Selectable values */
     readonly values: readonly TValue[];
+    /** Default value */
+    readonly defaultValue?: TValue;
     /** Users are allowed to input values not in values list */
     readonly allowCustomValues?: boolean;
     /** Regular expression describing valid values */

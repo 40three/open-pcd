@@ -24,6 +24,12 @@ export const productTypeCamera = PType({
     },
     attributeRefs: [
         ...ag.common,
-        ...s.camera
+        ...s.camera,
+        'electronics.batteriesIncluded',
+        'electronics.batteriesRequired',
+        'electronics.batteryCapacity',
+        'electronics.batteryTechnology',
+        'electronics.mic.hasMicrophone',
+        'electronics.mic.channels',
     ]
 });
