@@ -26,11 +26,13 @@
 * [color (product.color)](../attributes/product.color.md)
 
 #### Camera
+* [Has camera (camera.hasCamera)](../attributes/camera.hasCamera.md)
 * [Number of pixels (image sensor) (camera.imageSensor.numberOfPixels)](../attributes/camera.imageSensor.numberOfPixels.md)
 * [Aspect ratio (camera.imageSensor.aspectRatio)](../attributes/camera.imageSensor.aspectRatio.md)
 * [Image sensor format (camera.imageSensor.format)](../attributes/camera.imageSensor.format.md)
 * [Lens mount (camera.lens.mount)](../attributes/camera.lens.mount.md)
 * [Image stabilization (camera.imageStabilization)](../attributes/camera.imageStabilization.md)
+* [Focus type (camera.focus.type)](../attributes/camera.focus.type.md)
 * [Zoom type (camera.zoom.type)](../attributes/camera.zoom.type.md)
 * [Zoom range (camera.zoom.range)](../attributes/camera.zoom.range.md)
 
@@ -46,7 +48,7 @@
 
 ## Sub Types
 
-### Action camera
+### Action camera (digital)
 
 -- no description --
 
@@ -54,7 +56,7 @@
 
 -- no description --
 
-### Compact camera (digital)
+### Point-and-shoot camera (digital)
 
 -- no description --
 

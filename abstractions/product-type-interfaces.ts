@@ -11,6 +11,7 @@ export interface IProductTypeBase {
     /** URL of document describing what products of this type are */
     readonly definitionUrl?: string;
     readonly subTypes?: any;
+    readonly defaultValues?: Partial<Record<AttributeKey, any>>;
 }
 
 /** Use sub types if products share the exact same set of attributes */
@@ -20,6 +21,7 @@ export interface IProductSubType {
     readonly definitionUrl?: string;
     readonly categories?: readonly ProductTypeCategoryKey[];
     readonly addAttributeRefs?: AttributeKey[];
+    readonly defaultValues?: Partial<Record<AttributeKey, any>>;
 }
 
 /** Product types define which attributes we need to describe a product */

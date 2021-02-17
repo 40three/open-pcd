@@ -59,11 +59,13 @@ Detailed product description.
 ## Camera (camera)
 Photo camera description.
 
+* [Has camera](attributes/camera.hasCamera.md) (camera.hasCamera, boolean)
 * [Number of pixels (image sensor)](attributes/camera.imageSensor.numberOfPixels.md) (camera.imageSensor.numberOfPixels, number)
 * [Aspect ratio](attributes/camera.imageSensor.aspectRatio.md) (camera.imageSensor.aspectRatio, set)
 * [Image sensor format](attributes/camera.imageSensor.format.md) (camera.imageSensor.format, set)
 * [Lens mount](attributes/camera.lens.mount.md) (camera.lens.mount, set)
 * [Image stabilization](attributes/camera.imageStabilization.md) (camera.imageStabilization, set)
+* [Focus type](attributes/camera.focus.type.md) (camera.focus.type, set)
 * [Zoom type](attributes/camera.zoom.type.md) (camera.zoom.type, set)
 * [Zoom range](attributes/camera.zoom.range.md) (camera.zoom.range, string)
 

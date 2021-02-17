@@ -1,8 +1,12 @@
-import { NumberAttr, SetAttr, StringAttr } from '../../../abstractions';
+import { BooleanAttr, NumberAttr, SetAttr, StringAttr } from '../../../abstractions';
 import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 import { vAspectRatio, vCameraLensMount, vCameraSensorFormat } from '../../values';
 
 export const sectionCameraAttrs = <const>{
+    'camera.hasCamera': BooleanAttr({
+        name: 'Has camera',
+        description: 'True if device has a camera.',
+    }),
     'camera.imageSensor.numberOfPixels': NumberAttr({
         name: 'Number of pixels (image sensor)',
         description: 'The image sensors total resolution.',
@@ -33,6 +37,10 @@ export const sectionCameraAttrs = <const>{
         definitionUrl: 'https://en.wikipedia.org/wiki/Image_stabilization',
         values: ['optical', 'digital'],
         allowCustomValues: true
+    }),
+    'camera.focus.type': SetAttr({
+        name: 'Focus type',
+        values: ['auto-focus', 'fixed-focus'],
     }),
     'camera.zoom.type': SetAttr({
         name: 'Zoom type',
