@@ -1,4 +1,4 @@
-import { FilesAttr, IAttributeSection } from '../../abstractions';
+import { IAttributeSection } from '../../abstractions';
 
 export const sectionMediaAttrs = <const>{
     'product.images': FilesAttr({

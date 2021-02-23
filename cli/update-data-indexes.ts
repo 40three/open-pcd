@@ -1,6 +1,7 @@
 /**
  * Collect existing data and update collections
  */
+import './_setup';
 import { Attribute, IAttributeSection } from '../abstractions';
 import { promises as fs } from 'fs';
 import { generatedDataBasePath, generatedIndexesBasePath } from './configuration';

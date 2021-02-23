@@ -1,4 +1,4 @@
-import { Attribute, IAttributeSection, NumberAttr, NumberRangeAttr, SetAttr, StringAttr, } from '../../abstractions';
+import { IAttributeSection } from '../../abstractions';
 import { vColor } from '../values';
 
 export const exampleSectionAttributes = <const>{

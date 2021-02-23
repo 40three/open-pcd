@@ -1,3 +1,4 @@
+import './_setup';
 import { promises as fs } from 'fs';
 import { Attribute, IAttributeSection, IProductSubType, IProductType } from '../abstractions';
 import { a, attributeSections } from '../data/attributes';

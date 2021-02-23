@@ -1,6 +1,5 @@
 import { ag } from '../../attribute-groups';
 import { s } from '../../generated';
-import { PSub, PType } from '../../../abstractions';
 
 export const productTypeCamera = PType({
     name: 'Camera (photo)',

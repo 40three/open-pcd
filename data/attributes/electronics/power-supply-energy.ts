@@ -1,4 +1,3 @@
-import { BooleanAttr, NumberAttr, NumberRangeAttr, SetAttr, StringAttr } from '../../../abstractions';
 import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 import { vEnergyEfficiencyClass } from '../../values';
 

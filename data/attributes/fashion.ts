@@ -1,4 +1,3 @@
-import { SetAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionFashionAttrs = <const>{

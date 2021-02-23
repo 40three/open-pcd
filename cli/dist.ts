@@ -1,6 +1,7 @@
 /**
  * Create final output
  */
+import './_setup';
 import { IUnitInfo } from 'abstractions/unit-interfaces';
 import { promises as fs } from 'fs';
 import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abstractions';

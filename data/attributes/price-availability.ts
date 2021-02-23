@@ -1,4 +1,3 @@
-import { DateTimeAttr, MoneyAttr, StringAttr } from '../../abstractions';
 import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionPriceAvailabilityAttrs = <const>{
