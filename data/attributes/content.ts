@@ -1,7 +1,6 @@
 /**
  * Text, audio and video content attributes
  */
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionContentAttrs = <const>{
     'content.title': StringAttr({

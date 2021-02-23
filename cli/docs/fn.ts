@@ -1,5 +1,4 @@
 import { AttributeKey } from 'attributes';
-import { Attribute, IAttributeSection } from '../../abstractions';
 
 /** Sections with some attrs from attrKeys section.attributes filtered by attrKeys */
 export function filteredSectionsWithReferencedAttributes(allSections: IAttributeSection[], attrKeys: AttributeKey[]): IAttributeSection[] {

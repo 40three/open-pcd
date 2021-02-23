@@ -1,7 +1,5 @@
 import { Optional } from 'utility-types';
-import { IDateTimeAttribute, IFilesAttribute, IMoneyAttribute } from 'abstractions';
 import { AttributeKey } from 'attributes';
-import { IBooleanAttribute, INumberAttribute, INumberRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
 import { IProductType, IExampleProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
 import { IUnitInfo } from './unit-interfaces';
 

@@ -1,4 +1,3 @@
-import { IAttributeSection } from '../../abstractions';
 import { vColor } from '../values';
 
 export const exampleSectionAttributes = <const>{

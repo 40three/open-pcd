@@ -1,4 +1,3 @@
-import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 import { vEnergyEfficiencyClass } from '../../values';
 
 export const sectionPowerSupplyAttrs = <const>{

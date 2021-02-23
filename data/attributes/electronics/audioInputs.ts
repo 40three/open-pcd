@@ -1,4 +1,3 @@
-import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionAudioInputsAttrs = <const>{
     'electronics.audio.inputs.phono': NumberAttr({

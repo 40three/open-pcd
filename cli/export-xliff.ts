@@ -2,7 +2,7 @@
  * Create xliff files to provide data for translations
  */
 import './_setup';
-import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstractions';
+import { IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstractions';
 import { promises as fs } from 'fs';
 import { attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';

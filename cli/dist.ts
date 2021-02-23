@@ -4,7 +4,7 @@
 import './_setup';
 import { IUnitInfo } from 'abstractions/unit-interfaces';
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abstractions';
+import { IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abstractions';
 import { IDistAttribute, IDistAttributeSection, IDistProductType, IDistProductTypeCategory } from '../abstractions/dist';
 import { a, AttributeKey, attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';

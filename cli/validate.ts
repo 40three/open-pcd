@@ -1,6 +1,6 @@
 import './_setup';
 import symbols from 'log-symbols';
-import { IAttributeSection, IProductType } from '../abstractions';
+import { IProductType } from '../abstractions';
 import { attributeSections } from '../data/attributes';
 import { pt } from '../data/product-types';
 

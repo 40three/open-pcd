@@ -1,4 +1,3 @@
-import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 
 export const sectionMicrophoneAttrs = <const>{
     'electronics.mic.hasMicrophone': BooleanAttr({

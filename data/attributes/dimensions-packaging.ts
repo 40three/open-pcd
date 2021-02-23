@@ -1,4 +1,3 @@
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 import { vPackagingType } from '../values/package-type';
 
 export const sectionDimensionsPackagingAttrs = <const>{
