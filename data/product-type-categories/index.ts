@@ -7,7 +7,11 @@ export const productTypeCategoryTree: IProductTypeCategoryMap = {
     clothing: PTCat('Clothing, shoes & accessories'),
     electronics: PTCat('Electronics & office', {
         homeElectronics: PTCat('Home electronics'),
-        photo: PTCat('Photo & video')
+        photo: PTCat('Photo & video'),
+        kitchenAppliances: PTCat('Kitchen appliances'),
+        largeElectricAppliances: PTCat('Large electric appliances'),
+        homeCinema: PTCat('Home cinema'),
+        audioHifi: PTCat('Audio & Hifi'),
     }),
     booksMedia: PTCat({ name: 'Books and movies', }),
     other: PTCat({ name: 'Other' }),
