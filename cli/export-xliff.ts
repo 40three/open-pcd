@@ -6,7 +6,6 @@ import { IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstrac
 import { promises as fs } from 'fs';
 import { attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
-import { pt } from '../data/product-types';
 import { TranslationCultureKey } from './configuration';
 import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 

@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeMicrowave = PType({
+PType({
     name: 'Microwave',
     key: 'microwave',
     categories: ['kitchenAppliances'],

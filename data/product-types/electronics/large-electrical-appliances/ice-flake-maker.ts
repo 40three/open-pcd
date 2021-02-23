@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeIceFlakeMaker = PType({
+PType({
     name: 'Ice flake maker',
     key: 'iceflakemaker',
     categories: ['largeElectricAppliances'],

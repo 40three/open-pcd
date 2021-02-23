@@ -1,9 +1,9 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBeamer = PType({
+PType({
     name: 'Beamer',
-    key: 'beamer',
+    key: 'projector',
     categories: ['kitchenAppliances'],
     attributeRefs: [
         ...ag.common,

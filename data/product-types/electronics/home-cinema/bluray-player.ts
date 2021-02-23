@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBlurayPlayer = PType({
+PType({
     name: 'Bluray player',
     key: 'blurayplayer',
     categories: ['homeCinema'],

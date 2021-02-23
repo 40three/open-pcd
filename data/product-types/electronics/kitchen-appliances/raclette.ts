@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeRaclette = PType({
+PType({
     name: 'Raclette',
     key: 'raclette',
     categories: ['kitchenAppliances'],

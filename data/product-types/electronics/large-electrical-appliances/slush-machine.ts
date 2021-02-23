@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeSlushMachine = PType({
+PType({
     name: 'Slush machine',
     key: 'slushmachine',
     categories: ['largeElectricAppliances'],

@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeDishwasher = PType({
+PType({
     name: 'Dishwasher',
     key: 'dishwasher',
     categories: ['largeElectricAppliances'],

@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeTrumbleDryer = PType({
+PType({
     name: 'Trumble dryer',
     key: 'trumbledryer',
     categories: ['largeElectricAppliances'],

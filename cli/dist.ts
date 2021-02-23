@@ -8,7 +8,6 @@ import { IProductSubType, IProductType, IProductTypeCategoryFlat } from '../abst
 import { IDistAttribute, IDistAttributeSection, IDistProductType, IDistProductTypeCategory } from '../abstractions/dist';
 import { a, AttributeKey, attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
-import { pt } from '../data/product-types';
 import { u, UnitKey } from '../data/units';
 import { generatedTypesBasePath } from './configuration';
 import { multiLang, readAllTranslations } from './translations/fn';

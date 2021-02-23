@@ -1,9 +1,9 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeHomeTheaterSystem = PType({
+PType({
     name: 'Home theater system',
-    key: 'hometheatersystem',
+    key: 'homeTheaterSystem',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

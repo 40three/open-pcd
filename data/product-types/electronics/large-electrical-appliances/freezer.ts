@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeFreezer = PType({
+PType({
     name: 'Freezer',
     key: 'freezer',
     categories: ['largeElectricAppliances'],

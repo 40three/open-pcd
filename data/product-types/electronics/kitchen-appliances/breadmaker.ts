@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBreadmaker = PType({
+PType({
     name: 'Breadmaker',
     key: 'breadmaker',
     categories: ['kitchenAppliances'],

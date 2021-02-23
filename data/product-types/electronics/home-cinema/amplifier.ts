@@ -1,10 +1,10 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeAmplifier = PType({
+PType({
     name: 'Amplifier',
     key: 'amplifier',
-    categories: ['kitchenAppliances'],
+    categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,
     ]

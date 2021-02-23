@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeSandwichMaker = PType({
+PType({
     name: 'Sandwich maker',
     key: 'sandwichmaker',
     categories: ['kitchenAppliances'],

@@ -1,9 +1,9 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeVideoGlass = PType({
-    name: 'Video glass',
-    key: 'videoglass',
+PType({
+    name: 'Video glasses',
+    key: 'videoGlasses',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

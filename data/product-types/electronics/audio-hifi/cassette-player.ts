@@ -1,9 +1,10 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeCassettePlayer = PType({
+PType({
     name: 'Cassette player',
-    key: 'cassetteplayer',
+    key: 'cassettePlayer',
+    definitionUrl: 'https://en.wikipedia.org/wiki/Cassette_deck',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

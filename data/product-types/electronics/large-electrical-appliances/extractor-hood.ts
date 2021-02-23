@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeExtractorHood = PType({
+PType({
     name: 'Extractor hood',
     key: 'extractorhood',
     categories: ['largeElectricAppliances'],

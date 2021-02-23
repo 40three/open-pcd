@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeElectricFireplace = PType({
+PType({
     name: 'Electric fireplace',
     key: 'electricfireplace',
     categories: ['largeElectricAppliances'],

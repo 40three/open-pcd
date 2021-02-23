@@ -1,9 +1,10 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeSatelliteDish = PType({
+PType({
     name: 'Satellite dish',
-    key: 'satellitedish',
+    key: 'satelliteDish',
+    definitionUrl: 'https://en.wikipedia.org/wiki/Satellite_dish',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

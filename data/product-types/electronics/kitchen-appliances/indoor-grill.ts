@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeIndoorGrill = PType({
+PType({
     name: 'Indoor grill',
     key: 'indoorgrill',
     categories: ['kitchenAppliances'],

@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeElectricKitchenGrater = PType({
+PType({
     name: 'Electric kitchen grater',
     key: 'electrickitchengrater',
     categories: ['kitchenAppliances'],

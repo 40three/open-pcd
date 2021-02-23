@@ -2,7 +2,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeCooktop = PType({
+PType({
     name: 'Cooktop',
     key: 'cooktop',
     categories: ['largeElectricAppliances'],

@@ -2,7 +2,6 @@ import './_setup';
 import symbols from 'log-symbols';
 import { IProductType } from '../abstractions';
 import { attributeSections } from '../data/attributes';
-import { pt } from '../data/product-types';
 
 const validateSections = (sections: IAttributeSection[]) => ({
     'duplicate keys': sections.length === (new Set(sections.map(s => s.key)).size),

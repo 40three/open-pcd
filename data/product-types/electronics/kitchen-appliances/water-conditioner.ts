@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeWatterConditioner = PType({
+PType({
     name: 'Watter conditioner',
     key: 'waterconditioner',
     categories: ['kitchenAppliances'],

@@ -7,7 +7,6 @@ import './_setup';
 import { promises as fs } from 'fs';
 import { IProductType, IProductTypeCategoryMap } from '../abstractions';
 import { productTypeCategoryTree } from '../data/product-type-categories';
-import { pt } from '../data/product-types';
 import { generatedTypesBasePath } from './configuration';
 
 

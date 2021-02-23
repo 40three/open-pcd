@@ -1,7 +1,7 @@
 
 import { ag } from '../../../attribute-groups';
 
-export const productTypeHomeLoudspeaker = PType({
+PType({
     name: 'Loudspeaker',
     key: 'loudspeaker',
     categories: ['audioHifi', 'homeCinema'],
