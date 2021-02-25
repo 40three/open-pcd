@@ -1,4 +1,3 @@
-import { Unit } from '../../abstractions';
 
 /** Supported units with descriptions */
 export const u = {

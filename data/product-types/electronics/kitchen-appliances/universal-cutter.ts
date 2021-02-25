@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeUniversalCutter = PType({
+PType({
     name: 'Universal cutter',
     key: 'universalcutter',
     categories: ['kitchenAppliances'],

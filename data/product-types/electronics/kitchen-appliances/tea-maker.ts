@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeTeaMakers = PType({
+PType({
     name: 'Tea maker',
     key: 'teamaker',
     categories: ['kitchenAppliances'],

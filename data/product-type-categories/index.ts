@@ -1,4 +1,4 @@
-import { IProductTypeCategory, IProductTypeCategoryMap, IProductTypeCategoryFlat, PTCat } from '../../abstractions';
+import { IProductTypeCategoryMap, IProductTypeCategoryFlat } from '../../abstractions';
 
 /**
  * Categories allow us to browse available product types

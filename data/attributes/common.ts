@@ -1,5 +1,4 @@
-import { StringAttr } from '../../abstractions';
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
+
 
 export const sectionCommonAttrs = <const>{
     'product.sku': StringAttr({

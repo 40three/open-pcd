@@ -1,9 +1,9 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeCompactSystem = PType({
+PType({
     name: 'Compact system',
-    key: 'compactsystem',
+    key: 'compactSystem',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

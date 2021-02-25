@@ -1,40 +1,85 @@
 import { Optional } from 'utility-types';
-import { IDateTimeAttribute, IFilesAttribute, IMoneyAttribute } from 'abstractions';
 import { AttributeKey } from 'attributes';
-import { IBooleanAttribute, INumberAttribute, INumberRangeAttribute, ISetAttribute, IStringAttribute } from './attribute-interfaces';
 import { IProductType, IExampleProductType, IProductTypeCategory, IProductSubType, IProductTypeCategoryMap } from './product-type-interfaces';
 import { IUnitInfo } from './unit-interfaces';
+import glob from 'glob';
+import path from 'path';
+
+declare global {
+    /** Creates unit info */
+    function Unit(data: IUnitInfo): IUnitInfo;
+    /** Creates boolean attribute */
+    function BooleanAttr(data: Omit<IBooleanAttribute, 'type'>): IBooleanAttribute;
+    /** Creates date attribute */
+    function DateAttr(data: Omit<IDateTimeAttribute, 'type' | 'resolution'>): IDateTimeAttribute;
+    /** Creates datetime attribute */
+    function DateTimeAttr(data: Optional<Omit<IDateTimeAttribute, 'type' | 'resolution'>, 'interval'>): IDateTimeAttribute;
+    /** Creates file list attribute */
+    function FilesAttr(data: Omit<IFilesAttribute, 'type'>): IFilesAttribute;
+    /** Creates money attribute */
+    function MoneyAttr(data: Omit<IMoneyAttribute, 'type'>): IMoneyAttribute;
+    /** Creates number attribute */
+    function NumberAttr(data: Omit<INumberAttribute, 'type'>): INumberAttribute;
+    /** Creates range attribute */
+    function NumberRangeAttr(data: Omit<INumberRangeAttribute, 'type'>): INumberRangeAttribute;
+    /** Creates set attribute */
+    function SetAttr<TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue>;
+    /** Creates string attribute */
+    function StringAttr(data: Omit<IStringAttribute, 'type'>): IStringAttribute;
+
+    function AttrGroup<TCollection extends readonly AttributeKey[]>(data: TCollection): TCollection;
+
+    /** Creates product type */
+    function PType(data: IProductType): void;
+    /** Creates product sub type */
+    function PSub(data: IProductSubType): IProductSubType;
+
+    /** Creates example product type */
+    function ExamplePType(data: IExampleProductType): IExampleProductType;
+    /** Creates product type category */
+    function PTCat(data: Omit<IProductTypeCategory, 'children'> | string, children?: IProductTypeCategoryMap): IProductTypeCategory;
+
+    /** Read and return all product types */
+    function productTypes(): Promise<IProductType[]>;
+}
+
+const _global = (typeof window === 'undefined' ? global : window) as any;
 
 /** Creates unit info */
-export const Unit = (data: IUnitInfo): IUnitInfo => data;
-
+_global.Unit = function (data: IUnitInfo): IUnitInfo { return data; }
 /** Creates boolean attribute */
-export const BooleanAttr = (data: Omit<IBooleanAttribute, 'type'>): IBooleanAttribute => (<const>{ ...data, type: 'boolean' });
+_global.BooleanAttr = function (data: Omit<IBooleanAttribute, 'type'>): IBooleanAttribute { return <const>{ ...data, type: 'boolean' }; };
 /** Creates date attribute */
-export const DateAttr = (data: Omit<IDateTimeAttribute, 'type' | 'resolution'>): IDateTimeAttribute => (<const>{ ...data, type: 'datetime', resolution: 'date' });
+_global.DateAttr = function (data: Omit<IDateTimeAttribute, 'type' | 'resolution'>): IDateTimeAttribute { return (<const>{ ...data, type: 'datetime', resolution: 'date' }); }
 /** Creates datetime attribute */
-export const DateTimeAttr = (data: Optional<Omit<IDateTimeAttribute, 'type' | 'resolution'>, 'interval'>): IDateTimeAttribute => (<const>{ ...<const>{ interval: 'start'}, ...data, type: 'datetime', resolution: 'datetime' });
+_global.DateTimeAttr = function (data: Optional<Omit<IDateTimeAttribute, 'type' | 'resolution'>, 'interval'>): IDateTimeAttribute { return (<const>{ ...<const>{ interval: 'start' }, ...data, type: 'datetime', resolution: 'datetime' }); }
 /** Creates file list attribute */
-export const FilesAttr = (data: Omit<IFilesAttribute, 'type'>): IFilesAttribute => (<const>{ ...data, type: 'files' });
+_global.FilesAttr = function (data: Omit<IFilesAttribute, 'type'>): IFilesAttribute { return (<const>{ ...data, type: 'files' }); }
 /** Creates money attribute */
-export const MoneyAttr = (data: Omit<IMoneyAttribute, 'type'>): IMoneyAttribute => (<const>{ ...data, type: 'money' });
+_global.MoneyAttr = function (data: Omit<IMoneyAttribute, 'type'>): IMoneyAttribute { return (<const>{ ...data, type: 'money' }); }
 /** Creates number attribute */
-export const NumberAttr = (data: Omit<INumberAttribute, 'type'>): INumberAttribute => (<const>{ ...data, type: 'number' });
+_global.NumberAttr = function (data: Omit<INumberAttribute, 'type'>): INumberAttribute { return (<const>{ ...data, type: 'number' }); }
 /** Creates range attribute */
-export const NumberRangeAttr = (data: Omit<INumberRangeAttribute, 'type'>): INumberRangeAttribute => (<const>{ ...data, type: 'numberrange' });
+_global.NumberRangeAttr = function (data: Omit<INumberRangeAttribute, 'type'>): INumberRangeAttribute { return (<const>{ ...data, type: 'numberrange' }); }
 /** Creates set attribute */
-export const SetAttr = <TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue> => (<const>{ ...data, type: 'set' });
+_global.SetAttr = function <TValue extends string | number>(data: Omit<ISetAttribute<TValue>, 'type'>): ISetAttribute<TValue> { return (<const>{ ...data, type: 'set' }); }
 /** Creates string attribute */
-export const StringAttr = (data: Omit<IStringAttribute, 'type'>): IStringAttribute => (<const>{ ...data, type: 'string' });
+_global.StringAttr = function (data: Omit<IStringAttribute, 'type'>): IStringAttribute { return (<const>{ ...data, type: 'string' }); }
 
-export const AttrGroup = <TCollection extends readonly AttributeKey[]>(data: TCollection) => data;
+_global.AttrGroup = function <TCollection extends readonly AttributeKey[]>(data: TCollection) { return data; }
 
 /** Creates product type */
-export const PType = (data: IProductType): IProductType => data;
+_global.PType = function (data: IProductType) { pt.push(data); }
 /** Creates product sub type */
-export const PSub = (data: IProductSubType): IProductSubType => data;
+_global.PSub = function (data: IProductSubType): IProductSubType { return data; }
 
 /** Creates example product type */
-export const ExamplePType = (data: IExampleProductType): IExampleProductType => data;
+_global.ExamplePType = function (data: IExampleProductType): IExampleProductType { return data; }
 /** Creates product type category */
-export const PTCat = (data: Omit<IProductTypeCategory, 'children'> | string, children: IProductTypeCategoryMap = {}): IProductTypeCategory => ({ ...(typeof data === 'string' ? { name: data } : data), children });
+_global.PTCat = function (data: Omit<IProductTypeCategory, 'children'> | string, children: IProductTypeCategoryMap = {}): IProductTypeCategory { return ({ ...(typeof data === 'string' ? { name: data } : data), children }); }
+
+_global.productTypes = function (): IProductType[] {
+    const dir = path.resolve(__dirname, '../data/product-types');
+    glob.sync(`${dir}/**/*.ts`).forEach((file) => require(path.resolve(file)));
+    return pt;
+}

@@ -1,5 +1,3 @@
-import { StringAttr } from '../../abstractions';
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionMaterialAttrs = <const>{
     'product.color': StringAttr({

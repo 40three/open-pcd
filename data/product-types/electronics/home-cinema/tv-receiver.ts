@@ -1,9 +1,9 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeTvReceiver = PType({
+PType({
     name: 'Tv receiver',
-    key: 'tvreceiver',
+    key: 'tvReceiver',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

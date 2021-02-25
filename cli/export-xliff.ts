@@ -1,11 +1,11 @@
 /**
  * Create xliff files to provide data for translations
  */
-import { Attribute, IAttributeSection, IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstractions';
+import './_setup';
+import { IProductSubType, IProductType, IProductTypeCategoryFlat } from 'abstractions';
 import { promises as fs } from 'fs';
 import { attributeSections } from '../data/attributes';
 import { productTypesCategoryList } from '../data/product-type-categories';
-import { pt } from '../data/product-types';
 import { TranslationCultureKey } from './configuration';
 import { writeXliff, XlfFile, XlfGroup, XlfSegment, XlfUnit } from './xliff';
 

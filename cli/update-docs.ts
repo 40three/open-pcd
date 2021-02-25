@@ -1,7 +1,7 @@
+import './_setup';
 import { promises as fs } from 'fs';
-import { Attribute, IAttributeSection, IProductSubType, IProductType } from '../abstractions';
+import { IProductSubType, IProductType } from '../abstractions';
 import { a, attributeSections } from '../data/attributes';
-import { pt } from '../data/product-types';
 import { filteredSectionsWithReferencedAttributes } from './docs/fn';
 import { getTranslations, readAllTranslations } from './translations/fn';
 import { AllTranslationsDict } from './translations/types';

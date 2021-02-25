@@ -1,9 +1,9 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypePreamplifier = PType({
+PType({
     name: 'Preamplifier',
-    key: 'preamplfier',
+    key: 'preamplifier',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

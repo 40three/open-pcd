@@ -1,7 +1,6 @@
 import { ag } from '../../attribute-groups';
-import { PSub, PType } from '../../../abstractions';
 
-export const productTypeBook = PType({
+PType({
     name: 'book',
     key: 'book',
     definitionUrl: 'https://en.wikipedia.org/wiki/Book',

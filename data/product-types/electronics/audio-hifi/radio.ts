@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeRadio = PType({
+PType({
     name: 'Radio',
     key: 'radio',
     categories: ['audioHifi', 'homeCinema'],

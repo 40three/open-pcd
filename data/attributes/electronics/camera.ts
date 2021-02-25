@@ -1,5 +1,3 @@
-import { BooleanAttr, NumberAttr, SetAttr, StringAttr } from '../../../abstractions';
-import { IAttributeSection } from '../../../abstractions/attribute-interfaces';
 import { vAspectRatio, vCameraLensMount, vCameraSensorFormat } from '../../values';
 
 export const sectionCameraAttrs = <const>{

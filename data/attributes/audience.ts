@@ -1,8 +1,6 @@
 /**
  * Text, audio and video content attributes
  */
-import { BooleanAttr, NumberAttr, SetAttr, StringAttr } from '../../abstractions';
-import { IAttributeSection } from '../../abstractions/attribute-interfaces';
 
 export const sectionAudienceAttrs = <const>{
     'audience.ageMin': NumberAttr({

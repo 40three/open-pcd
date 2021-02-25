@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeEggBoiler = PType({
+PType({
     name: 'Egg boiler',
     key: 'eggboiler',
     categories: ['kitchenAppliances'],

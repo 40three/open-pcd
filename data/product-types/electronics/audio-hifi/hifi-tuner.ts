@@ -1,9 +1,9 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeHifiTuner = PType({
+PType({
     name: 'HiFi tuner',
-    key: 'hifituner',
+    key: 'hifiTuner',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

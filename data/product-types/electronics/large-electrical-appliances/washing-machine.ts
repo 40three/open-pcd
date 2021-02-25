@@ -1,8 +1,8 @@
 
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeWashingMachine = PType({
+PType({
     name: 'Washing machine',
     key: 'washingmachine',
     categories: ['largeElectricAppliances'],

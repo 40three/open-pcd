@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBlurayRecorder = PType({
+PType({
     name: 'Bluray recorder',
     key: 'blurayrecorder',
     categories: ['homeCinema'],

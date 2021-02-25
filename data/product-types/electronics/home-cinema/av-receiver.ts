@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeAvReceiver = PType({
+PType({
     name: 'Av receiver',
     key: 'avreceiver',
     categories: ['homeCinema'],

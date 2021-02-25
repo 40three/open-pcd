@@ -6,7 +6,6 @@ import { SupportedCultureKey } from '../cli/configuration';
 import { AttributeKey } from '../data/attributes';
 import { ProductTypeCategoryKey } from '../data/generated/types';
 import { UnitKey } from '../data/units';
-import { AttributeType } from './attribute-interfaces';
 
 export type MultiLanguageText = Record<SupportedCultureKey, string>;
 

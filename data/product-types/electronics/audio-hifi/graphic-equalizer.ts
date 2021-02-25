@@ -1,9 +1,9 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeGraphicEqualizer = PType({
+PType({
     name: 'Graphic equalizer',
-    key: 'graphicequalizer',
+    key: 'graphicEqualizer',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

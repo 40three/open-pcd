@@ -1,8 +1,8 @@
 
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeGastroIceMachine = PType({
+PType({
     name: 'Gastro ice machine',
     key: 'gastroicemachine',
     categories: ['largeElectricAppliances'],

@@ -1,7 +1,6 @@
 import { ag } from '../attribute-groups';
-import { PType } from '../../abstractions';
 
-export const simpleProduct = PType({
+PType({
     name: 'simple product',
     description: 'Product with a basic set of describing attributes.',
     key: 'simpleProduct',
