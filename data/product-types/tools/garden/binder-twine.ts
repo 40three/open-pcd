@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBinderTwine = PType({
+PType({
     name: 'Binder twine',
     key: 'bindertwine',
     categories: ['homeCinema'],

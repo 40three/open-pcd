@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeSpareStem = PType({
+PType({
     name: 'Spare stem',
     key: 'sparestem',
     categories: ['homeCinema'],

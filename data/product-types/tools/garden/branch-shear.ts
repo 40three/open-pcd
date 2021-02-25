@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeBranchShear = PType({
+PType({
     name: 'Branch shear',
     key: 'branchshear',
     categories: ['homeCinema'],

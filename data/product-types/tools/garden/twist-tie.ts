@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeTwistTie = PType({
+PType({
     name: 'Twist tie',
     key: 'twisttie',
     categories: ['homeCinema'],

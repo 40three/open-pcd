@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeMotionDetector = PType({
+PType({
     name: 'Motion detector',
     key: 'motiondetector',
     categories: ['smartHome'],

@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeGardenFork = PType({
+PType({
     name: 'Garden fork',
     key: 'gardenfork',
     categories: ['homeCinema'],

@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeWarningIndicator = PType({
+PType({
     name: 'Warning indicator',
     key: 'warningindicator',
     categories: ['smartHome'],

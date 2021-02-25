@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeFlameCutter = PType({
+PType({
     name: 'Flame cutter',
     key: 'flamecutter',
     categories: ['homeCinema'],

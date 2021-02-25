@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeMulcher = PType({
+PType({
     name: 'Mulcher',
     key: 'mulcher',
     categories: ['homeCinema'],

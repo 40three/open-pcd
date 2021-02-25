@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeVoiceAssistant = PType({
+PType({
     name: 'Voice assistant',
     key: 'voiceassistant',
     categories: ['smartHome'],

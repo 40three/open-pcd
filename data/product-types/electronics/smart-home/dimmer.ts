@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeDimmer = PType({
+PType({
     name: 'Dimmer',
     key: 'dimmer',
     categories: ['smartHome'],

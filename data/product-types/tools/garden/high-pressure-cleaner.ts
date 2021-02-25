@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeHighPressureCleaner = PType({
+PType({
     name: 'High pressure cleaner',
     key: 'highpressurecleaner',
     categories: ['homeCinema'],

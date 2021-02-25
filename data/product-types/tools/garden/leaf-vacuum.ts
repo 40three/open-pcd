@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeLeafVacuum = PType({
+PType({
     name: 'Leaf vacuum',
     key: 'leafvacuum',
     categories: ['homeCinema'],

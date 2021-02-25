@@ -1,7 +1,7 @@
-import { PType } from '../../../../abstractions';
+
 import { ag } from '../../../attribute-groups';
 
-export const productTypeSwitch = PType({
+PType({
     name: 'Switch',
     key: 'switch',
     categories: ['smartHome'],
