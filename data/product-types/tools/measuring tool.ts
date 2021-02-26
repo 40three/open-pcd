@@ -2,8 +2,8 @@
 import { ag } from '../../../attribute-groups';
 
 PType({
-    name: 'Electric garden shear',
-    key: 'electricgardenshear',
+    name: 'Measuring tool',
+    key: 'measuringtool',
     categories: ['homeCinema'],
     attributeRefs: [
         ...ag.common,

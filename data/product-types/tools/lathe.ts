@@ -2,9 +2,9 @@
 import { ag } from '../../../attribute-groups';
 
 PType({
-    name: 'Edge shear',
-    key: 'edgeshear',
-    categories: ['homeCinema'],
+    name: 'Lathe',
+    key: 'lathe',
+    categories: ['smartHome'],
     attributeRefs: [
         ...ag.common,
     ]

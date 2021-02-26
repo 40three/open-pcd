@@ -2,9 +2,9 @@
 import { ag } from '../../../attribute-groups';
 
 PType({
-    name: 'Hub',
-    key: 'hub',
-    categories: ['homeCinema'],
+    name: 'Stapler',
+    key: 'stapler',
+    categories: ['smartHome'],
     attributeRefs: [
         ...ag.common,
     ]
