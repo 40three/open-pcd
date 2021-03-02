@@ -13,8 +13,14 @@ export const productTypeCategoryTree: IProductTypeCategoryMap = {
         homeCinema: PTCat('Home cinema'),
         audioHifi: PTCat('Audio & Hifi'),
         smartHome: PTCat('Smart home'),
+        officeElectronics: PTCat('Office electronics'),
     }),
     booksMedia: PTCat({ name: 'Books and movies', }),
+    office: PTCat('Office & School', {
+        officeSupplies: PTCat('Office supplies'),
+        paper: PTCat('Paper'),
+        stationery: PTCat('Stationary'),
+    }),
     other: PTCat({ name: 'Other' }),
 };
 
