@@ -15,13 +15,15 @@ export const productTypeCategoryTree: IProductTypeCategoryMap = {
         smartHome: PTCat('Smart home'),
         officeElectronics: PTCat('Office electronics'),
     }),
-    booksMedia: PTCat({ name: 'Books and movies', }),
+    booksMedia: PTCat('Books and movies'),
     office: PTCat('Office & School', {
         officeSupplies: PTCat('Office supplies'),
         paper: PTCat('Paper'),
         stationery: PTCat('Stationary'),
     }),
-    other: PTCat({ name: 'Other' }),
+    furniture: PTCat('Furniture'),
+    drugstore: PTCat('Drugstore & body care'),
+    other: PTCat('Other'),
 };
 
 const flatCategories = (map: IProductTypeCategoryMap | undefined, parentKey?: string): IProductTypeCategoryFlat[] =>
