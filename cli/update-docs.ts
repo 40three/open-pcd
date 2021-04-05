@@ -33,7 +33,8 @@ async function writeAttributeDetailsPage(path: string, attr: Attribute): Promise
 
 /** Write one page for each product type */
 async function writeProductTypes(path: string, productTypes: IProductType[], sections: IAttributeSection[], translations: AllTranslationsDict): Promise<void> {
-    for (const pt of productTypes) {
+    const sorted = productTypes.sort((a, b) => a.name.localeCompare(b.name));
+    for (const pt of sorted) {
         const lines: string[] = [
             `# ${pt.name}`,
             '',
