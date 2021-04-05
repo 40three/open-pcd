@@ -86,6 +86,7 @@ const docsBaseDir = 'docs/generated';
 
 // main
 (async () => {
+    productTypes();
     await fs.mkdir(`${docsBaseDir}/attributes`, { recursive: true });
     await fs.mkdir(`${docsBaseDir}/product-types`, { recursive: true });
 

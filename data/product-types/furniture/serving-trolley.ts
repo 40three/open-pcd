@@ -1,6 +1,4 @@
 
-import { ag } from '../../attribute-groups';
-
 PType({
     name: 'Serving trolley',
     key: 'servingtrolley',
@@ -8,4 +6,4 @@ PType({
     attributeRefs: [
         ...ag.common,
     ]
-});+9/
+});

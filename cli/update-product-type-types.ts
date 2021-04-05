@@ -34,6 +34,7 @@ async function writeProductTypeCategoryTypes(productTypeCategories: IProductType
 
 // main
 (async () => {
+    productTypes();
     await fs.mkdir(generatedTypesBasePath, { recursive: true });
     await writeProductTypeTypes(pt, `${generatedTypesBasePath}/product-types.ts`);
     await writeProductTypeCategoryTypes(productTypeCategoryTree, `${generatedTypesBasePath}/product-type-categories.ts`);

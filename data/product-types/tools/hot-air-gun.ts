@@ -1,5 +1,5 @@
 
-import { ag } from '../../../attribute-groups';
+
 
 PType({
     name: 'Hot air gun',

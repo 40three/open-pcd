@@ -1,10 +1,10 @@
 
-import { ag } from '../../../attribute-groups';
 
-PType
+
+PType({
     name: 'Gateway',
     key: 'gateway',
-    categories: ['smartHome',
+    categories: ['smartHome'],
     attributeRefs: [
         ...ag.common,
     ]

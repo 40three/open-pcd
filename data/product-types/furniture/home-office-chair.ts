@@ -1,6 +1,4 @@
 
-import { ag } from '../../attribute-groups';
-
 PType({
     name: 'Home office chair',
     key: 'homeofficechair',

@@ -1,4 +1,4 @@
-# Beamer
+# Projector (video)
 
 ## Translations
 * de: undefined
