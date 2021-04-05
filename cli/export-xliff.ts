@@ -65,6 +65,7 @@ const outPath = 'omega-t/source';
 
 // main
 (async () => {
+    productTypes();
     await fs.mkdir(outPath, { recursive: true });
     await writeAttributeSectionsXliff(`${outPath}/attribute-sections.xlf`, 'de', attributeSections);
     await writeAttributesXliff(`${outPath}/attributes.xlf`, 'de', attributeSections);

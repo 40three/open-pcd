@@ -1,4 +1,4 @@
-import { ag } from '../../attribute-groups';
+
 
 PType({
     name: 'book',

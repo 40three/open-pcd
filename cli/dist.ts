@@ -83,6 +83,7 @@ const distTypesBaseDir = 'dist/types';
 
 // main
 (async () => {
+    productTypes();
     await fs.mkdir(distDataBaseDir, { recursive: true });
     await fs.mkdir(distTypesBaseDir, { recursive: true });
 
