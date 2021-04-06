@@ -2,8 +2,8 @@
 import { ag } from '../../attribute-groups';
 
 PType({
-    name: 'Beach chair',
-    key: 'beachchair',
+    name: 'Bed',
+    key: 'bed',
     categories: ['furniture'],
     attributeRefs: [
         ...ag.common,
