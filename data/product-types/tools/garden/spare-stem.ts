@@ -4,7 +4,7 @@
 PType({
     name: 'Spare stem',
     key: 'sparestem',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

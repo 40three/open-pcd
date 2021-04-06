@@ -4,7 +4,7 @@
 PType({
     name: 'Wire brush',
     key: 'wirebrush',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

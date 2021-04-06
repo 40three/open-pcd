@@ -4,7 +4,7 @@
 PType({
     name: 'Grating board',
     key: 'gratingboard',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

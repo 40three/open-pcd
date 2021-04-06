@@ -4,7 +4,7 @@
 PType({
     name: 'Toolbox',
     key: 'toolbox',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

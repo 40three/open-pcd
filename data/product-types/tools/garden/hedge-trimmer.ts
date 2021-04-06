@@ -4,7 +4,7 @@
 PType({
     name: 'Hedge trimmer',
     key: 'knifetrimmer',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

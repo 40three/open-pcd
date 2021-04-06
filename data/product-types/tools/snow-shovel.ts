@@ -4,7 +4,7 @@
 PType({
     name: 'Snow shovel',
     key: 'snowshovel',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

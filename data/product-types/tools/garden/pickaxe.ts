@@ -4,7 +4,7 @@
 PType({
     name: 'Pickaxe',
     key: 'pickaxe',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

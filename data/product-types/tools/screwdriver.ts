@@ -4,7 +4,7 @@
 PType({
     name: 'Screwdriver',
     key: 'screwdriver',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

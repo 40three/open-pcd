@@ -4,7 +4,7 @@
 PType({
     name: 'Shredder',
     key: 'shredder',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

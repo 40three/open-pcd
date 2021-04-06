@@ -4,7 +4,7 @@
 PType({
     name: 'Metal detector',
     key: 'metaldetector',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

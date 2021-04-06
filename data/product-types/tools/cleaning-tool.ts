@@ -4,7 +4,7 @@
 PType({
     name: 'Cleaning tool',
     key: 'cleaningtool',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Air cleaner',
     key: 'aircleaner',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Rasp',
     key: 'rasp',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

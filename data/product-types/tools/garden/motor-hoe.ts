@@ -4,7 +4,7 @@
 PType({
     name: 'Motor hoe',
     key: 'motorhoe',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

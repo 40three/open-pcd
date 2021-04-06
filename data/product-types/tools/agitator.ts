@@ -2,7 +2,7 @@
 PType({
     name: 'Agitator',
     key: 'agitator',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Spade',
     key: 'spade',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

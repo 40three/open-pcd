@@ -4,7 +4,7 @@
 PType({
     name: 'Crowbar',
     key: 'crowbar',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

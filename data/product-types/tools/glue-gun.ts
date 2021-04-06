@@ -4,7 +4,7 @@
 PType({
     name: 'Glue gun',
     key: 'gluegun',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'File',
     key: 'file',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

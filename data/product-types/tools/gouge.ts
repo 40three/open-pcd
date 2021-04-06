@@ -4,7 +4,7 @@
 PType({
     name: 'Gouge',
     key: 'gouge',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

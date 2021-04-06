@@ -4,7 +4,7 @@
 PType({
     name: 'Flame cutter',
     key: 'flamecutter',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

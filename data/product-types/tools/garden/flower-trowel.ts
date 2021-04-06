@@ -4,7 +4,7 @@
 PType({
     name: 'Flower trowel',
     key: 'flowertrowel',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

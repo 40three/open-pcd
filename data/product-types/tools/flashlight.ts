@@ -4,7 +4,7 @@
 PType({
     name: 'Flashlight',
     key: 'flashlight',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

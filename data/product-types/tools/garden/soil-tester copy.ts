@@ -4,7 +4,7 @@
 PType({
     name: 'Onion planter',
     key: 'onionplanter',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

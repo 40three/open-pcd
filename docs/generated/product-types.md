@@ -10,9 +10,6 @@
 ## [Adhesive tape (adhesivetape)](./product-types/adhesivetape.md)
 
 
-## [Adhesive tape (adhesivetape)](./product-types/adhesivetape.md)
-
-
 ## [Agitator (agitator)](./product-types/agitator.md)
 
 
@@ -23,9 +20,6 @@
 
 
 ## [Amplifier (amplifier)](./product-types/amplifier.md)
-
-
-## [Arm chair (armchair)](./product-types/armchair.md)
 
 
 ## [Arm chair (armchair)](./product-types/armchair.md)
@@ -76,10 +70,10 @@
 ## [Beach chair (beachchair)](./product-types/beachchair.md)
 
 
-## [Beach chair (beachchair)](./product-types/beachchair.md)
-
-
 ## [Beanbag (beanbag)](./product-types/beanbag.md)
+
+
+## [Bed (bed)](./product-types/bed.md)
 
 
 ## [Bed frame (bedframe)](./product-types/bedframe.md)
@@ -98,9 +92,6 @@
 
 
 ## [Binder twine (bindertwine)](./product-types/bindertwine.md)
-
-
-## [Binding machine (bindingmachine)](./product-types/bindingmachine.md)
 
 
 ## [Binding machine (bindingmachine)](./product-types/bindingmachine.md)
@@ -1049,9 +1040,6 @@
 
 
 ## [Reception counter (receptioncounter)](./product-types/receptioncounter.md)
-
-
-## [Register (register)](./product-types/register.md)
 
 
 ## [Register (register)](./product-types/register.md)

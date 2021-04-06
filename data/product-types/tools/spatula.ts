@@ -4,7 +4,7 @@
 PType({
     name: 'Spatula',
     key: 'spatula',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

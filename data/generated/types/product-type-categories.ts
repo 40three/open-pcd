@@ -15,4 +15,6 @@ export type ProductTypeCategoryKey = "clothing"
 |"stationery"
 |"furniture"
 |"drugstore"
+|"tools"
+|"gardenTools"
 |"other";

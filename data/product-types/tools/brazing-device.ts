@@ -4,7 +4,7 @@
 PType({
     name: 'Brazing device',
     key: 'brazingdevice',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

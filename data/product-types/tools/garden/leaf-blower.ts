@@ -4,7 +4,7 @@
 PType({
     name: 'Leaf blower',
     key: 'leafblower',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

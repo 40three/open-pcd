@@ -4,7 +4,7 @@
 PType({
     name: 'Splitting wedges',
     key: 'splittingwedges',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

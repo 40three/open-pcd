@@ -4,7 +4,7 @@
 PType({
     name: 'High pruner',
     key: 'highpruner',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

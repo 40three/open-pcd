@@ -4,7 +4,7 @@
 PType({
     name: 'Knife grinder',
     key: 'knifegrinder',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

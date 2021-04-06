@@ -4,7 +4,7 @@
 PType({
     name: 'Compost Aerator',
     key: 'compostaerator',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Sockel set',
     key: 'sockelset',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

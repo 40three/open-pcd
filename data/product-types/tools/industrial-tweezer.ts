@@ -4,7 +4,7 @@
 PType({
     name: 'Industrial-tweezer',
     key: 'industrialtweezer',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

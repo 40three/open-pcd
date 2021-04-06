@@ -4,7 +4,7 @@
 PType({
     name: 'Nibbler',
     key: 'nibbler',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

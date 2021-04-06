@@ -4,7 +4,7 @@
 PType({
     name: 'Milling machine',
     key: 'millingmachine',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

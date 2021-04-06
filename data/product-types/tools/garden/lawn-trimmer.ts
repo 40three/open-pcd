@@ -4,7 +4,7 @@
 PType({
     name: 'Lawn trimmer',
     key: 'lawntrimmer',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Plier',
     key: 'plier',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -23,6 +23,9 @@ export const productTypeCategoryTree: IProductTypeCategoryMap = {
     }),
     furniture: PTCat('Furniture'),
     drugstore: PTCat('Drugstore & body care'),
+    tools: PTCat('Tools', {
+        gardenTools: PTCat('Garden tools')
+    }),
     other: PTCat('Other'),
 };
 

@@ -4,7 +4,7 @@
 PType({
     name: 'Poloshing machine',
     key: 'poloshingmachine',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

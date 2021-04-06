@@ -4,7 +4,7 @@
 PType({
     name: 'Garden fork',
     key: 'gardenfork',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

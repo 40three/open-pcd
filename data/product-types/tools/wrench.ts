@@ -4,7 +4,7 @@
 PType({
     name: 'Wrench',
     key: 'wrench',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Soil tester',
     key: 'soiltester',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

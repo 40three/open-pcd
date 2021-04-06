@@ -4,7 +4,7 @@
 PType({
     name: 'Engraving tool',
     key: 'engravingtool',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

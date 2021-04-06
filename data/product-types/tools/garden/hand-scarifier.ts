@@ -4,7 +4,7 @@
 PType({
     name: 'Hand scarifier',
     key: 'handscarifier',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Twist tie',
     key: 'twisttie',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Trowel',
     key: 'trowel',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Cartridge press',
     key: 'cartridgepress',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'High pressure cleaner',
     key: 'highpressurecleaner',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

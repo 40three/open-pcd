@@ -4,7 +4,7 @@
 PType({
     name: 'Compressor',
     key: 'compressor',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Cutting-die',
     key: 'cuttingdie',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

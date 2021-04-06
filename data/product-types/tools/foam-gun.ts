@@ -4,7 +4,7 @@
 PType({
     name: 'Foam gun',
     key: 'foamgun',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

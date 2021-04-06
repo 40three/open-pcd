@@ -4,7 +4,7 @@
 PType({
     name: 'Garden shear',
     key: 'gardenshear',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

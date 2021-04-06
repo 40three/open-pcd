@@ -4,7 +4,7 @@
 PType({
     name: 'Headlamp',
     key: 'headlamp',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

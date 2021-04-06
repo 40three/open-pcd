@@ -4,7 +4,7 @@
 PType({
     name: 'Oscillating tool',
     key: 'oscillatingtool',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

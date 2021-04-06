@@ -4,7 +4,7 @@
 PType({
     name: 'Binder twine',
     key: 'bindertwine',
-    categories: ['homeCinema'],
+    categories: ['gardenTools'],
     attributeRefs: [
         ...ag.common,
     ]

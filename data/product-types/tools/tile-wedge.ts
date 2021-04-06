@@ -4,7 +4,7 @@
 PType({
     name: 'Tile wedge',
     key: 'tilewedge',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

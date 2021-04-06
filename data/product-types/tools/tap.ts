@@ -4,7 +4,7 @@
 PType({
     name: 'Tap',
     key: 'tap',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

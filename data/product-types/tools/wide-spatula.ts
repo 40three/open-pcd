@@ -4,7 +4,7 @@
 PType({
     name: 'Wide spatula',
     key: 'widespatula',
-    categories: ['smartHome'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]
