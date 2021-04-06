@@ -4,7 +4,7 @@
 PType({
     name: 'Stapler',
     key: 'stapler',
-    categories: ['officeSupplies'],
+    categories: ['officeSupplies','tools'],
     attributeRefs: [
         ...ag.common,
     ]
