@@ -4,7 +4,7 @@
 PType({
     name: 'Craftsman scissor',
     key: 'craftmanscissor',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

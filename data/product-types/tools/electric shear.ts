@@ -4,7 +4,7 @@
 PType({
     name: 'Electric shear',
     key: 'electricshear',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

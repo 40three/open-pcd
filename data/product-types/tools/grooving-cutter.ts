@@ -4,7 +4,7 @@
 PType({
     name: 'Grooving cutter',
     key: 'groovingcutter',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

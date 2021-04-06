@@ -4,7 +4,7 @@
 PType({
     name: 'Measuring tool',
     key: 'measuringtool',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

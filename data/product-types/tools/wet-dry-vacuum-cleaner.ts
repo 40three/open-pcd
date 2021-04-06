@@ -4,7 +4,7 @@
 PType({
     name: 'Wet dry vacuum cleaner',
     key: 'wetdryvacuumcleaner',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

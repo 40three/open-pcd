@@ -4,7 +4,7 @@
 PType({
     name: 'Sanding tool',
     key: 'sandingtool',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

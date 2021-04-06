@@ -4,7 +4,7 @@
 PType({
     name: 'Extraction system',
     key: 'extractionsystem',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

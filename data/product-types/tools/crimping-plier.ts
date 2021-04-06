@@ -4,7 +4,7 @@
 PType({
     name: 'Crimping plier',
     key: 'crimpingplier',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

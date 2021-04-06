@@ -4,7 +4,7 @@
 PType({
     name: 'Soldering device',
     key: 'solderingdevice',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

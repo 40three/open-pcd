@@ -4,7 +4,7 @@
 PType({
     name: 'Hand countersink',
     key: 'handcountersink',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

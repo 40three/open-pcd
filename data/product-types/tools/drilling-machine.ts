@@ -4,7 +4,7 @@
 PType({
     name: 'Drilling machine',
     key: 'drillingmachine',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

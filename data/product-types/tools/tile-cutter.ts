@@ -4,7 +4,7 @@
 PType({
     name: 'Tile cutter',
     key: 'tilecutter',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

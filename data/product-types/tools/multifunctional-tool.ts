@@ -4,7 +4,7 @@
 PType({
     name: 'Multifunctional tool',
     key: 'multifunctionaltool',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

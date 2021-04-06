@@ -4,7 +4,7 @@
 PType({
     name: 'Hot air gun',
     key: 'hotairgun',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

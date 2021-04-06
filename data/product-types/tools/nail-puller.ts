@@ -4,7 +4,7 @@
 PType({
     name: 'Nail puller',
     key: 'nailpuller',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

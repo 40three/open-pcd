@@ -4,7 +4,7 @@
 PType({
     name: 'Hand drill',
     key: 'handdrill',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

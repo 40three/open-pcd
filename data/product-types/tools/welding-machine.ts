@@ -4,7 +4,7 @@
 PType({
     name: 'Welding machine',
     key: 'weldingmachine',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

@@ -4,7 +4,7 @@
 PType({
     name: 'Wood burning tool',
     key: 'woodburningtool',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

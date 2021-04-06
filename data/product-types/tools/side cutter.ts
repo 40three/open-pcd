@@ -4,7 +4,7 @@
 PType({
     name: 'Side cutter',
     key: 'sidecutter',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

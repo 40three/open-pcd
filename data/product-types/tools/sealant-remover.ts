@@ -4,7 +4,7 @@
 PType({
     name: 'Sealant remover',
     key: 'sealantremover',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

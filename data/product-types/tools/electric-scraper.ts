@@ -4,7 +4,7 @@
 PType({
     name: 'Electric scraper',
     key: 'electricscraper',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]

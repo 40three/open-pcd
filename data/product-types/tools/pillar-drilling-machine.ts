@@ -4,7 +4,7 @@
 PType({
     name: 'Pillar drilling machine',
     key: 'pillardrillingmachine',
-    categories: ['homeCinema'],
+    categories: ['tools'],
     attributeRefs: [
         ...ag.common,
     ]
