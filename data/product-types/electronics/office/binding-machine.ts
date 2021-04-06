@@ -4,7 +4,7 @@
 PType({
     name: 'Binding machine',
     key: 'bindingmachine',
-    categories: ['officeElectronics'],
+    categories: ['officeElectronics','officeSupplies'],
     attributeRefs: [
         ...ag.common,
     ]
