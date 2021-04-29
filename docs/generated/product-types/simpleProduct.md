@@ -1,4 +1,4 @@
-# simple product
+# Simple product
 
 ## Translations
 * de: simple product

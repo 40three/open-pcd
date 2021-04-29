@@ -589,9 +589,6 @@
 ## [Hand drill (handdrill)](./product-types/handdrill.md)
 
 
-## [Hand drill (handdrill)](./product-types/handdrill.md)
-
-
 ## [Hand saw (handsaw)](./product-types/handsaw.md)
 
 
@@ -1096,12 +1093,6 @@
 ## [Saw (saw)](./product-types/saw.md)
 
 
-## [Scraber (scraber)](./product-types/scraber.md)
-
-
-## [Scraber (scraber)](./product-types/scraber.md)
-
-
 ## [Screwdriver (screwdriver)](./product-types/screwdriver.md)
 
 
@@ -1145,6 +1136,11 @@
 
 
 ## [Sieve (sieve)](./product-types/sieve.md)
+
+
+## [Simple product (simpleProduct)](./product-types/simpleProduct.md)
+Product with a basic set of describing attributes.
+
 
 
 ## [Sketchpad (sketchpad)](./product-types/sketchpad.md)
@@ -1220,9 +1216,6 @@
 
 
 ## [Staple (staple)](./product-types/staple.md)
-
-
-## [Stapler (stapler)](./product-types/stapler.md)
 
 
 ## [Stapler (stapler)](./product-types/stapler.md)
